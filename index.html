@@ -1,10 +1,1837 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Punishka Trading</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Punishka Trading | Professional DJ Equipment Supplier India</title>
+<meta name="description" content="India's #1 DJ equipment supplier. Best price on DJ mixers, speakers, amplifiers. Call now for wholesale price. GST verified. 1000+ satisfied customers."/>
+<meta name="keywords" content="DJ mixer India, DJ speaker, amplifier India, DJ equipment supplier, professional audio India, wholesale DJ gear, DJ controller India"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ============================================================
+   ROOT VARIABLES
+============================================================ */
+:root {
+  --orange: #FF6B00;
+  --orange-dark: #cc5500;
+  --orange-light: #ff8c33;
+  --orange-glow: rgba(255,107,0,0.13);
+  --dark: #0f0f0f;
+  --dark2: #181818;
+  --text: #1a1a1a;
+  --muted: #666;
+  --muted2: #999;
+  --bg: #f5f5f5;
+  --white: #ffffff;
+  --border: #e5e5e5;
+  --green: #25D366;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  padding-top: 62px; /* header height */
+  padding-bottom: 72px; /* sticky bottom bar */
+}
+h1,h2,h3,h4,h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ============================================================
+   PAGE SECTIONS (SPA navigation)
+============================================================ */
+.page-section { display: none; }
+.page-section.active { display: block; }
+
+/* ============================================================
+   STICKY HEADER
+============================================================ */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(16px);
+  border-bottom: 2.5px solid var(--orange);
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.logo {
+  display: flex; align-items: center; gap: 8px;
+  cursor: pointer;
+}
+.logo-icon {
+  width: 36px; height: 36px;
+  background: var(--orange);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.logo-icon svg { width: 20px; height: 20px; fill: white; }
+.logo-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  color: var(--dark);
+}
+.logo-name span { color: var(--orange); }
+
+/* Desktop Nav */
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+.nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+  border: none;
+  background: none;
+}
+.nav-link:hover { color: var(--text); background: #f0f0f0; }
+.nav-link.active { color: var(--orange); background: var(--orange-glow); }
+
+.header-call-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--orange);
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  animation: pulse-btn 2.5s ease-in-out infinite;
+  white-space: nowrap;
+}
+.header-call-btn svg { width: 17px; height: 17px; fill: white; }
+@keyframes pulse-btn {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,107,0,0.5); }
+  50%      { box-shadow: 0 0 0 8px rgba(255,107,0,0); }
+}
+
+/* ============================================================
+   URGENCY TICKER
+============================================================ */
+.ticker {
+  background: var(--dark);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 6px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker-inner {
+  display: inline-flex;
+  animation: ticker-scroll 32s linear infinite;
+}
+.ticker-item { padding: 0 36px; display: flex; align-items: center; gap: 7px; }
+.ticker-dot { color: var(--orange); }
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ============================================================
+   COMMON HELPERS
+============================================================ */
+.section-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--orange); margin-bottom: 8px;
+}
+.section-title { font-size: clamp(30px,8vw,52px); font-weight: 900; color: var(--dark); }
+.section-sub { font-size: 14px; color: var(--muted); margin-top: 8px; }
+.divider { height: 1px; background: var(--border); margin: 0; }
+
+/* ============================================================
+   BUTTONS (shared)
+============================================================ */
+.btn-orange {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--orange); color: white;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+  font-size: 20px; text-transform: uppercase; letter-spacing: 0.3px;
+  padding: 14px 24px; border-radius: 11px; border: none; cursor: pointer;
+  box-shadow: 0 6px 24px rgba(255,107,0,0.35);
+  transition: background 0.15s, transform 0.1s;
+  width: 100%;
+}
+.btn-orange:active { background: var(--orange-dark); transform: scale(0.98); }
+.btn-orange svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+
+.btn-whatsapp {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--green); color: white;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+  font-size: 18px; text-transform: uppercase; letter-spacing: 0.3px;
+  padding: 13px 24px; border-radius: 11px; border: none; cursor: pointer;
+  transition: background 0.15s;
+  width: 100%;
+}
+.btn-whatsapp svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+.btn-outline-orange {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  background: white; color: var(--orange);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+  font-size: 16px; text-transform: uppercase;
+  padding: 11px 16px; border-radius: 10px; border: 2px solid var(--orange);
+  cursor: pointer; transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.btn-outline-orange svg { width: 16px; height: 16px; fill: var(--orange); }
+.btn-outline-orange:active { background: var(--orange); color: white; }
+
+/* ============================================================
+   ██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+   ██║  ██║██╔═══██╗████╗ ████║██╔════╝
+   ███████║██║   ██║██╔████╔██║█████╗
+   ██╔══██║██║   ██║██║╚██╔╝██║██╔══╝
+   ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+============================================================ */
+
+/* HERO */
+.hero {
+  background: var(--dark);
+  padding: 36px 16px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content:''; position:absolute; top:-100px; right:-100px;
+  width:500px; height:500px;
+  background: radial-gradient(circle, rgba(255,107,0,0.18) 0%, transparent 65%);
+  pointer-events:none;
+}
+.hero::after {
+  content:''; position:absolute; bottom:-80px; left:-80px;
+  width:350px; height:350px;
+  background: radial-gradient(circle, rgba(255,107,0,0.09) 0%, transparent 65%);
+  pointer-events:none;
+}
+.hero-live-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,107,0,0.15); border: 1px solid rgba(255,107,0,0.4);
+  color: var(--orange-light); font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  padding: 5px 13px; border-radius: 100px; margin-bottom: 18px;
+}
+.blink { width:7px;height:7px;background:var(--orange);border-radius:50%;animation:blink 1.2s infinite; }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0.15} }
+
+.hero h1 { font-size: clamp(38px,10vw,76px); font-weight:900; color:white; margin-bottom:14px; }
+.hero h1 .accent { color: var(--orange); }
+.hero-sub { color:#aaa; font-size:15px; line-height:1.7; margin-bottom:28px; max-width:480px; }
+
+.hero-btns { display:flex; flex-direction:column; gap:11px; margin-bottom:32px; }
+
+.hero-img-wrap {
+  position:relative; border-radius:16px; overflow:hidden;
+  border: 2px solid rgba(255,107,0,0.3);
+  margin-top:28px;
+}
+.hero-img-wrap img { width:100%; aspect-ratio:16/9; object-fit:cover; }
+.hero-img-overlay {
+  position:absolute; bottom:0;left:0;right:0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, transparent 100%);
+  padding:20px 16px 14px;
+}
+.hero-overlay-badge {
+  display:inline-flex; align-items:center; gap:5px;
+  background:var(--orange); color:white;
+  font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px;
+  padding:5px 10px; border-radius:6px;
+}
+
+/* STATS BAR */
+.stats-bar {
+  background: var(--orange);
+  display: grid; grid-template-columns: repeat(3,1fr);
+  text-align:center;
+}
+.stat-cell { padding:20px 8px; }
+.stat-cell + .stat-cell { border-left:1px solid rgba(255,255,255,0.22); }
+.stat-num { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:34px; color:white; line-height:1; }
+.stat-lbl { font-size:10px; font-weight:700; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.8px; margin-top:3px; }
+
+/* TRUST STRIP */
+.trust-strip {
+  background:white; border-bottom:1px solid var(--border);
+  display:grid; grid-template-columns:repeat(2,1fr); gap:14px; padding:20px 16px;
+}
+.trust-item { display:flex; align-items:center; gap:10px; }
+.trust-icon { width:38px;height:38px;background:var(--orange-glow);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+.trust-icon svg { width:19px;height:19px;fill:var(--orange); }
+.trust-title { font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;text-transform:uppercase;line-height:1.1; }
+.trust-sub { font-size:10.5px;color:var(--muted);margin-top:2px; }
+
+/* HOME MINI PRODUCTS PREVIEW */
+.home-products { padding:44px 16px; background:var(--bg); }
+.hp-grid { display:flex; flex-direction:column; gap:16px; margin-top:24px; }
+.hp-card {
+  background:white; border-radius:14px; overflow:hidden;
+  border:1.5px solid var(--border);
+  display:flex; align-items:center; gap:0;
+  transition: box-shadow 0.2s;
+}
+.hp-card:hover { box-shadow:0 6px 24px rgba(0,0,0,0.08); }
+.hp-card-img { width:110px; height:110px; object-fit:cover; flex-shrink:0; }
+.hp-card-body { padding:14px 14px; flex:1; }
+.hp-cat { font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--orange);margin-bottom:4px; }
+.hp-name { font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;line-height:1.05;margin-bottom:8px; }
+.hp-actions { display:flex; gap:7px; }
+.hp-call-btn {
+  flex:1; background:var(--orange); color:white;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;text-transform:uppercase;
+  padding:9px 10px; border-radius:8px; border:none; cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:5px;
+}
+.hp-call-btn svg { width:14px;height:14px;fill:white; }
+.hp-enq-btn {
+  background:white;color:var(--orange);
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:13px;text-transform:uppercase;
+  padding:9px 11px;border-radius:8px;border:2px solid var(--orange);cursor:pointer;
+  display:flex;align-items:center;gap:4px;white-space:nowrap;
+}
+.hp-enq-btn svg { width:13px;height:13px;fill:var(--orange); }
+
+.view-all-btn {
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  background:white;color:var(--orange);
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;
+  padding:13px 24px;border-radius:10px;border:2px solid var(--orange);cursor:pointer;
+  margin-top:20px; width:100%; transition:background 0.15s,color 0.15s;
+}
+.view-all-btn:active { background:var(--orange);color:white; }
+
+/* REVIEWS (home) */
+.home-reviews { background:#f0f0f0; padding:44px 16px; }
+.review-card {
+  background:white; border-radius:13px; padding:18px;
+  border:1px solid var(--border); margin-bottom:12px;
+}
+.stars { color:var(--orange); font-size:15px; letter-spacing:2px; margin-bottom:9px; }
+.review-text { font-size:13.5px; line-height:1.65; color:#444; margin-bottom:10px; font-style:italic; }
+.review-author { font-weight:700; font-size:13px; color:var(--dark); }
+.review-role { font-size:11px; color:var(--muted); }
+
+/* HOME CTA BANNER */
+.home-cta {
+  background:var(--orange); padding:40px 16px; text-align:center;
+}
+.home-cta h2 { font-size:clamp(30px,8vw,52px); font-weight:900; color:white; margin-bottom:10px; }
+.home-cta p { color:rgba(255,255,255,0.88); font-size:14px; margin-bottom:24px; }
+.cta-btn-row { display:flex; flex-direction:column; gap:10px; }
+.btn-white-orange {
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:white;color:var(--orange);
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;text-transform:uppercase;
+  padding:15px 24px;border-radius:11px;border:none;cursor:pointer;
+  width:100%; transition:opacity 0.15s;
+}
+.btn-white-orange svg { width:22px;height:22px;fill:var(--orange); }
+.btn-dark-cta {
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:rgba(0,0,0,0.22);color:white;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;
+  padding:13px 24px;border-radius:11px;border:2px solid rgba(255,255,255,0.38);cursor:pointer;
+  width:100%;
+}
+.btn-dark-cta svg { width:20px;height:20px;fill:white; }
+
+/* ============================================================
+   ██████╗ ██████╗  ██████╗ ██████╗ ██╗   ██╗ ██████╗████████╗███████╗
+   ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝╚══██╔══╝██╔════╝
+   ██████╔╝██████╔╝██║   ██║██║  ██║██║   ██║██║        ██║   ███████╗
+   ██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║   ██║██║        ██║   ╚════██║
+   ██║     ██║  ██║╚██████╔╝██████╔╝╚██████╔╝╚██████╗   ██║   ███████║
+============================================================ */
+.products-page { background:var(--bg); }
+
+.products-header {
+  background:var(--dark); padding:36px 16px 32px;
+  position:relative; overflow:hidden;
+}
+.products-header::before {
+  content:''; position:absolute; top:-60px;right:-60px;
+  width:300px;height:300px;
+  background:radial-gradient(circle,rgba(255,107,0,0.15) 0%,transparent 70%);
+  pointer-events:none;
+}
+.products-header .section-label { color:rgba(255,107,0,0.8); }
+.products-header .section-title { color:white; }
+.products-header .section-sub { color:#888; }
+
+/* Category Filter */
+.cat-filter {
+  display:flex; gap:8px; overflow-x:auto; padding:16px 16px 0;
+  scrollbar-width:none; -webkit-overflow-scrolling:touch;
+  background:white; border-bottom:1px solid var(--border);
+}
+.cat-filter::-webkit-scrollbar { display:none; }
+.cat-btn {
+  font-family:'DM Sans',sans-serif; font-weight:700; font-size:13px;
+  padding:8px 16px; border-radius:100px;
+  border:1.5px solid var(--border); background:white; color:var(--muted);
+  cursor:pointer; white-space:nowrap; transition:all 0.15s; flex-shrink:0;
+}
+.cat-btn.active, .cat-btn:active { background:var(--orange); color:white; border-color:var(--orange); }
+
+/* Product Grid */
+.prod-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  padding:16px; background:var(--bg);
+}
+.prod-card {
+  background:white; border-radius:13px; overflow:hidden;
+  border:1.5px solid var(--border); position:relative;
+  transition:box-shadow 0.2s; display:flex; flex-direction:column;
+}
+.prod-card:hover { box-shadow:0 6px 24px rgba(0,0,0,0.1); }
+.prod-badge {
+  position:absolute; top:8px;left:8px; z-index:2;
+  background:var(--orange); color:white;
+  font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;
+  padding:3px 7px;border-radius:5px;
+}
+.prod-img { width:100%;aspect-ratio:1/1;object-fit:cover; background:#eee; }
+.prod-body { padding:11px 11px 13px; flex:1; display:flex;flex-direction:column; }
+.prod-cat { font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--orange);margin-bottom:3px; }
+.prod-name { font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;line-height:1.05;margin-bottom:8px; }
+.prod-feats { display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px; }
+.feat-tag {
+  font-size:9.5px;font-weight:600;color:#555;background:#f2f2f2;
+  padding:3px 6px;border-radius:5px;display:flex;align-items:center;gap:3px;
+}
+.feat-tag svg { width:9px;height:9px;fill:var(--orange); }
+.price-row {
+  display:flex;align-items:center;justify-content:space-between;
+  background:#fff8f3;border:1px solid rgba(255,107,0,0.15);
+  border-radius:7px;padding:7px 9px;margin-bottom:9px;
+}
+.call-price { font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:16px;color:var(--orange); }
+.stock-badge {
+  font-size:8.5px;font-weight:700;color:#dc2626;text-transform:uppercase;
+  display:flex;align-items:center;gap:3px;
+}
+.stock-dot { width:5px;height:5px;background:#dc2626;border-radius:50%;animation:blink 1s infinite; }
+.prod-actions { display:flex;gap:6px;margin-top:auto; }
+.pa-call {
+  flex:1;background:var(--orange);color:white;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:13px;text-transform:uppercase;
+  padding:9px 6px;border-radius:8px;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:4px;
+}
+.pa-call svg { width:13px;height:13px;fill:white; }
+.pa-enq {
+  background:white;color:var(--orange);
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;text-transform:uppercase;
+  padding:9px 9px;border-radius:8px;border:2px solid var(--orange);cursor:pointer;
+  display:flex;align-items:center;gap:3px;white-space:nowrap;
+}
+.pa-enq svg { width:12px;height:12px;fill:var(--orange); }
+
+/* Products page CTA strip */
+.prod-cta-strip {
+  background:var(--dark);padding:28px 16px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+}
+.prod-cta-strip p { color:#888;font-size:13px;margin-bottom:4px; }
+.prod-cta-strip h3 { color:white;font-size:26px;font-weight:900;margin-bottom:4px; }
+
+/* ============================================================
+   ABOUT US
+============================================================ */
+.about-page { background:var(--bg); }
+
+.about-hero {
+  background:var(--dark); padding:36px 16px 40px;
+  position:relative; overflow:hidden;
+}
+.about-hero::before {
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:400px;height:400px;
+  background:radial-gradient(circle,rgba(255,107,0,0.15) 0%,transparent 65%);
+  pointer-events:none;
+}
+.about-hero .section-title { color:white; font-size:clamp(36px,10vw,64px); }
+.about-hero p { color:#999;font-size:15px;line-height:1.7;margin-top:12px;max-width:480px; }
+
+.about-story {
+  background:white;padding:40px 16px;
+}
+.about-story h3 { font-size:28px;font-weight:900;margin-bottom:12px;color:var(--dark); }
+.about-story p { font-size:14px;line-height:1.8;color:#555;margin-bottom:14px; }
+.about-story .highlight { color:var(--orange);font-weight:700; }
+
+.about-timeline { padding:36px 16px; background:var(--bg); }
+.timeline-item {
+  display:flex;gap:16px;padding-bottom:28px;position:relative;
+}
+.timeline-item::before {
+  content:'';position:absolute;left:19px;top:40px;bottom:0;
+  width:2px;background:var(--border);
+}
+.timeline-item:last-child::before { display:none; }
+.tl-dot {
+  width:40px;height:40px;background:var(--orange);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:13px;color:white;
+  position:relative;z-index:1;
+}
+.tl-content { padding-top:6px; }
+.tl-year { font-size:11px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px; }
+.tl-title { font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;margin-bottom:4px; }
+.tl-desc { font-size:13px;color:var(--muted);line-height:1.6; }
+
+.about-values { background:var(--dark);padding:40px 16px; }
+.about-values .section-title { color:white;margin-bottom:24px; }
+.values-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+.val-card {
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);
+  border-radius:13px;padding:18px 14px;
+}
+.val-icon { width:40px;height:40px;background:rgba(255,107,0,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:12px; }
+.val-icon svg { width:20px;height:20px;fill:var(--orange); }
+.val-title { font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;color:white;margin-bottom:5px; }
+.val-desc { font-size:12px;color:#777;line-height:1.6; }
+
+.about-team { background:white;padding:40px 16px; }
+.about-team .section-title { margin-bottom:24px; }
+.team-card {
+  background:var(--bg);border-radius:13px;padding:20px 16px;
+  display:flex;align-items:center;gap:14px;
+  border:1.5px solid var(--border);margin-bottom:12px;
+}
+.team-avatar {
+  width:56px;height:56px;border-radius:50%;
+  background:var(--orange);display:flex;align-items:center;justify-content:center;
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:white;
+  flex-shrink:0;
+}
+.team-name { font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;margin-bottom:2px; }
+.team-role { font-size:12px;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px; }
+.team-bio { font-size:12.5px;color:var(--muted);line-height:1.5; }
+
+.about-why { background:var(--bg);padding:40px 16px; }
+.why-list { margin-top:20px;display:flex;flex-direction:column;gap:12px; }
+.why-item {
+  background:white;border-radius:12px;padding:16px;
+  display:flex;align-items:flex-start;gap:12px;
+  border:1.5px solid var(--border);
+}
+.why-num {
+  width:36px;height:36px;background:var(--orange);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;color:white;flex-shrink:0;
+}
+.why-text-title { font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;text-transform:uppercase;margin-bottom:3px; }
+.why-text-desc { font-size:13px;color:var(--muted);line-height:1.6; }
+
+/* ============================================================
+   CONTACT US
+============================================================ */
+.contact-page { background:var(--bg); }
+
+.contact-hero {
+  background:var(--dark);padding:36px 16px 40px;
+  position:relative;overflow:hidden;
+}
+.contact-hero::before {
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:350px;height:350px;
+  background:radial-gradient(circle,rgba(255,107,0,0.15) 0%,transparent 70%);
+  pointer-events:none;
+}
+.contact-hero .section-title { color:white;font-size:clamp(34px,9vw,60px); }
+.contact-hero p { color:#999;font-size:14px;line-height:1.7;margin-top:10px; }
+
+/* Quick Contact Options */
+.contact-options { background:white;padding:28px 16px; }
+.contact-opt-grid { display:flex;flex-direction:column;gap:12px;margin-top:16px; }
+.contact-opt {
+  display:flex;align-items:center;gap:14px;
+  background:var(--bg);border-radius:13px;padding:16px;
+  border:1.5px solid var(--border);
+  cursor:pointer;text-decoration:none;color:var(--text);
+  transition:border-color 0.15s,box-shadow 0.15s;
+}
+.contact-opt:hover { border-color:var(--orange); box-shadow:0 3px 14px rgba(255,107,0,0.1); }
+.contact-opt.whatsapp-opt:hover { border-color:var(--green); }
+.contact-opt-icon {
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.contact-opt-icon.orange { background:rgba(255,107,0,0.12); }
+.contact-opt-icon.orange svg { fill:var(--orange); }
+.contact-opt-icon.green { background:rgba(37,211,102,0.12); }
+.contact-opt-icon.green svg { fill:var(--green); }
+.contact-opt-icon.blue { background:rgba(59,130,246,0.12); }
+.contact-opt-icon.blue svg { fill:#3b82f6; }
+.contact-opt-icon svg { width:24px;height:24px; }
+.contact-opt-title { font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;margin-bottom:2px; }
+.contact-opt-detail { font-size:13px;color:var(--muted); }
+.contact-opt-arrow { margin-left:auto;color:var(--muted);font-size:20px; }
+
+/* Business Info */
+.biz-info { background:var(--bg);padding:28px 16px; }
+.info-card {
+  background:white;border-radius:14px;padding:20px;
+  border:1.5px solid var(--border);margin-bottom:12px;
+}
+.info-card-header {
+  display:flex;align-items:center;gap:10px;margin-bottom:14px;
+  padding-bottom:12px;border-bottom:1px solid var(--border);
+}
+.info-card-icon { width:36px;height:36px;background:var(--orange-glow);border-radius:9px;display:flex;align-items:center;justify-content:center; }
+.info-card-icon svg { width:18px;height:18px;fill:var(--orange); }
+.info-card-title { font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase; }
+.info-row { display:flex;gap:10px;margin-bottom:10px;align-items:flex-start; }
+.info-row:last-child { margin-bottom:0; }
+.info-row-label { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--muted);min-width:64px;padding-top:1px; }
+.info-row-val { font-size:14px;color:var(--text);line-height:1.5; }
+.info-row-val a { color:var(--orange);font-weight:600; }
+
+/* GST Badge */
+.gst-badge {
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,107,0,0.1);border:1px solid rgba(255,107,0,0.25);
+  color:var(--orange);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;
+  padding:5px 11px;border-radius:6px;margin-top:8px;
+}
+
+/* Hours */
+.hours-grid { display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+.hour-cell { font-size:13px;color:var(--text); }
+.hour-cell .day { font-weight:700;margin-bottom:1px; }
+.hour-cell .time { color:var(--muted);font-size:12px; }
+.open-now { color:#16a34a;font-weight:700;font-size:11px; }
+
+/* CONTACT FORM */
+.contact-form-section { background:white;padding:36px 16px; }
+.cf-wrap {
+  background:var(--bg);border-radius:16px;
+  border:1.5px solid var(--border);padding:22px;
+}
+.cf-title { font-size:24px;font-weight:900;margin-bottom:4px; }
+.cf-sub { font-size:13px;color:var(--muted);margin-bottom:20px; }
+.form-group { margin-bottom:15px; }
+.form-label { display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#555;margin-bottom:5px; }
+.form-input {
+  width:100%;padding:12px 13px;
+  border:1.5px solid var(--border);border-radius:9px;
+  font-size:14px;font-family:'DM Sans',sans-serif;
+  color:var(--text);background:white;
+  transition:border-color 0.18s;appearance:none;-webkit-appearance:none;
+}
+.form-input:focus { outline:none;border-color:var(--orange);background:white; }
+.form-textarea { resize:vertical;min-height:90px; }
+.form-submit {
+  width:100%;background:var(--orange);color:white;
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:21px;text-transform:uppercase;
+  padding:15px;border-radius:11px;border:none;cursor:pointer;
+  transition:background 0.15s;margin-top:4px;
+}
+.form-submit:active { background:var(--orange-dark); }
+.success-msg {
+  display:none;background:#f0fdf4;border:2px solid #22c55e;
+  border-radius:11px;padding:18px;text-align:center;margin-top:14px;
+}
+.success-msg.show { display:block; }
+.success-msg h4 { font-size:20px;font-weight:900;color:#16a34a;margin-bottom:5px; }
+.success-msg p { font-size:13px;color:#555; }
+.success-wa {
+  display:inline-flex;align-items:center;gap:6px;
+  background:#25D366;color:white;font-weight:700;
+  padding:10px 18px;border-radius:8px;text-decoration:none;
+  margin-top:11px;font-size:13px;
+}
+.success-wa svg { width:16px;height:16px;fill:white; }
+
+/* Map placeholder */
+.map-section { background:var(--bg);padding:24px 16px; }
+.map-placeholder {
+  background:#e8e8e8;border-radius:14px;height:180px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  border:1.5px dashed #ccc;color:var(--muted);font-size:14px;
+  cursor:pointer;transition:background 0.15s;
+}
+.map-placeholder:hover { background:#e0e0e0; }
+.map-placeholder svg { width:32px;height:32px;fill:#aaa; }
+.map-placeholder span { font-weight:600;font-size:13px; }
+
+/* ============================================================
+   FLOATING + STICKY BOTTOM
+============================================================ */
+.float-whatsapp {
+  position:fixed;bottom:84px;right:16px;z-index:150;
+  width:54px;height:54px;background:var(--green);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 18px rgba(37,211,102,0.5);
+  text-decoration:none;
+  animation:float-bounce 3s ease-in-out infinite;
+}
+.float-whatsapp svg { width:28px;height:28px;fill:white; }
+@keyframes float-bounce {
+  0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)}
+}
+
+.sticky-bottom {
+  position:fixed;bottom:0;left:0;right:0;z-index:190;
+  background:white;border-top:2px solid var(--orange);
+  padding:8px 10px;
+  display:grid;grid-template-columns:1fr 1.5fr 1fr;
+  gap:7px;
+  box-shadow:0 -3px 18px rgba(0,0,0,0.1);
+}
+.sb-btn {
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:7px 5px;border-radius:9px;
+  border:none;cursor:pointer;font-family:'DM Sans',sans-serif;
+  font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;
+  text-decoration:none;transition:opacity 0.15s;
+}
+.sb-btn svg { width:19px;height:19px; }
+.sb-btn:active { opacity:0.75; }
+.sb-call { background:var(--orange);color:white;padding:9px 5px;font-size:12px; }
+.sb-call svg { width:22px;height:22px;fill:white; }
+.sb-wa { background:#f0fdf7;color:#16a34a;border:1.5px solid #bbf7d0; }
+.sb-wa svg { fill:var(--green); }
+.sb-enq { background:#fff8f3;color:var(--orange);border:1.5px solid rgba(255,107,0,0.2); }
+.sb-enq svg { fill:var(--orange); }
+
+/* ============================================================
+   ENQUIRY MODAL
+============================================================ */
+.modal-overlay {
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);
+  z-index:300;align-items:flex-end;justify-content:center;
+}
+.modal-overlay.open { display:flex; }
+.modal {
+  background:white;border-radius:22px 22px 0 0;
+  padding:22px 18px 32px;width:100%;max-width:500px;
+  animation:slide-up 0.28s ease;
+}
+@keyframes slide-up { from{transform:translateY(100%)} to{transform:translateY(0)} }
+.modal-handle { width:38px;height:4px;background:#ddd;border-radius:2px;margin:0 auto 18px; }
+.modal-title { font-size:26px;font-weight:900;margin-bottom:3px; }
+.modal-sub { font-size:13px;color:var(--muted);margin-bottom:18px; }
+.modal-success { display:none;background:#f0fdf4;border:2px solid #22c55e;border-radius:10px;padding:16px;text-align:center;margin-top:12px; }
+.modal-success.show { display:block; }
+.modal-success h4 { font-size:20px;font-weight:900;color:#16a34a;margin-bottom:4px; }
+.modal-success p { font-size:13px;color:#555; }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.site-footer {
+  background:#0a0a0a;padding:28px 16px 24px;color:#666;font-size:12.5px;
+}
+.footer-top { margin-bottom:20px; }
+.footer-logo-row { display:flex;align-items:center;gap:8px;margin-bottom:10px; }
+.footer-logo-icon { width:30px;height:30px;background:var(--orange);border-radius:6px;display:flex;align-items:center;justify-content:center; }
+.footer-logo-icon svg { width:17px;height:17px;fill:white; }
+.footer-logo-name { font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:17px;text-transform:uppercase;color:white;letter-spacing:1px; }
+.footer-tagline { font-size:12px;color:#555;line-height:1.6;max-width:260px;margin-bottom:12px; }
+.footer-gst { display:inline-flex;align-items:center;gap:5px;background:rgba(255,107,0,0.1);border:1px solid rgba(255,107,0,0.22);color:var(--orange);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;padding:4px 9px;border-radius:5px; }
+.footer-links { display:flex;flex-wrap:wrap;gap:8px 20px;margin:16px 0; }
+.footer-links button { color:#555;font-size:12.5px;background:none;border:none;cursor:pointer;padding:0;text-align:left; }
+.footer-links button:hover { color:var(--orange); }
+.footer-contact { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px; }
+.footer-contact a { color:var(--orange);font-weight:600;font-size:13px;display:flex;align-items:center;gap:4px; }
+.footer-contact a.wa { color:var(--green); }
+.footer-divider { height:1px;background:#1a1a1a;margin:16px 0; }
+.footer-copy { font-size:11px;color:#3a3a3a;line-height:1.7; }
+
+/* ============================================================
+   RESPONSIVE DESKTOP
+============================================================ */
+@media (min-width:768px) {
+  body { padding-bottom: 0; }
+
+  .desktop-nav { display:flex; }
+
+  .hero { padding:64px 48px; display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center; }
+  .hero-img-wrap { margin-top:0; }
+  .hero-btns { flex-direction:row; }
+  .btn-orange,.btn-whatsapp { width:auto;padding:14px 32px; }
+
+  .stats-bar .stat-cell { padding:24px 16px; }
+  .stat-num { font-size:40px; }
+
+  .trust-strip { grid-template-columns:repeat(4,1fr);padding:24px 48px; }
+
+  .home-products { padding:60px 48px; }
+  .hp-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px; }
+  .hp-card { flex-direction:column; }
+  .hp-card-img { width:100%;height:200px; }
+
+  .home-reviews { padding:60px 48px; }
+  .reviews-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:14px; }
+  .review-card { margin-bottom:0; }
+
+  .home-cta { padding:60px 48px; }
+  .cta-btn-row { flex-direction:row;justify-content:center;max-width:460px;margin:0 auto; }
+  .btn-white-orange,.btn-dark-cta { width:auto; }
+
+  .products-header { padding:52px 48px 40px; }
+  .cat-filter { padding:16px 48px 0; }
+  .prod-grid { grid-template-columns:repeat(3,1fr);padding:20px 48px;gap:16px; }
+  .prod-cta-strip { padding:36px 48px; flex-direction:row;justify-content:space-between;align-items:center; }
+  .prod-cta-strip .cta-right { display:flex;gap:12px; }
+
+  .about-hero { padding:52px 48px 48px; }
+  .about-story { padding:52px 48px; display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start; }
+  .about-timeline { padding:52px 48px; display:grid;grid-template-columns:1fr 1fr;gap:0 40px; }
+  .about-values { padding:52px 48px; }
+  .values-grid { grid-template-columns:repeat(4,1fr); }
+  .about-team { padding:52px 48px; }
+  .team-cards { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+  .team-card { margin-bottom:0; }
+  .about-why { padding:52px 48px; }
+  .why-list { display:grid;grid-template-columns:1fr 1fr;gap:14px; }
+  .why-item { margin-bottom:0; }
+
+  .contact-hero { padding:52px 48px 48px; }
+  .contact-options { padding:40px 48px; }
+  .contact-opt-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+  .biz-info { padding:36px 48px; display:grid;grid-template-columns:1fr 1fr;gap:14px; }
+  .info-card { margin-bottom:0; }
+  .contact-form-section { padding:48px 48px; display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start; }
+  .map-section { padding:0 48px 48px; }
+  .map-placeholder { height:260px; }
+
+  .float-whatsapp { bottom:32px;right:32px;width:62px;height:62px; }
+  .float-whatsapp svg { width:34px;height:34px; }
+  .sticky-bottom { display:none; }
+
+  .site-footer { padding:36px 48px; display:grid;grid-template-columns:1.2fr 1fr;gap:32px; }
+  .footer-bottom { grid-column:span 2; }
+}
+</style>
 </head>
 <body>
-  <h1>Website Working ✅</h1>
-  <p>DJ Equipment Supplier</p>
+
+<!-- ============================================================
+     STICKY HEADER
+============================================================ -->
+<header class="site-header">
+  <div class="logo" onclick="showPage('home')">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+    </div>
+    <div class="logo-name">Punishka<br/><span>Trading</span></div>
+  </div>
+  <nav class="desktop-nav">
+    <button class="nav-link active" id="nav-home" onclick="showPage('home')">Home</button>
+    <button class="nav-link" id="nav-products" onclick="showPage('products')">Products</button>
+    <button class="nav-link" id="nav-about" onclick="showPage('about')">About Us</button>
+    <button class="nav-link" id="nav-contact" onclick="showPage('contact')">Contact</button>
+  </nav>
+  <a href="tel:+919999999999" class="header-call-btn">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+</header>
+
+<!-- URGENCY TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🔥 Limited Stock — Order Today</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 📦 Pan-India Insured Shipping</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> ✅ GST Verified Supplier — Tax Invoice Provided</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🎧 1000+ Happy Customers Across India</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 💰 Best Wholesale Price — Call Now</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🔒 100% Original Hardware — Certified Genuine</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🔥 Limited Stock — Order Today</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 📦 Pan-India Insured Shipping</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> ✅ GST Verified Supplier — Tax Invoice Provided</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🎧 1000+ Happy Customers Across India</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 💰 Best Wholesale Price — Call Now</span>
+    <span class="ticker-item"><span class="ticker-dot">●</span> 🔒 100% Original Hardware — Certified Genuine</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     HOME PAGE
+============================================================ -->
+<div id="page-home" class="page-section active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-live-badge">
+        <span class="blink"></span>
+        India's #1 DJ Equipment Supplier
+      </div>
+      <h1>Pro DJ Gear.<br/><span class="accent">Best Price.</span><br/>Call Now.</h1>
+      <p class="hero-sub">DJ mixers, speakers, amplifiers &amp; more — direct from importer. 100% original, GST invoice, pan-India delivery.</p>
+      <div class="hero-btns">
+        <a href="tel:+919999999999" class="btn-orange">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+          Call for Best Price
+        </a>
+        <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20enquire%20about%20DJ%20equipment" target="_blank" class="btn-whatsapp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBUn_jhcMfu9cYSdqm7aZgI_cpFojQs0XdId6Mick069zPg0j4rC-Y5z2BH-lI9g0lXcvNuACQqpVtaLmpvrAKuNTWDdJ8xFDFrHTWWPR7PUE6-sUjyuLvVZMZh_ufF22U3KsUT1hRHiiqvEMPMpE06mnM7AfrXPt5wdVXhdOoc4jW50HKKsc94cYWxT0erOB1I_zLZoxOV-WEHa93ALBBSEVFG1_II8cvIfNq0i9QE5mn84SExEoM-gZ-lBDxE-wS3ocruzVQ8w_" alt="Professional DJ Mixer India"/>
+      <div class="hero-img-overlay">
+        <span class="hero-overlay-badge">
+          <svg viewBox="0 0 24 24" style="width:12px;height:12px;fill:white;flex-shrink:0;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          100% Original · GST Verified · Pan-India
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-cell">
+      <div class="stat-num" id="counter-home">0+</div>
+      <div class="stat-lbl">Happy Customers</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">15+</div>
+      <div class="stat-lbl">Years Experience</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">100%</div>
+      <div class="stat-lbl">Original Gear</div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg></div>
+      <div><div class="trust-title">GST Verified</div><div class="trust-sub">Tax Invoice Provided</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+      <div><div class="trust-title">1000+ Customers</div><div class="trust-sub">Trusted Supplier</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm13.5-9l1.96 2.5H17V9.5h2.5zM18 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg></div>
+      <div><div class="trust-title">Pan-India Delivery</div><div class="trust-sub">Insured Shipping</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+      <div><div class="trust-title">Best Price</div><div class="trust-sub">Price Match Guarantee</div></div>
+    </div>
+  </div>
+
+  <!-- MINI PRODUCTS PREVIEW -->
+  <section class="home-products">
+    <div class="section-label">Our Products</div>
+    <h2 class="section-title">Top Selling Equipment</h2>
+    <p class="section-sub">Direct import pricing — unmatched in India</p>
+    <div class="hp-grid">
+      <div class="hp-card">
+        <img loading="lazy" class="hp-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBVOaViDOy-9W8xOsSw6ctQIdLyZd77lAsuzVE9_2vpHFf8juVAm3MBYn58brz4PB-Kcx28Zk7ZR63lo2JE06ahhvZ1GUuT4dyDovo7b1sAq4DS1_nKN2W8yKRi4-l0DzYo3b73iDIfOJfGxgpOYoi3PEbxzMGY4dnNClj4IXJCHxv-Jm7yYbEbg8AQZlCTwGYF8I6C-YbhHAD4upnfQnMssSQJdV9DfRNSXWrM66_twjzMl70YUPRsJQciNOyPeGhmXj1Plw9xEXL" alt="DJ Speaker"/>
+        <div class="hp-card-body">
+          <div class="hp-cat">DJ Speaker</div>
+          <div class="hp-name">Pro Stage Speaker System</div>
+          <div class="hp-actions">
+            <a href="tel:+919999999999" class="hp-call-btn">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+              Call Now
+            </a>
+            <button class="hp-enq-btn" onclick="openModal('Pro Stage Speaker System')">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+              Enquiry
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hp-card">
+        <img loading="lazy" class="hp-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75NHk_vBXMwedS17L0IGP8-Wltp2rpNdRVqvNUhAi6RX6LGq-K6eCqGc42Lq1s1nSjgRLu-z-2gQE5MkuFrcHUZWRkXjigF0KHYZTQc0hQHiYU3tD3uWn3DRkVXIS103gZe5kQXbQrN5mDTG6z2PU6HIjKjWUbwlbdff7C4Q6kPWq2Tfkjadqa-hceoqQ0jWRVtGBz7dP4DdX8p6FBNAIT0rvNc3K_QJFECUek44W9IX81MvfizO9Nt6JKODIINLgqjL6_Lf8Rf7-" alt="DJ Mixer"/>
+        <div class="hp-card-body">
+          <div class="hp-cat">DJ Mixer</div>
+          <div class="hp-name">Performance DJ Mixer</div>
+          <div class="hp-actions">
+            <a href="tel:+919999999999" class="hp-call-btn">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+              Call Now
+            </a>
+            <button class="hp-enq-btn" onclick="openModal('Performance DJ Mixer')">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+              Enquiry
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hp-card">
+        <img loading="lazy" class="hp-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1isKb_aAOh7paqgTOycGm4K1wk_v5HSGh8774A26nwqMFbKAE00l2_0Hi7uOZuaNRt78MpijelyWmjV3z55l-IhPlF-vVAmU4cpwYC6Ov_fJpqOKev9BIWgmT8BHcvvkcFiizdKa_inu8VVfrZ065fL19kX_HFh_1MehrssYlsHAb2DlYW0lBZT5Y59Mb-4Ke0EIAQi22Fmx4c0_uX2uQcn2aneH3N9ja8LkCa6bvamaO33QzRLyQgzIXU-j7Bly7B4vkbl28rf0P" alt="Amplifier India"/>
+        <div class="hp-card-body">
+          <div class="hp-cat">Amplifier India</div>
+          <div class="hp-name">High-Power Amplifier</div>
+          <div class="hp-actions">
+            <a href="tel:+919999999999" class="hp-call-btn">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+              Call Now
+            </a>
+            <button class="hp-enq-btn" onclick="openModal('High-Power Amplifier')">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+              Enquiry
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="view-all-btn" onclick="showPage('products')">
+      View All Products →
+    </button>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="home-reviews">
+    <div class="section-label">Reviews</div>
+    <h2 class="section-title">What Clients Say</h2>
+    <div style="margin-top:20px;" class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Punishka Trading is my go-to for all DJ equipment in India. Wholesale pricing on amplifiers is unbeatable and hardware is always 100% genuine."</p>
+        <div class="review-author">DJ Rahul S.</div>
+        <div class="review-role">Professional DJ, Mumbai</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Fast delivery to Delhi. Speaker system arrived in perfect condition, packed professionally. Great support team. Will definitely order again."</p>
+        <div class="review-author">SoundCraft Events</div>
+        <div class="review-role">Event Company, Delhi</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"They helped us set up the perfect sound system for our club. GST invoice given. Best price we found across all of India."</p>
+        <div class="review-author">Club Velocity</div>
+        <div class="review-role">Nightclub, Bangalore</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME CTA -->
+  <section class="home-cta">
+    <h2>Get Best Price Today</h2>
+    <p>Call now or WhatsApp — our team responds within minutes. GST invoice, pan-India delivery, 100% original.</p>
+    <div class="cta-btn-row">
+      <a href="tel:+919999999999" class="btn-white-orange">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/919999999999" target="_blank" class="btn-dark-cta">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </section>
+</div><!-- /page-home -->
+
+<!-- ============================================================
+     PRODUCTS PAGE
+============================================================ -->
+<div id="page-products" class="page-section products-page">
+  <div class="products-header">
+    <div class="section-label">Our Catalogue</div>
+    <h1 class="section-title">All Products</h1>
+    <p class="section-sub">Direct import prices — call for best wholesale rate in India</p>
+  </div>
+
+  <!-- Category Filter -->
+  <div class="cat-filter">
+    <button class="cat-btn active" onclick="filterCat(this,'all')">All Products</button>
+    <button class="cat-btn" onclick="filterCat(this,'speaker')">DJ Speakers</button>
+    <button class="cat-btn" onclick="filterCat(this,'mixer')">DJ Mixers</button>
+    <button class="cat-btn" onclick="filterCat(this,'amplifier')">Amplifiers</button>
+    <button class="cat-btn" onclick="filterCat(this,'controller')">Controllers</button>
+    <button class="cat-btn" onclick="filterCat(this,'lighting')">DJ Lighting</button>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="prod-grid" id="prod-grid">
+
+    <!-- Speaker 1 -->
+    <div class="prod-card" data-cat="speaker">
+      <span class="prod-badge">🔥 Hot</span>
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBVOaViDOy-9W8xOsSw6ctQIdLyZd77lAsuzVE9_2vpHFf8juVAm3MBYn58brz4PB-Kcx28Zk7ZR63lo2JE06ahhvZ1GUuT4dyDovo7b1sAq4DS1_nKN2W8yKRi4-l0DzYo3b73iDIfOJfGxgpOYoi3PEbxzMGY4dnNClj4IXJCHxv-Jm7yYbEbg8AQZlCTwGYF8I6C-YbhHAD4upnfQnMssSQJdV9DfRNSXWrM66_twjzMl70YUPRsJQciNOyPeGhmXj1Plw9xEXL" alt="DJ Speaker"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Speaker</div>
+        <div class="prod-name">Pro Stage Speaker System</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0118 0v6"/></svg>Heavy Bass</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>Clear Vocals</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Durable</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Pro Stage Speaker System')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaker 2 -->
+    <div class="prod-card" data-cat="speaker">
+      <span class="prod-badge">⭐ Popular</span>
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBVOaViDOy-9W8xOsSw6ctQIdLyZd77lAsuzVE9_2vpHFf8juVAm3MBYn58brz4PB-Kcx28Zk7ZR63lo2JE06ahhvZ1GUuT4dyDovo7b1sAq4DS1_nKN2W8yKRi4-l0DzYo3b73iDIfOJfGxgpOYoi3PEbxzMGY4dnNClj4IXJCHxv-Jm7yYbEbg8AQZlCTwGYF8I6C-YbhHAD4upnfQnMssSQJdV9DfRNSXWrM66_twjzMl70YUPRsJQciNOyPeGhmXj1Plw9xEXL" alt="Subwoofer Speaker"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Speaker</div>
+        <div class="prod-name">Active Subwoofer 18"</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0118 0v6"/></svg>Deep Bass</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>1200W RMS</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Active Subwoofer 18 inch')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mixer 1 -->
+    <div class="prod-card" data-cat="mixer">
+      <span class="prod-badge">💎 Best</span>
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75NHk_vBXMwedS17L0IGP8-Wltp2rpNdRVqvNUhAi6RX6LGq-K6eCqGc42Lq1s1nSjgRLu-z-2gQE5MkuFrcHUZWRkXjigF0KHYZTQc0hQHiYU3tD3uWn3DRkVXIS103gZe5kQXbQrN5mDTG6z2PU6HIjKjWUbwlbdff7C4Q6kPWq2Tfkjadqa-hceoqQ0jWRVtGBz7dP4DdX8p6FBNAIT0rvNc3K_QJFECUek44W9IX81MvfizO9Nt6JKODIINLgqjL6_Lf8Rf7-" alt="DJ Mixer 4 Channel"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Mixer</div>
+        <div class="prod-name">Performance DJ Mixer 4Ch</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Studio Grade</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>4 Channel</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Performance DJ Mixer 4Ch')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mixer 2 -->
+    <div class="prod-card" data-cat="mixer">
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75NHk_vBXMwedS17L0IGP8-Wltp2rpNdRVqvNUhAi6RX6LGq-K6eCqGc42Lq1s1nSjgRLu-z-2gQE5MkuFrcHUZWRkXjigF0KHYZTQc0hQHiYU3tD3uWn3DRkVXIS103gZe5kQXbQrN5mDTG6z2PU6HIjKjWUbwlbdff7C4Q6kPWq2Tfkjadqa-hceoqQ0jWRVtGBz7dP4DdX8p6FBNAIT0rvNc3K_QJFECUek44W9IX81MvfizO9Nt6JKODIINLgqjL6_Lf8Rf7-" alt="DJ Mixer 2 Channel"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Mixer</div>
+        <div class="prod-name">Club Mixer 2 Channel</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Pro FX</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>USB Port</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Club Mixer 2 Channel')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amplifier 1 -->
+    <div class="prod-card" data-cat="amplifier">
+      <span class="prod-badge">💪 Value</span>
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1isKb_aAOh7paqgTOycGm4K1wk_v5HSGh8774A26nwqMFbKAE00l2_0Hi7uOZuaNRt78MpijelyWmjV3z55l-IhPlF-vVAmU4cpwYC6Ov_fJpqOKev9BIWgmT8BHcvvkcFiizdKa_inu8VVfrZ065fL19kX_HFh_1MehrssYlsHAb2DlYW0lBZT5Y59Mb-4Ke0EIAQi22Fmx4c0_uX2uQcn2aneH3N9ja8LkCa6bvamaO33QzRLyQgzIXU-j7Bly7B4vkbl28rf0P" alt="Power Amplifier India"/>
+      <div class="prod-body">
+        <div class="prod-cat">Amplifier India</div>
+        <div class="prod-name">High-Power Amplifier</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Zero Distortion</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>Rack Mount</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('High-Power Amplifier')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amplifier 2 -->
+    <div class="prod-card" data-cat="amplifier">
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1isKb_aAOh7paqgTOycGm4K1wk_v5HSGh8774A26nwqMFbKAE00l2_0Hi7uOZuaNRt78MpijelyWmjV3z55l-IhPlF-vVAmU4cpwYC6Ov_fJpqOKev9BIWgmT8BHcvvkcFiizdKa_inu8VVfrZ065fL19kX_HFh_1MehrssYlsHAb2DlYW0lBZT5Y59Mb-4Ke0EIAQi22Fmx4c0_uX2uQcn2aneH3N9ja8LkCa6bvamaO33QzRLyQgzIXU-j7Bly7B4vkbl28rf0P" alt="Digital Amplifier"/>
+      <div class="prod-body">
+        <div class="prod-cat">Amplifier India</div>
+        <div class="prod-name">Digital Class-D Amplifier</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>2000W</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>Lightweight</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Digital Class-D Amplifier')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controller -->
+    <div class="prod-card" data-cat="controller">
+      <span class="prod-badge">🎛 New</span>
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75NHk_vBXMwedS17L0IGP8-Wltp2rpNdRVqvNUhAi6RX6LGq-K6eCqGc42Lq1s1nSjgRLu-z-2gQE5MkuFrcHUZWRkXjigF0KHYZTQc0hQHiYU3tD3uWn3DRkVXIS103gZe5kQXbQrN5mDTG6z2PU6HIjKjWUbwlbdff7C4Q6kPWq2Tfkjadqa-hceoqQ0jWRVtGBz7dP4DdX8p6FBNAIT0rvNc3K_QJFECUek44W9IX81MvfizO9Nt6JKODIINLgqjL6_Lf8Rf7-" alt="DJ Controller"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Controller</div>
+        <div class="prod-name">Pro DJ Controller</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Jog Wheels</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>USB DJ</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('Pro DJ Controller')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lighting -->
+    <div class="prod-card" data-cat="lighting">
+      <img loading="lazy" class="prod-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBUn_jhcMfu9cYSdqm7aZgI_cpFojQs0XdId6Mick069zPg0j4rC-Y5z2BH-lI9g0lXcvNuACQqpVtaLmpvrAKuNTWDdJ8xFDFrHTWWPR7PUE6-sUjyuLvVZMZh_ufF22U3KsUT1hRHiiqvEMPMpE06mnM7AfrXPt5wdVXhdOoc4jW50HKKsc94cYWxT0erOB1I_zLZoxOV-WEHa93ALBBSEVFG1_II8cvIfNq0i9QE5mn84SExEoM-gZ-lBDxE-wS3ocruzVQ8w_" alt="DJ Lighting"/>
+      <div class="prod-body">
+        <div class="prod-cat">DJ Lighting</div>
+        <div class="prod-name">LED Moving Head Light</div>
+        <div class="prod-feats">
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>RGB Color</span>
+          <span class="feat-tag"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>DMX Ready</span>
+        </div>
+        <div class="price-row">
+          <div class="call-price">📞 Call for Price</div>
+          <div class="stock-badge"><span class="stock-dot"></span>Limited</div>
+        </div>
+        <div class="prod-actions">
+          <a href="tel:+919999999999" class="pa-call">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+            Call Now
+          </a>
+          <button class="pa-enq" onclick="openModal('LED Moving Head Light')">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Enquiry
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /prod-grid -->
+
+  <!-- Products page bottom CTA -->
+  <div class="prod-cta-strip">
+    <div>
+      <p>Need a custom quote for bulk order?</p>
+      <h3>Talk to Our Sales Team</h3>
+    </div>
+    <div class="cta-right">
+      <a href="tel:+919999999999" class="btn-orange" style="width:auto;font-size:18px;padding:13px 24px;">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+        Call Now
+      </a>
+      <button class="btn-outline-orange" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.3);color:white;" onclick="showPage('contact')">
+        Send Enquiry
+      </button>
+    </div>
+  </div>
+</div><!-- /page-products -->
+
+<!-- ============================================================
+     ABOUT US PAGE
+============================================================ -->
+<div id="page-about" class="page-section about-page">
+  <div class="about-hero">
+    <div class="section-label">Our Story</div>
+    <h1 class="section-title">About Punishka Trading</h1>
+    <p>India's most trusted professional DJ equipment supplier since 2008. Direct importers of world-class audio gear.</p>
+  </div>
+
+  <section class="about-story">
+    <div>
+      <h3>Who We Are</h3>
+      <p>Punishka Trading was founded with one clear mission: <span class="highlight">bring world-class professional DJ equipment to India at prices that make sense.</span></p>
+      <p>We are direct importers and authorized distributors of professional DJ mixers, speakers, amplifiers, controllers, and lighting equipment. By eliminating middlemen, we pass on massive savings directly to DJs, event companies, clubs, and sound rental businesses across India.</p>
+      <p>Over <span class="highlight">15 years</span> in the industry and <span class="highlight">1,000+ satisfied customers</span> from Kashmir to Kanyakumari — we know what Indian professionals need and we deliver it.</p>
+    </div>
+    <div>
+      <h3>Our Promise</h3>
+      <p>Every product we sell comes with a <span class="highlight">100% authenticity guarantee</span>. No grey market. No duplicates. No compromise.</p>
+      <p>We provide <span class="highlight">GST invoices</span> on all purchases, making us the preferred supplier for businesses, event companies, and professionals who need proper documentation.</p>
+      <p>Our expert team is available 6 days a week to help you choose the right gear — whether you're setting up a home studio, a 5000-person event venue, or a chain of nightclubs.</p>
+      <div class="gst-badge">
+        <svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:var(--orange);"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        ✓ GST Registered Business — GSTIN: 29XXXXX1234Z1
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="about-timeline">
+    <div class="section-label">Our Journey</div>
+    <h2 class="section-title" style="margin-bottom:24px;">15+ Years of Excellence</h2>
+    <div class="timeline-item">
+      <div class="tl-dot">08</div>
+      <div class="tl-content">
+        <div class="tl-year">2008 — Founded</div>
+        <div class="tl-title">Punishka Trading Established</div>
+        <div class="tl-desc">Started as a small electronics distributor in Mumbai with a vision to supply professional audio equipment.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-dot">12</div>
+      <div class="tl-content">
+        <div class="tl-year">2012 — Expanded</div>
+        <div class="tl-title">Direct Import Operations</div>
+        <div class="tl-desc">Became direct importers, eliminating middlemen and offering the best wholesale prices in India.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-dot">16</div>
+      <div class="tl-content">
+        <div class="tl-year">2016 — Milestone</div>
+        <div class="tl-title">500+ Customers Served</div>
+        <div class="tl-desc">Reached 500+ happy customers across India with pan-India shipping network established.</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-dot">24</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Today</div>
+        <div class="tl-title">1000+ Customers & Growing</div>
+        <div class="tl-desc">India's most trusted DJ equipment supplier with customers in every major city.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="about-values">
+    <div class="section-label" style="color:rgba(255,107,0,0.8);">Our Values</div>
+    <h2 class="section-title">What We Stand For</h2>
+    <div class="values-grid" style="margin-top:22px;">
+      <div class="val-card">
+        <div class="val-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+        <div class="val-title">Authenticity</div>
+        <div class="val-desc">100% original products. No fakes, no grey market. Every item certified genuine.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+        <div class="val-title">Best Price</div>
+        <div class="val-desc">Direct import pricing. We beat any genuine competitor price in India.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <div class="val-title">Transparency</div>
+        <div class="val-desc">GST invoice on every sale. No hidden costs. Clear, honest business always.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <div class="val-title">Expert Team</div>
+        <div class="val-desc">15+ years of experience. Free consultation to help you choose perfectly.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="about-team">
+    <div class="section-label">Our People</div>
+    <h2 class="section-title">Meet the Team</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <div class="team-avatar">PK</div>
+        <div>
+          <div class="team-name">Punishka Kumar</div>
+          <div class="team-role">Founder & CEO</div>
+          <div class="team-bio">15+ years in professional audio. Founded Punishka Trading to give Indian professionals access to world-class DJ gear.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">RS</div>
+        <div>
+          <div class="team-name">Rahul Sharma</div>
+          <div class="team-role">Technical Expert</div>
+          <div class="team-bio">Certified sound engineer with expertise in PA systems, DJ setups, and large venue installations.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">AP</div>
+        <div>
+          <div class="team-name">Anita Patel</div>
+          <div class="team-role">Sales & Customer Care</div>
+          <div class="team-bio">Handles all customer enquiries, order processing, and ensures every customer is 100% satisfied.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">MR</div>
+        <div>
+          <div class="team-name">Mohammed Rizwan</div>
+          <div class="team-role">Logistics & Delivery</div>
+          <div class="team-bio">Manages pan-India shipping, packaging, and ensures all orders reach safely and on time.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="about-why">
+    <div class="section-label">Why Us</div>
+    <h2 class="section-title">Why 1000+ Customers Choose Punishka</h2>
+    <div class="why-list">
+      <div class="why-item">
+        <div class="why-num">1</div>
+        <div><div class="why-text-title">Direct Importer — No Middleman</div><div class="why-text-desc">We import directly, so prices are 20–40% lower than retail shops and local dealers.</div></div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">2</div>
+        <div><div class="why-text-title">100% Genuine Products</div><div class="why-text-desc">Every product is certified original. We never deal in duplicates or grey market goods.</div></div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">3</div>
+        <div><div class="why-text-title">GST Invoice on Every Order</div><div class="why-text-desc">Proper tax invoices issued for all purchases — essential for businesses claiming ITC.</div></div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">4</div>
+        <div><div class="why-text-title">Pan-India Insured Delivery</div><div class="why-text-desc">We ship to every city in India, fully insured. Orders packed professionally for safety.</div></div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">5</div>
+        <div><div class="why-text-title">Free Expert Consultation</div><div class="why-text-desc">Confused about what to buy? Our sound engineers advise you at no charge.</div></div>
+      </div>
+      <div class="why-item">
+        <div class="why-num">6</div>
+        <div><div class="why-text-title">After-Sales Support</div><div class="why-text-desc">We stand behind every product sold. Warranty support and troubleshooting always available.</div></div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+<!-- ============================================================
+     CONTACT US PAGE
+============================================================ -->
+<div id="page-contact" class="page-section contact-page">
+  <div class="contact-hero">
+    <div class="section-label">Get in Touch</div>
+    <h1 class="section-title">Contact Us</h1>
+    <p>Call, WhatsApp, or send an enquiry — we respond within minutes. Best price guaranteed.</p>
+  </div>
+
+  <!-- Quick Contact Options -->
+  <section class="contact-options">
+    <div class="section-label">Reach Us Instantly</div>
+    <h2 class="section-title">Choose How to Connect</h2>
+    <div class="contact-opt-grid" style="margin-top:16px;">
+      <a href="tel:+919999999999" class="contact-opt">
+        <div class="contact-opt-icon orange">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+        </div>
+        <div>
+          <div class="contact-opt-title">Call Us Now</div>
+          <div class="contact-opt-detail">+91 99999 99999 — Fastest response</div>
+        </div>
+        <div class="contact-opt-arrow">›</div>
+      </a>
+      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20enquire%20about%20DJ%20equipment" target="_blank" class="contact-opt whatsapp-opt">
+        <div class="contact-opt-icon green">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </div>
+        <div>
+          <div class="contact-opt-title">WhatsApp Us</div>
+          <div class="contact-opt-detail">+91 99999 99999 — Chat anytime</div>
+        </div>
+        <div class="contact-opt-arrow">›</div>
+      </a>
+      <a href="mailto:info@punishkatrading.com" class="contact-opt">
+        <div class="contact-opt-icon blue">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div>
+          <div class="contact-opt-title">Email Us</div>
+          <div class="contact-opt-detail">info@punishkatrading.com</div>
+        </div>
+        <div class="contact-opt-arrow">›</div>
+      </a>
+      <div class="contact-opt" style="cursor:default;">
+        <div class="contact-opt-icon orange">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div>
+          <div class="contact-opt-title">Visit Us</div>
+          <div class="contact-opt-detail">Mumbai, Maharashtra, India</div>
+        </div>
+        <div class="contact-opt-arrow">›</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Info -->
+  <section class="biz-info">
+    <div class="info-card">
+      <div class="info-card-header">
+        <div class="info-card-icon"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zm-2 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V9h6v2zm0-4H4V5h6v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></div>
+        <div class="info-card-title">Business Details</div>
+      </div>
+      <div class="info-row">
+        <div class="info-row-label">Business</div>
+        <div class="info-row-val">Punishka Trading</div>
+      </div>
+      <div class="info-row">
+        <div class="info-row-label">Type</div>
+        <div class="info-row-val">Wholesaler / Importer / Distributor</div>
+      </div>
+      <div class="info-row">
+        <div class="info-row-label">GSTIN</div>
+        <div class="info-row-val">29XXXXX1234Z1 <span style="color:var(--orange);font-size:11px;font-weight:700;">✓ Verified</span></div>
+      </div>
+      <div class="info-row">
+        <div class="info-row-label">Est.</div>
+        <div class="info-row-val">2008 (15+ Years in Business)</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-header">
+        <div class="info-card-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+        <div class="info-card-title">Business Hours</div>
+      </div>
+      <div class="hours-grid">
+        <div class="hour-cell"><div class="day">Monday – Friday</div><div class="time">9:00 AM – 7:00 PM <span class="open-now">● Open</span></div></div>
+        <div class="hour-cell"><div class="day">Saturday</div><div class="time">10:00 AM – 5:00 PM</div></div>
+        <div class="hour-cell"><div class="day">Sunday</div><div class="time">Closed</div></div>
+        <div class="hour-cell"><div class="day">WhatsApp</div><div class="time">24/7 Anytime</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Map -->
+  <section class="contact-form-section">
+    <div>
+      <div class="section-label">Send Enquiry</div>
+      <h2 class="section-title" style="margin-bottom:6px;">Get Best Price</h2>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:0;">We'll call back within 15 minutes!</p>
+      <div class="cf-wrap" style="margin-top:20px;">
+        <div class="form-group">
+          <label class="form-label" for="cf-name">Your Name *</label>
+          <input class="form-input" id="cf-name" type="text" placeholder="Enter your full name" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-phone">Phone Number *</label>
+          <input class="form-input" id="cf-phone" type="tel" placeholder="+91 XXXXX XXXXX" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-product">Product / Requirement</label>
+          <select class="form-input" id="cf-product">
+            <option value="">Select product...</option>
+            <option>Pro Stage Speaker System</option>
+            <option>Active Subwoofer 18"</option>
+            <option>Performance DJ Mixer 4Ch</option>
+            <option>Club Mixer 2 Channel</option>
+            <option>High-Power Amplifier</option>
+            <option>Digital Class-D Amplifier</option>
+            <option>Pro DJ Controller</option>
+            <option>LED Moving Head Light</option>
+            <option>Multiple / Bulk Order</option>
+            <option>Other — Custom Requirement</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-city">Your City</label>
+          <input class="form-input" id="cf-city" type="text" placeholder="City name for shipping quote"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-msg">Message (Optional)</label>
+          <textarea class="form-input form-textarea" id="cf-msg" placeholder="Quantity, budget, specific requirements..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitContactForm()">
+          🚀 Send Enquiry — Get Best Price
+        </button>
+        <div class="success-msg" id="cf-success">
+          <h4>✅ Enquiry Received!</h4>
+          <p>Thank you! We'll call you within <strong>15 minutes</strong>. For faster response:</p>
+          <a href="https://wa.me/919999999999" target="_blank" class="success-wa">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Chat on WhatsApp Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Location</div>
+      <h2 class="section-title" style="margin-bottom:16px;">Find Us</h2>
+      <div class="map-placeholder" onclick="window.open('https://maps.google.com','_blank')">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Tap to Open in Google Maps</span>
+        <span style="font-size:12px;color:#999;">Mumbai, Maharashtra, India</span>
+      </div>
+      <div class="info-card" style="margin-top:14px;border:1.5px solid var(--border);">
+        <div class="info-row" style="margin-bottom:8px;">
+          <div class="info-row-label">Address</div>
+          <div class="info-row-val">Punishka Trading, Shop No. XX,<br/>Mumbai – 400001, Maharashtra, India</div>
+        </div>
+        <div class="info-row" style="margin-bottom:8px;">
+          <div class="info-row-label">Phone</div>
+          <div class="info-row-val"><a href="tel:+919999999999">+91 99999 99999</a></div>
+        </div>
+        <div class="info-row">
+          <div class="info-row-label">Email</div>
+          <div class="info-row-val"><a href="mailto:info@punishkatrading.com">info@punishkatrading.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-logo-row">
+      <div class="footer-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg></div>
+      <span class="footer-logo-name">Punishka Trading</span>
+    </div>
+    <p class="footer-tagline">India's most trusted professional DJ equipment supplier. Direct importers since 2008.</p>
+    <div class="footer-gst">✓ GST Verified Business</div>
+  </div>
+  <div>
+    <div class="footer-links">
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('products')">Products</button>
+      <button onclick="showPage('about')">About Us</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:+919999999999">📞 +91 99999 99999</a>
+      <a href="https://wa.me/919999999999" target="_blank" class="wa">💬 WhatsApp</a>
+      <a href="mailto:info@punishkatrading.com">✉ Email Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 Punishka Trading. All Rights Reserved. | DJ Mixer India | DJ Speaker | Amplifier India | DJ Equipment Supplier | Professional Audio India | Wholesale DJ Gear</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20enquire%20about%20DJ%20equipment" target="_blank" class="float-whatsapp" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- STICKY BOTTOM BAR (MOBILE) -->
+<div class="sticky-bottom">
+  <a href="https://wa.me/919999999999" target="_blank" class="sb-btn sb-wa">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    WhatsApp
+  </a>
+  <a href="tel:+919999999999" class="sb-btn sb-call">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <button class="sb-btn sb-enq" onclick="showPage('contact');window.scrollTo(0,0)">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    Enquiry
+  </button>
+</div>
+
+<!-- ENQUIRY MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Get Best Price</div>
+    <div class="modal-sub">Fill below — we'll call you back in minutes!</div>
+    <div class="form-group">
+      <label class="form-label" for="m-name">Your Name *</label>
+      <input class="form-input" id="m-name" type="text" placeholder="Your name" required/>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="m-phone">Phone Number *</label>
+      <input class="form-input" id="m-phone" type="tel" placeholder="+91 XXXXX XXXXX" required/>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="m-product">Product</label>
+      <input class="form-input" id="m-product" type="text" readonly style="background:#f5f5f5;"/>
+    </div>
+    <button class="form-submit" onclick="submitModal()">🚀 Send — Get Best Price</button>
+    <div class="modal-success" id="modal-success">
+      <h4>✅ Enquiry Sent!</h4>
+      <p>We'll call you within <strong>15 minutes</strong>!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   PAGE NAVIGATION
+============================================================ */
+function showPage(page) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  const navEl = document.getElementById('nav-' + page);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ============================================================
+   CATEGORY FILTER (Products page)
+============================================================ */
+function filterCat(btn, cat) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.prod-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+/* ============================================================
+   MODAL
+============================================================ */
+function openModal(productName) {
+  document.getElementById('m-product').value = productName || '';
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModalOutside(e) {
+  if (e.target === document.getElementById('modal-overlay')) {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+    document.getElementById('modal-success').classList.remove('show');
+  }
+}
+function submitModal() {
+  const name = document.getElementById('m-name').value.trim();
+  const phone = document.getElementById('m-phone').value.trim();
+  if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+  document.getElementById('modal-success').classList.add('show');
+  document.getElementById('m-name').value = '';
+  document.getElementById('m-phone').value = '';
+  setTimeout(() => {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+    document.getElementById('modal-success').classList.remove('show');
+  }, 3000);
+}
+
+/* ============================================================
+   CONTACT FORM
+============================================================ */
+function submitContactForm() {
+  const name = document.getElementById('cf-name').value.trim();
+  const phone = document.getElementById('cf-phone').value.trim();
+  if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+  document.getElementById('cf-success').classList.add('show');
+  document.getElementById('cf-name').value = '';
+  document.getElementById('cf-phone').value = '';
+  document.getElementById('cf-product').value = '';
+  document.getElementById('cf-city').value = '';
+  document.getElementById('cf-msg').value = '';
+  setTimeout(() => document.getElementById('cf-success').classList.remove('show'), 8000);
+}
+
+/* ============================================================
+   COUNTER ANIMATION
+============================================================ */
+function animateCount(el, target, suffix) {
+  let val = 0;
+  const step = Math.ceil(target / 55);
+  const t = setInterval(() => {
+    val = Math.min(val + step, target);
+    el.textContent = val + suffix;
+    if (val >= target) clearInterval(t);
+  }, 22);
+}
+const counterEl = document.getElementById('counter-home');
+const obs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) { animateCount(counterEl, 1000, '+'); obs.disconnect(); }
+});
+if (counterEl) obs.observe(counterEl);
+</script>
 </body>
 </html>
