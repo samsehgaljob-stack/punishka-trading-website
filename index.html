@@ -8,6 +8,36 @@
 <meta name="keywords" content="DJ amplifier India, DJ mixer Delhi, microphone supplier, network plate, pressure mid, DJ equipment Rohini, Punishka Trading"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GOOGLE ANALYTICS 4
+     1. Go to analytics.google.com → create property → get Measurement ID (G-XXXXXXXXXX)
+     2. Uncomment the two script blocks below and replace G-XXXXXXXXXX with your ID
+     ═══════════════════════════════════════════════════════════ -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script> -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     META PIXEL
+     1. Go to business.facebook.com → Events Manager → create Pixel → copy Pixel ID
+     2. Uncomment the block below and replace YOUR_PIXEL_ID with your ID
+     ═══════════════════════════════════════════════════════════ -->
+<!-- <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','YOUR_PIXEL_ID');
+  fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript> -->
 <style>
 /* ====================================================
    VARIABLES & RESET
@@ -1234,6 +1264,7 @@ function submitModal() {
   const leads = JSON.parse(localStorage.getItem('punishka_leads')||'[]');
   leads.unshift({name:n,phone:p,product:prod,budget,city,time:new Date().toISOString()});
   localStorage.setItem('punishka_leads',JSON.stringify(leads.slice(0,200)));
+  _pt('enquiry_submit',{product:prod,source:'modal'});
   document.getElementById('modal-ok').classList.add('show');
   ['m-name','m-phone'].forEach(id=>document.getElementById(id).value='');
   setTimeout(()=>{
@@ -1405,6 +1436,7 @@ function submitExit() {
     time: new Date().toISOString()
   });
   localStorage.setItem('punishka_leads', JSON.stringify(leads.slice(0, 200)));
+  _pt('enquiry_submit',{product:document.getElementById('ex-prod').value,source:'exit_intent'});
   document.getElementById('exit-ok').classList.add('show');
   setTimeout(() => {
     closeExit();
@@ -1445,6 +1477,29 @@ function chatStep(type) {
     `<div class="chat-msg" style="margin-top:6px"><div class="chat-bubble">Want the best price? 👇</div></div>`;
   body.scrollTop = body.scrollHeight;
 }
+
+/* ============================================================
+   TRACKING — GA4 + Meta Pixel helper
+============================================================ */
+function _pt(event, params) {
+  try { if(typeof gtag==='function') gtag('event', event, params||{}); } catch(e){}
+  try {
+    if(typeof fbq==='function'){
+      const fbMap={call_click:'Contact',whatsapp_click:'Contact',enquiry_open:'InitiateCheckout',enquiry_submit:'Lead'};
+      fbq('track', fbMap[event]||'CustomEvent', params||{});
+    }
+  } catch(e){}
+}
+
+// Single delegation listener — covers call, WhatsApp, enquiry open
+document.addEventListener('click', function(e){
+  const el = e.target.closest('a[href^="tel:"], a[href*="wa.me"], .pca-enq, .hp-enq, .pd-cta-enq');
+  if(!el) return;
+  const h = el.getAttribute('href')||'';
+  if(h.startsWith('tel:'))        _pt('call_click',     {source: el.className});
+  else if(h.includes('wa.me'))    _pt('whatsapp_click', {source: el.className});
+  else                            _pt('enquiry_open',   {source: el.className});
+}, true);
 
 /* ============================================================
    INIT
