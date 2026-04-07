@@ -146,6 +146,15 @@ input,select,textarea,button{font-family:'DM Sans',sans-serif}
 .sw input:checked+.sw-slider{background:var(--or)}
 .sw input:checked+.sw-slider::before{transform:translateX(20px)}
 
+/* IMAGE UPLOAD + PREVIEW */
+.img-up-row{display:flex;align-items:center;gap:9px;margin-top:7px}
+.img-up-btn{display:inline-flex;align-items:center;gap:5px;background:var(--or3);color:var(--or);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;text-transform:uppercase;padding:8px 12px;border-radius:8px;border:1.5px solid rgba(255,107,0,.25);cursor:pointer;white-space:nowrap;transition:background .15s}
+.img-up-btn:hover{background:rgba(255,107,0,.2)}
+.img-up-btn svg{width:14px;height:14px;fill:var(--or)}
+.img-prev{width:56px;height:56px;object-fit:cover;border-radius:8px;border:1.5px solid var(--bd);display:none;flex-shrink:0}
+.img-prev.show{display:block}
+.img-up-hint{font-size:11px;color:var(--mu);line-height:1.4}
+
 /* DANGER ZONE */
 .danger-card{border-color:#fecaca}
 .danger-btn{background:#fef2f2;color:var(--rd);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:15px;text-transform:uppercase;padding:10px 20px;border-radius:8px;border:2px solid var(--rd);cursor:pointer;transition:all .15s}
@@ -346,8 +355,21 @@ input,select,textarea,button{font-family:'DM Sans',sans-serif}
                   </select>
                 </div>
               </div>
-              <div class="fgrp"><label class="flbl" for="pf-desc">Description</label><textarea class="finp ftxt" id="pf-desc" placeholder="Short product description..."></textarea></div>
-              <div class="fgrp"><label class="flbl" for="pf-img">Image URL</label><input class="finp" id="pf-img" type="url" placeholder="https://..."/></div>
+              <div class="fgrp"><label class="flbl" for="pf-desc">Short Description</label><textarea class="finp ftxt" id="pf-desc" placeholder="Short tagline e.g. 1600W × 4 | Pure Copper Transformer"></textarea></div>
+              <div class="fgrp"><label class="flbl" for="pf-fulldesc">Full Description <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--mu)">(shown in product detail popup)</span></label><textarea class="finp ftxt" id="pf-fulldesc" placeholder="Detailed specs, highlights, use cases..." style="min-height:90px"></textarea></div>
+              <div class="fgrp">
+                <label class="flbl" for="pf-img">Image</label>
+                <input class="finp" id="pf-img" type="url" placeholder="Paste image URL — or upload below" oninput="pfImgPreview()"/>
+                <div class="img-up-row">
+                  <label class="img-up-btn">
+                    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    Upload Image
+                    <input type="file" id="pf-img-file" accept="image/*" style="display:none" onchange="pfImgUpload(this)"/>
+                  </label>
+                  <img id="pf-img-prev" class="img-prev" src="" alt="Preview"/>
+                  <div class="img-up-hint">Upload converts to data URL<br/>and stores in localStorage</div>
+                </div>
+              </div>
               <div class="row2">
                 <div class="fgrp"><label class="flbl" for="pf-badge">Badge Label</label><input class="finp" id="pf-badge" type="text" placeholder="🔥 Hot"/></div>
                 <div class="fgrp"><label class="flbl" for="pf-feats">Features (comma separated)</label><input class="finp" id="pf-feats" type="text" placeholder="1600W×4, Class-H, Pure Copper"/></div>
@@ -652,6 +674,30 @@ function saveAll() {
 }
 
 /* ============================================================
+   PRODUCTS — image helpers
+============================================================ */
+function pfImgPreview() {
+  const url = document.getElementById('pf-img').value.trim();
+  const prev = document.getElementById('pf-img-prev');
+  if(url){ prev.src=url; prev.classList.add('show'); }
+  else { prev.src=''; prev.classList.remove('show'); }
+}
+function pfImgUpload(input) {
+  const file = input.files[0];
+  if(!file) return;
+  if(file.size > 2*1024*1024){ showToast('Image too large — keep under 2MB',true); return; }
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    document.getElementById('pf-img').value = e.target.result;
+    const prev = document.getElementById('pf-img-prev');
+    prev.src = e.target.result;
+    prev.classList.add('show');
+    showToast('Image loaded — save product to store it');
+  };
+  reader.readAsDataURL(file);
+}
+
+/* ============================================================
    PRODUCTS
 ============================================================ */
 function renderProducts() {
@@ -676,10 +722,13 @@ function renderProducts() {
 function newProduct() {
   document.getElementById('pf-title').textContent = 'Add New Product';
   document.getElementById('pf-id').value = '';
-  ['pf-name','pf-desc','pf-img','pf-badge','pf-feats'].forEach(id=>document.getElementById(id).value='');
+  ['pf-name','pf-desc','pf-fulldesc','pf-img','pf-badge','pf-feats'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('pf-cat').value = 'amplifier';
   document.getElementById('pf-hot').checked = false;
   document.getElementById('pf-feat').checked = false;
+  document.getElementById('pf-img-file').value = '';
+  const prev = document.getElementById('pf-img-prev');
+  prev.src = ''; prev.classList.remove('show');
   document.getElementById('prod-form').classList.add('on');
   document.getElementById('prod-form').scrollIntoView({behavior:'smooth'});
 }
@@ -688,14 +737,19 @@ function editProd(id) {
   if(!p) return;
   document.getElementById('pf-title').textContent = 'Edit Product';
   document.getElementById('pf-id').value = id;
-  document.getElementById('pf-name').value = p.name||'';
-  document.getElementById('pf-cat').value  = p.cat||'amplifier';
-  document.getElementById('pf-desc').value = p.desc||'';
-  document.getElementById('pf-img').value  = p.img||'';
-  document.getElementById('pf-badge').value= p.badge||'';
-  document.getElementById('pf-feats').value= (p.feats||[]).join(', ');
-  document.getElementById('pf-hot').checked = !!p.hot;
-  document.getElementById('pf-feat').checked= !!p.featured;
+  document.getElementById('pf-name').value    = p.name||'';
+  document.getElementById('pf-cat').value     = p.cat||'amplifier';
+  document.getElementById('pf-desc').value    = p.desc||'';
+  document.getElementById('pf-fulldesc').value= p.fullDesc||'';
+  document.getElementById('pf-img').value     = p.img||'';
+  document.getElementById('pf-badge').value   = p.badge||'';
+  document.getElementById('pf-feats').value   = (p.feats||[]).join(', ');
+  document.getElementById('pf-hot').checked   = !!p.hot;
+  document.getElementById('pf-feat').checked  = !!p.featured;
+  // Show image preview
+  const prev = document.getElementById('pf-img-prev');
+  if(p.img){ prev.src=p.img; prev.classList.add('show'); }
+  else { prev.src=''; prev.classList.remove('show'); }
   document.getElementById('prod-form').classList.add('on');
   document.getElementById('prod-form').scrollIntoView({behavior:'smooth'});
 }
@@ -705,13 +759,14 @@ function saveProd() {
   const existing_id = parseInt(document.getElementById('pf-id').value);
   const prod = {
     id: existing_id || Date.now(),
-    name, cat: document.getElementById('pf-cat').value,
-    desc: document.getElementById('pf-desc').value,
-    img:  document.getElementById('pf-img').value,
-    badge:document.getElementById('pf-badge').value,
-    feats:document.getElementById('pf-feats').value.split(',').map(f=>f.trim()).filter(Boolean),
-    hot:  document.getElementById('pf-hot').checked,
-    featured: document.getElementById('pf-feat').checked
+    name, cat:      document.getElementById('pf-cat').value,
+    desc:           document.getElementById('pf-desc').value,
+    fullDesc:       document.getElementById('pf-fulldesc').value,
+    img:            document.getElementById('pf-img').value,
+    badge:          document.getElementById('pf-badge').value,
+    feats:          document.getElementById('pf-feats').value.split(',').map(f=>f.trim()).filter(Boolean),
+    hot:            document.getElementById('pf-hot').checked,
+    featured:       document.getElementById('pf-feat').checked
   };
   if(existing_id) {
     const idx = DATA.products.findIndex(p=>p.id===existing_id);
