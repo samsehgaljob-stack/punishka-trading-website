@@ -727,8 +727,16 @@ const nb = document.getElementById('nb-' + pg);
 if(nb) nb.classList.add('on');
 const sb = document.getElementById('sb-' + pg);
 if(sb) sb.classList.add('on');
+history.replaceState(null,'','#'+pg);
 window.scrollTo({top:0,behavior:'smooth'});
 }
+// Handle navigation from policy pages via URL hash
+(function(){
+const hash = location.hash.replace('#','');
+if(['products','about','contact'].includes(hash)){
+document.addEventListener('DOMContentLoaded',function(){ goPage(hash); });
+}
+})();
 function buildTicker() {
 const items = D.ticker || DEFAULTS.ticker;
 const inner = document.getElementById('ticker-inner');
