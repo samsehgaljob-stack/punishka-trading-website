@@ -729,7 +729,7 @@ const nb = document.getElementById('nb-' + pg);
 if(nb) nb.classList.add('on');
 const sb = document.getElementById('sb-' + pg);
 if(sb) sb.classList.add('on');
-history.replaceState(null,'','#'+pg);
+try{history.replaceState(null,'','#'+pg);}catch(e){}
 window.scrollTo({top:0,behavior:'smooth'});
 }
 // Handle navigation from policy pages via URL hash
