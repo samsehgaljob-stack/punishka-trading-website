@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.punishkatrading.com/sitemap.xml
+
+# Block admin panel
+Disallow: /admin.html
+Disallow: /admin-*.html
+Disallow: /api/
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
