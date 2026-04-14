@@ -334,16 +334,32 @@
   }
   </script>
 
-  <!-- Tawk.to: lazy-loaded + widget hidden — opens only on "Chat With Us" click -->
+  <!-- Tawk.to: preloaded silently after page load, widget hidden, instant on click -->
   <script>
+  // Preload Tawk after page is fully idle — widget stays hidden
+  window.Tawk_API = window.Tawk_API || {};
+  window.Tawk_API.onLoad = function() {
+    window.Tawk_API.hideWidget();
+  };
+  window.addEventListener('load', function() {
+    // Load after 3s so it doesn't compete with critical page resources
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://embed.tawk.to/69d8861aa5ae3e1c3b562250/1jlqsnmev';
+      s.charset = 'UTF-8';
+      s.setAttribute('crossorigin', '*');
+      document.head.appendChild(s);
+    }, 3000);
+  });
+
+  // On click: open instantly (already loaded) or load + open if somehow not ready
   function openTawkChat() {
     if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
-      window.Tawk_API.hideWidget();
       window.Tawk_API.maximize();
       return;
     }
-    window.Tawk_API = window.Tawk_API || {};
-    window.Tawk_LoadStart = new Date();
+    // Fallback: load now if 3s timer hasn't fired yet
     window.Tawk_API.onLoad = function() {
       window.Tawk_API.hideWidget();
       window.Tawk_API.maximize();
