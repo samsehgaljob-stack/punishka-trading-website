@@ -216,3 +216,7 @@ body { padding-top: 64px; padding-bottom: 85px; overflow-x: hidden; }
   transition: all .2s !important;
 }
 .int-link:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+
+/* ── Placeholder reserve space to prevent layout shift ── */
+#pt-header { min-height: 64px; display: block; }
+#pt-footer { display: block; }
