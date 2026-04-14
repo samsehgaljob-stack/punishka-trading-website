@@ -86,7 +86,8 @@ body { padding-top: 64px; padding-bottom: 85px; overflow-x: hidden; }
 .ft2-heading{color:#111!important;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:18px;display:block;color:#8e8e93!important;border-bottom:none;padding-bottom:0;opacity:1!important;visibility:visible!important}
 .ft2-links-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:0 20px}
 .ft2-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
-.ft2-links li button,.ft2-links li a{background:none;border:none;color:#3a3a3c;font-size:13px;cursor:pointer;padding:2px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;font-weight:400;letter-spacing:-.01em;word-break:keep-all;transition:all .22s cubic-bezier(.4,0,.2,1);display:block;width:100%}
+.ft2-links li button,.ft2-links li a{background:none;border:none;color:#3a3a3c;font-size:13px;cursor:pointer;padding:2px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;font-weight:400;letter-spacing:-.01em;word-break:keep-all;transition:all .22s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;gap:7px;width:100%}
+.ft2-links li a::before,.ft2-links li button::before{content:"›";color:var(--or);font-size:16px;font-weight:700;line-height:1;flex-shrink:0}
 .ft2-links li button:hover,.ft2-links li a:hover{color:var(--or)}
 .ft2-contact-list{list-style:none;display:flex;flex-direction:column;gap:16px}
 .ft2-contact-list li{display:flex;align-items:flex-start;gap:14px;text-align:left!important}
