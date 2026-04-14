@@ -52,7 +52,7 @@
 /* headings */
 .ft2-heading{color:#111!important;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;padding-bottom:12px;border-bottom:2.5px solid var(--or);display:inline-block;opacity:1!important;visibility:visible!important}
 /* links */
-.ft2-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft2-links{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
 .ft2-links li button,.ft2-links li a{background:none;border:none;color:#333;font-size:13px;cursor:pointer;padding:3px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;transition:color .18s,transform .18s;display:flex;align-items:center;gap:8px}
 .ft2-links li button::before,.ft2-links li a::before{content:'›';color:var(--or);font-size:17px;font-weight:700;line-height:1;transition:transform .18s}
 .ft2-links li button:hover,.ft2-links li a:hover{color:var(--or);transform:translateX(4px)}
@@ -82,6 +82,7 @@
   .ft2-inner{grid-template-columns:1fr;gap:0;padding:32px 20px 0}
   .ft2-col{padding:24px 0;border-bottom:1px solid #eee}
   .ft2-col:last-child{border-bottom:none}
+  .ft2-links{grid-template-columns:1fr}
   .ft2-desc{max-width:100%}
   .ft2-heading{display:block}
   .ft2-bottom{padding:16px 20px;flex-direction:column;align-items:center;text-align:center;gap:12px}
@@ -333,18 +334,7 @@
   }
   </script>
 
-  <!-- Tawk.to Live Chat -->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/69d8861aa5ae3e1c3b562250/1jlqsnmev';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
+  <!-- Tawk.to: loaded on-demand when user opens Chat (see Contact section) -->
 
   <!-- PRODUCT SCHEMAS — All 39 Products (Conversion + Ranking) -->
   <script type="application/ld+json">
@@ -1602,7 +1592,7 @@
         <div><div class="ct-opt-t">Call Now</div><div class="ct-opt-d">+91 8447075889 / 9315820632</div></div>
         <div class="ct-opt-arr">›</div>
       </a>
-      <div class="ct-opt" onclick="if(window.Tawk_API&&Tawk_API.toggle){Tawk_API.toggle()}else{window.open('https://tawk.to/punishkatrading','_blank')}" style="cursor:pointer">
+      <div class="ct-opt" onclick="(function(){if(window.Tawk_API&&window.Tawk_API.toggle){Tawk_API.toggle();return;}var Tawk_API=window.Tawk_API=window.Tawk_API||{};var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/69d8861aa5ae3e1c3b562250/1jlqsnmev';s.charset='UTF-8';s.setAttribute('crossorigin','*');s.onload=function(){Tawk_API.onLoad=function(){Tawk_API.toggle();};};document.head.appendChild(s);})()" style="cursor:pointer">
         <div class="ct-opt-ic or"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div>
         <div><div class="ct-opt-t">Chat With Us</div><div class="ct-opt-d">Live chat — we reply instantly</div></div>
         <div class="ct-opt-arr">›</div>
@@ -1869,14 +1859,6 @@
 
 
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/918447075889?text=Hi%2C+I+want+to+enquire+about+DJ+equipment" target="_blank" id="wa-fab" aria-label="WhatsApp Us" style="position:fixed;bottom:96px;right:16px;z-index:8000;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.55);text-decoration:none;">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.849L0 24l6.335-1.652A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.833 0-3.552-.495-5.025-1.357l-.36-.214-3.732.974.997-3.647-.235-.373A9.953 9.953 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
-</a>
-<style>
-@media(min-width:768px){#wa-fab{bottom:24px;right:24px;width:58px;height:58px}}
-@media(max-width:767px){#wa-fab{bottom:90px}}
-</style>
 
 <!-- STICKY BOTTOM BAR - 5-item nav -->
 <div class="sticky-bot">
