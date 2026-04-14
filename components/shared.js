@@ -24,8 +24,7 @@
   var HEADER_HTML = [
     '<header class="pt-hdr" id="pt-hdr">',
     '  <a href="/" class="pt-hdr-logo">',
-    '    <img src="/images/logo.svg" alt="Electronic Punishka Trading" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"/>',
-    '    <span style="display:none;align-items:center;gap:8px;font-family:\'Barlow Condensed\',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;letter-spacing:.08em;color:#1d1d1f">Punishka <span style="color:#FF6B00">Trading</span></span>',
+    '    <span class="pt-logo-text">Punishka<span> Trading</span></span>',
     '  </a>',
     '  <nav class="pt-hdr-nav">',
     '    <a href="/" class="pt-nav-a">Home</a>',
