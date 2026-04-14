@@ -96,10 +96,10 @@ body { padding-top: 64px; padding-bottom: 85px; overflow-x: hidden; }
 .pt-ft-links-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
 .pt-ft-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .pt-ft-links li a, .pt-ft-links li button {
-  background: none; border: none; color: #3a3a3c; font-size: 14px;
+  background: none; border: none; color: #3a3a3c; font-size: 13px;
   cursor: pointer; padding: 2px 0; text-align: left;
   font-family: 'DM Sans', sans-serif; text-decoration: none;
-  font-weight: 400; letter-spacing: -.01em;
+  font-weight: 400; letter-spacing: -.01em; word-break: keep-all;
   transition: var(--trans); display: block; width: 100%;
 }
 .pt-ft-links li a:hover, .pt-ft-links li button:hover { color: var(--or); }
