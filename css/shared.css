@@ -1,3 +1,17 @@
+/* ── Text Logo ── */
+.pt-logo-text {
+  font-family: 'Barlow Condensed', 'Arial Black', sans-serif;
+  font-weight: 900; font-size: 20px; text-transform: uppercase;
+  letter-spacing: .06em; color: #1d1d1f; line-height: 1;
+  white-space: nowrap;
+}
+.pt-logo-text span { color: #FF6B00; }
+.pt-ft-logo-text {
+  font-family: 'Barlow Condensed', 'Arial Black', sans-serif;
+  font-weight: 900; font-size: 24px; text-transform: uppercase;
+  letter-spacing: .06em; color: #111; line-height: 1;
+}
+.pt-ft-logo-text span { color: #FF6B00; }
 /* ═══════════════════════════════════════════════════════
    PUNISHKA TRADING — SHARED COMPONENT STYLES
    Single source of truth for header, footer, sticky bar
