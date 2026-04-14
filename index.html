@@ -52,10 +52,11 @@
 /* headings */
 .ft2-heading{color:#111!important;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;padding-bottom:12px;border-bottom:2.5px solid var(--or);display:inline-block;opacity:1!important;visibility:visible!important}
 /* links */
-.ft2-links{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
-.ft2-links li button,.ft2-links li a{background:none;border:none;color:#333;font-size:13px;cursor:pointer;padding:3px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;transition:color .18s,transform .18s;display:flex;align-items:center;gap:8px}
-.ft2-links li button::before,.ft2-links li a::before{content:'›';color:var(--or);font-size:17px;font-weight:700;line-height:1;transition:transform .18s}
-.ft2-links li button:hover,.ft2-links li a:hover{color:var(--or);transform:translateX(4px)}
+.ft2-links-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.ft2-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.ft2-links li button,.ft2-links li a{background:none;border:none;color:#333;font-size:13px;cursor:pointer;padding:2px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;transition:color .18s,transform .18s;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.ft2-links li button::before,.ft2-links li a::before{content:'›';color:var(--or);font-size:17px;font-weight:700;line-height:1;flex-shrink:0;transition:transform .18s}
+.ft2-links li button:hover,.ft2-links li a:hover{color:var(--or);transform:translateX(3px)}
 /* contact list */
 .ft2-contact-list{list-style:none;display:flex;flex-direction:column;gap:18px}
 .ft2-contact-list li{display:flex;align-items:flex-start;gap:14px}
@@ -82,7 +83,6 @@
   .ft2-inner{grid-template-columns:1fr;gap:0;padding:32px 20px 0}
   .ft2-col{padding:24px 0;border-bottom:1px solid #eee}
   .ft2-col:last-child{border-bottom:none}
-  .ft2-links{grid-template-columns:1fr}
   .ft2-desc{max-width:100%}
   .ft2-heading{display:block}
   .ft2-bottom{padding:16px 20px;flex-direction:column;align-items:center;text-align:center;gap:12px}
@@ -1788,19 +1788,25 @@
     <!-- COL 2: LINKS -->
     <div class="ft2-col">
       <div class="ft2-heading">Quick Links</div>
-      <ul class="ft2-links">
-        <li><button onclick="goPage('home')">Home</button></li>
-        <li><button onclick="goPage('products')">Products</button></li>
-        <li><button onclick="goPage('about')">About Us</button></li>
-        <li><button onclick="goPage('contact')">Contact</button></li>
-        <li><a href="/category/amplifiers/">DJ Amplifiers</a></li>
-        <li><a href="/category/microphones/">Microphones</a></li>
-        <li><a href="/category/mixers/">DJ Mixers</a></li>
-        <li><a href="/category/pa-systems/">PA Systems</a></li>
-        <li><a href="/dj-equipment-delhi/">Delhi Store</a></li>
-        <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-      </ul>
+      <div class="ft2-links-wrap">
+        <ul class="ft2-links">
+          <li><button onclick="goPage('home')">Home</button></li>
+          <li><button onclick="goPage('products')">Products</button></li>
+          <li><button onclick="goPage('about')">About Us</button></li>
+          <li><button onclick="goPage('contact')">Contact</button></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="returns.html">Return Policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        <ul class="ft2-links">
+          <li><a href="/category/amplifiers/">DJ Amplifiers</a></li>
+          <li><a href="/category/mixers/">DJ Mixers</a></li>
+          <li><a href="/category/microphones/">Microphones</a></li>
+          <li><a href="/category/pa-systems/">PA Systems</a></li>
+          <li><a href="/dj-equipment-delhi/">Delhi Store</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- COL 3: CONTACT -->
