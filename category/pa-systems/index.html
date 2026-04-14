@@ -88,6 +88,28 @@ img{display:block;max-width:100%;height:auto}
 footer{background:var(--dk);color:#aaa;text-align:center;padding:20px 16px;font-size:12px}
 footer a{color:var(--or)}
 </style>
+
+  <!-- Shared component styles -->
+  <link rel="stylesheet" href="/css/shared.css"/>
+  <style>
+  /* Remove old header/footer CSS conflicts */
+  .hdr{display:none!important}
+  header.hdr{display:none!important}
+  footer:not(.pt-footer){display:none!important}
+  /* Page body adjustments */
+  body{padding-top:64px;padding-bottom:85px;font-family:'DM Sans',sans-serif;overflow-x:hidden}
+  @media(min-width:768px){body{padding-bottom:0}}
+  /* Section max-width centering */
+  .wrap{max-width:960px;margin:0 auto}
+  /* Int-links equal buttons */
+  .int-links{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:10px!important}
+  @media(min-width:600px){.int-links{grid-template-columns:repeat(4,1fr)!important}}
+  .int-link{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;min-height:52px!important;padding:12px 16px!important;border-radius:12px!important;transition:all .2s!important}
+  .int-link:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.1)!important}
+  /* Comparison table scroll */
+  .specs-table{min-width:480px;width:100%}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;margin-bottom:20px}
+  </style>
 </head>
 <body>
 <header class="hdr">
@@ -159,5 +181,7 @@ footer a{color:var(--or)}
   <p style="margin-top:6px"><a href="/">Home</a> · <a href="/category/amplifiers/">Amplifiers</a> · <a href="/category/microphones/">Microphones</a> · <a href="/category/pa-systems/">PA Systems</a></p>
 </footer>
 <script>function toggle(id){document.getElementById(id).classList.toggle('open')}</script>
+
+<script src="/components/shared.js"></script>
 </body>
 </html>

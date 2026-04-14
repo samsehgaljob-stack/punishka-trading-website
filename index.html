@@ -1660,6 +1660,69 @@ body { padding-top: 64px; }
 .modal-close:hover { background: var(--bd); }
 </style>
 <!-- ═══════════ END PREMIUM DESIGN LAYER ═══════════ -->
+
+<!-- ═══════════ LAYOUT FIX LAYER ═══════════ -->
+<style>
+/* ─── HERO: centered container on large screens ─── */
+@media(min-width:1300px){
+  .hero{
+    padding-left:calc((100% - 1200px)/2 + 48px) !important;
+    padding-right:calc((100% - 1200px)/2 + 48px) !important;
+  }
+}
+/* ─── HERO: mobile text centering ─── */
+@media(max-width:767px){
+  .hero>div:first-child{text-align:center}
+  .hero-live{margin-left:auto;margin-right:auto}
+  .hero-btns{justify-content:center}
+  .hero-sub{margin-left:auto;margin-right:auto}
+}
+
+/* ─── PRODUCTS: max-width centering ─── */
+.prod-grid{max-width:1440px;margin-left:auto;margin-right:auto}
+.cat-bar{max-width:1440px;margin-left:auto;margin-right:auto}
+.prod-hdr{max-width:100%}
+.prod-hdr .lbl,.prod-hdr .ttl,.prod-hdr .sub{max-width:1344px;margin-left:auto;margin-right:auto}
+
+/* ─── PRODUCTS: responsive grid breakpoints ─── */
+@media(min-width:768px) and (max-width:1099px){
+  .prod-grid{grid-template-columns:repeat(2,1fr) !important;padding:16px 24px !important}
+}
+@media(min-width:1100px) and (max-width:1399px){
+  .prod-grid{grid-template-columns:repeat(3,1fr) !important}
+}
+@media(min-width:1400px){
+  .prod-grid{grid-template-columns:repeat(4,1fr) !important}
+}
+/* ─── PRODUCTS: mobile 1 col ─── */
+@media(max-width:767px){
+  .prod-grid{grid-template-columns:1fr !important;padding:12px 14px !important}
+}
+
+/* ─── SECTION WRAPPERS: centered ─── */
+@media(min-width:1300px){
+  .wrap{max-width:1200px;margin-left:auto;margin-right:auto;padding-left:0 !important;padding-right:0 !important}
+  .hero{max-width:100%}
+  .cta-banner{padding-left:calc((100% - 600px)/2) !important;padding-right:calc((100% - 600px)/2) !important}
+}
+
+/* ─── HP GRID: desktop 3 cols ─── */
+@media(min-width:768px){
+  .hp-list{grid-template-columns:repeat(3,1fr) !important}
+}
+@media(min-width:1100px){
+  .hp-list{grid-template-columns:repeat(4,1fr) !important}
+}
+
+/* ─── CAT BAR: ensure visible pills ─── */
+.cat-bar{padding-left:max(14px,calc((100vw - 1440px)/2 + 48px));padding-right:max(14px,calc((100vw - 1440px)/2 + 48px))}
+
+/* ─── PROD HDR: properly padded ─── */
+@media(min-width:768px){
+  .prod-hdr{padding-left:max(48px,calc((100% - 1344px)/2 + 48px)) !important;padding-right:max(48px,calc((100% - 1344px)/2 + 48px)) !important}
+}
+</style>
+<!-- ═══════════ END LAYOUT FIX LAYER ═══════════ -->
 </head>
 <body>
 
