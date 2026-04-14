@@ -1,9 +1,9 @@
 /* ── Text Logo ── */
 .pt-logo-text {
-  font-family: 'Barlow Condensed', 'Arial Black', sans-serif;
-  font-weight: 900; font-size: 20px; text-transform: uppercase;
-  letter-spacing: .06em; color: #1d1d1f; line-height: 1;
-  white-space: nowrap;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900; font-size: 18px; text-transform: uppercase;
+  letter-spacing: .08em; color: #1d1d1f; line-height: 1.15;
+  white-space: nowrap; display: inline-block;
 }
 .pt-logo-text span { color: #FF6B00; }
 .pt-ft-logo-text {
