@@ -88,46 +88,19 @@ img{display:block;max-width:100%;height:auto}
 footer{background:var(--dk);color:#aaa;text-align:center;padding:20px 16px;font-size:12px}
 footer a{color:var(--or)}
 </style>
-
   <!-- Shared component styles -->
   <link rel="stylesheet" href="/css/shared.css"/>
+  <script src="/components/shared.js"></script>
   <style>
-  /* Page body adjustments */
   body{padding-top:64px;padding-bottom:85px;font-family:'DM Sans',sans-serif;overflow-x:hidden}
   @media(min-width:768px){body{padding-bottom:0}}
-  /* Section max-width centering */
   .wrap{max-width:960px;margin:0 auto}
-  /* Int-links equal buttons */
-  .int-links{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:10px!important}
-  @media(min-width:600px){.int-links{grid-template-columns:repeat(4,1fr)!important}}
-  .int-link{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;min-height:52px!important;padding:12px 16px!important;border-radius:12px!important;transition:all .2s!important}
-  .int-link:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.1)!important}
-  /* Comparison table scroll */
-  .specs-table{min-width:480px;width:100%}
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;margin-bottom:20px}
-  </style>
-  <script src="/components/shared.js"></script>
-
-  <style>
-  /* Hero centering */
+  /* Hero center */
   .local-hero{text-align:center}
   .local-hero p{margin-left:auto;margin-right:auto}
-  .hero-btns{justify-content:center!important}
-  @media(min-width:768px){
-    .local-hero{padding:60px 48px}
-    .local-hero h1{font-size:clamp(40px,6vw,72px)}
-  }
-  </style>
-  <style>
-  /* Hero buttons: all 3 equal size in one row */
-  .hero-btns{display:grid !important;grid-template-columns:1fr 1fr 1fr !important;gap:10px !important;width:100% !important}
-  .hero-btns .btn-or,.hero-btns .btn-wa,.hero-btns .btn-map{grid-column:auto;justify-content:center !important;text-align:center !important}
-  .btn-or,.btn-wa,.btn-map{display:flex !important;align-items:center !important;justify-content:center !important;gap:5px !important;font-size:13px !important;padding:11px 8px !important}
-  /* CTA buttons: all 3 equal size in one row */
+  /* Buttons: all 3 equal, homepage style */
+  .hero-btns{display:grid !important;grid-template-columns:1fr 1fr 1fr !important;gap:10px !important;width:100% !important;max-width:480px;margin:0 auto}
   .cta-btns{display:grid !important;grid-template-columns:1fr 1fr 1fr !important;gap:10px !important;width:100% !important;max-width:480px;margin:0 auto}
-  .cta-btn-call,.cta-btn-wa,.cta-btn-map{display:flex !important;align-items:center !important;justify-content:center !important;gap:5px !important;padding:12px 8px !important;border-radius:10px !important;font-size:13px !important;white-space:nowrap !important}
-  </style>
-  /* Buttons: match homepage style exactly */
   .btn-or,.btn-wa,.btn-map,.cta-btn-call,.cta-btn-wa,.cta-btn-map{
     display:flex !important;align-items:center !important;justify-content:center !important;
     gap:6px !important;font-family:'Barlow Condensed',sans-serif !important;
@@ -138,10 +111,14 @@ footer a{color:var(--or)}
   }
   .btn-or,.cta-btn-call{background:#FF6B00 !important;color:#fff !important;box-shadow:0 4px 14px rgba(255,107,0,.3) !important}
   .btn-wa,.cta-btn-wa{background:#25D366 !important;color:#fff !important}
-  .btn-map,.cta-btn-map{background:#fff !important;color:#1d1d1f !important;border:1.5px solid #e5e5ea !important}
-  .btn-or svg,.cta-btn-call svg{fill:#fff !important;width:15px !important;height:15px !important}
-  .btn-wa svg,.cta-btn-wa svg{fill:#fff !important;width:15px !important;height:15px !important}
+  .btn-map,.cta-btn-map{background:#f5f5f7 !important;color:#1d1d1f !important;border:1.5px solid #e5e5ea !important}
+  .btn-or svg,.cta-btn-call svg,.btn-wa svg,.cta-btn-wa svg{fill:#fff !important;width:15px !important;height:15px !important}
   .btn-map svg,.cta-btn-map svg{fill:#1d1d1f !important;width:15px !important;height:15px !important}
+  .int-links{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:10px!important}
+  @media(min-width:600px){.int-links{grid-template-columns:repeat(4,1fr)!important}}
+  .int-link{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;min-height:52px!important;padding:12px 16px!important;border-radius:12px!important;transition:all .2s!important}
+  .specs-table{min-width:480px;width:100%}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px;margin-bottom:20px}
   </style>
 </head>
 <body>
