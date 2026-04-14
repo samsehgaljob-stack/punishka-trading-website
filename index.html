@@ -1710,9 +1710,6 @@ body { padding-top: 64px; }
 @media(min-width:768px){
   .hp-list{grid-template-columns:repeat(3,1fr) !important}
 }
-@media(min-width:1100px){
-  .hp-list{grid-template-columns:repeat(4,1fr) !important}
-}
 
 /* ─── CAT BAR: ensure visible pills ─── */
 .cat-bar{padding-left:max(14px,calc((100vw - 1440px)/2 + 48px));padding-right:max(14px,calc((100vw - 1440px)/2 + 48px))}
@@ -2666,7 +2663,7 @@ const prods = D.products || DEFAULTS.products;
 const grid = document.getElementById('prod-grid');
 grid.innerHTML = prods.map(p=>prodCard(p)).join('');
 const homeList = document.getElementById('home-prod-list');
-const featured = prods.filter(p=>p.featured).slice(0,6);
+const featured = prods.filter(p=>p.featured).slice(0,9);
 homeList.innerHTML = featured.map(p=>homeProdCard(p)).join('');
 const opts = '<option value="">Select product...</option>' + prods.map(p=>`<option value="${p.name}">${p.name}</option>`).join('');
 ['cf-prod','m-prod','ex-prod'].forEach(id=>{
