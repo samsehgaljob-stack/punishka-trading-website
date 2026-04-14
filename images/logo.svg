@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 68" fill="none">
+
+  <!-- ── DJ MONOGRAM MARK ── -->
+
+  <!-- D shape: solid black block + arc -->
+  <rect x="0" y="2" width="11" height="58" rx="2" fill="#1a1a1a"/>
+  <path d="M11 2 L30 2 Q56 2 56 31 Q56 60 30 60 L11 60 Z" fill="#1a1a1a"/>
+  <!-- Inner white cutout on D -->
+  <path d="M16 14 L28 14 Q43 14 43 31 Q43 48 28 48 L16 48 Z" fill="white"/>
+
+  <!-- J shape: italic, red/orange, overlapping -->
+  <text x="47" y="60"
+    font-family="'Arial Black','Impact','Barlow Condensed',sans-serif"
+    font-size="58"
+    font-weight="900"
+    font-style="italic"
+    fill="#E53030"
+    letter-spacing="-2">J</text>
+
+  <!-- ── THIN VERTICAL RULE ── -->
+  <rect x="88" y="8" width="1.5" height="52" fill="#e0e0e0" rx="1"/>
+
+  <!-- ── TEXT BLOCK ── -->
+
+  <!-- ELECTRONIC — small caps, tight tracking -->
+  <text x="100" y="26"
+    font-family="'Barlow Condensed','Arial Narrow','Arial',sans-serif"
+    font-size="13"
+    font-weight="700"
+    fill="#1a1a1a"
+    letter-spacing="3">ELECTRONIC</text>
+
+  <!-- PUNISHKA — big bold headline -->
+  <text x="98" y="53"
+    font-family="'Barlow Condensed','Arial Black','Impact',sans-serif"
+    font-size="32"
+    font-weight="900"
+    fill="#1a1a1a"
+    letter-spacing="0.5">PUNISHKA</text>
+
+  <!-- Red underline below PUNISHKA -->
+  <rect x="98" y="57" width="210" height="2.5" rx="1" fill="#E53030"/>
+
+  <!-- TRADING — spaced small caps -->
+  <text x="160" y="68"
+    font-family="'Barlow Condensed','Arial Narrow','Arial',sans-serif"
+    font-size="10.5"
+    font-weight="500"
+    fill="#555555"
+    letter-spacing="5.5">TRADING</text>
+
+</svg>

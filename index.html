@@ -1429,8 +1429,8 @@ body { background: var(--bg); letter-spacing: -0.01em; }
   padding: 0 20px;
   box-shadow: 0 1px 0 rgba(0,0,0,.06);
 }
-.hdr-logo-icon { border-radius: 10px; box-shadow: 0 2px 8px rgba(255,107,0,.25); }
-.hdr-logo-name { font-size: 18px; letter-spacing: .06em; }
+.hdr-logo-img { height: 38px; width: auto; display: block; }
+.ft2-logo-img { height: 48px; width: auto; display: block; margin-bottom: 4px; }
 .hdr-call {
   border-radius: 100px;
   padding: 9px 18px;
@@ -1666,8 +1666,7 @@ body { padding-top: 64px; }
 <!-- HEADER -->
 <header class="hdr">
   <div class="hdr-logo" onclick="goPage('home')">
-    <div class="hdr-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg></div>
-    <div class="hdr-logo-name">Punishka<br/><span>Trading</span></div>
+    <img src="/images/logo.svg" alt="Electronic Punishka Trading" class="hdr-logo-img"/>
   </div>
   <nav class="hdr-nav">
     <button class="nav-btn on" id="nb-home" onclick="goPage('home')">Home</button>
@@ -2062,10 +2061,7 @@ body { padding-top: 64px; }
     <!-- COL 1: BRAND -->
     <div class="ft2-col ft2-brand">
       <div class="ft2-logo">
-        <div class="ft2-logo-ic">
-          <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
-        </div>
-        <span class="ft2-logo-n">Punishka <span>Trading</span></span>
+        <img src="/images/logo.svg" alt="Electronic Punishka Trading" class="ft2-logo-img"/>
       </div>
       <p class="ft2-desc">Your trusted DJ &amp; audio equipment store. Amplifiers, mixers, mics, speakers &amp; more — serving Delhi since 2018.</p>
       <div class="ft2-gst">
