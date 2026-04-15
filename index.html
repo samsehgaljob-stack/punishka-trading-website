@@ -2329,7 +2329,8 @@ section.wrap .sub,
         <div class="fgrp"><label class="flbl" for="cf-name">Your Name *</label><input class="finp" id="cf-name" type="text" placeholder="Full name" required/></div>
         <div class="fgrp"><label class="flbl" for="cf-phone">Phone Number *</label><input class="finp" id="cf-phone" type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
         <div class="fgrp"><label class="flbl" for="cf-prod">Product Interested In</label>
-          <select class="finp" id="cf-prod"><option value="">Select product...</option></select>
+          <select class="finp" id="cf-prod" onchange="toggleOther(this,'cf-prod-other')"><option value="">Select product...</option></select>
+          <input class="finp" id="cf-prod-other" type="text" placeholder="Type your product name..." style="display:none;margin-top:8px" maxlength="100"/>
         </div>
         <div class="fgrp"><label class="flbl" for="cf-city">Your City</label><input class="finp" id="cf-city" type="text" placeholder="City (for shipping quote)"/></div>
         <div class="fgrp"><label class="flbl" for="cf-msg">Message</label><textarea class="finp ftxt" id="cf-msg" placeholder="Quantity, budget, requirements..."></textarea></div>
@@ -2606,7 +2607,8 @@ section.wrap .sub,
     <div class="fgrp"><label class="flbl" for="m-name">Name *</label><input class="finp" id="m-name" type="text" placeholder="Your name" required/></div>
     <div class="fgrp"><label class="flbl" for="m-phone">Phone *</label><input class="finp" id="m-phone" type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
     <div class="fgrp"><label class="flbl" for="m-prod">Product</label>
-      <select class="finp" id="m-prod"><option value="">Select product...</option></select>
+      <select class="finp" id="m-prod" onchange="toggleOther(this,'m-prod-other')"><option value="">Select product...</option></select>
+      <input class="finp" id="m-prod-other" type="text" placeholder="Type your product name..." style="display:none;margin-top:8px" maxlength="100"/>
     </div>
     <div class="enq-budget-row">
       <div class="fgrp"><label class="flbl" for="m-budget">Budget</label>
@@ -2687,7 +2689,8 @@ section.wrap .sub,
     <div class="fgrp"><label class="flbl" for="ex-name">Name *</label><input class="finp" id="ex-name" type="text" placeholder="Your name"/></div>
     <div class="fgrp"><label class="flbl" for="ex-phone">Phone *</label><input class="finp" id="ex-phone" type="tel" placeholder="+91 XXXXX XXXXX"/></div>
     <div class="fgrp"><label class="flbl" for="ex-prod">Product Interested In</label>
-      <select class="finp" id="ex-prod"><option value="">Select product...</option></select>
+      <select class="finp" id="ex-prod" onchange="toggleOther(this,'ex-prod-other')"><option value="">Select product...</option></select>
+      <input class="finp" id="ex-prod-other" type="text" placeholder="Type your product name..." style="display:none;margin-top:8px" maxlength="100"/>
     </div>
     <button class="f-submit" onclick="submitExit()">📞 Get Best Price Now</button>
     <div class="modal-ok" id="exit-ok" style="margin-top:10px"><h4>✅ Got it!</h4><p>We'll call you very soon!</p></div>
@@ -2867,6 +2870,28 @@ function faqSearch(q) {
   });
   document.querySelectorAll('.faq-pro-cta').forEach(el => el.style.display = term ? 'none' : '');
   document.getElementById('faq-no-results').style.display = visible === 0 ? 'block' : 'none';
+}
+
+
+function toggleOther(sel, otherId) {
+  const other = document.getElementById(otherId);
+  if (!other) return;
+  if (sel.value === '__other__') {
+    other.style.display = 'block';
+    other.focus();
+  } else {
+    other.style.display = 'none';
+    other.value = '';
+  }
+}
+function getProdValue(selId, otherId) {
+  const sel = document.getElementById(selId);
+  if (!sel) return '';
+  if (sel.value === '__other__') {
+    const other = document.getElementById(otherId);
+    return other ? other.value.trim() : '';
+  }
+  return sel.value;
 }
 
 // Handle navigation from policy pages via URL hash
@@ -3079,7 +3104,7 @@ grid.innerHTML = prods.map(p=>prodCard(p)).join('');
 const homeList = document.getElementById('home-prod-list');
 const featured = prods.filter(p=>p.featured).slice(0,9);
 homeList.innerHTML = featured.map(p=>homeProdCard(p)).join('');
-const opts = '<option value="">Select product...</option>' + prods.map(p=>`<option value="${p.name}">${p.name}</option>`).join('');
+const opts = '<option value="">Select product...</option>' + prods.map(p=>`<option value="${p.name}">${p.name}</option>`).join('') + '<option value="__other__">🖊 Other — Type product name</option>';
 ['cf-prod','m-prod','ex-prod'].forEach(id=>{
 const el = document.getElementById(id);
 if(el) el.innerHTML = opts;
@@ -3132,7 +3157,7 @@ document.getElementById('modal-ok').classList.remove('show');
 function submitModal() {
 const n = document.getElementById('m-name').value.trim();
 const p = document.getElementById('m-phone').value.trim();
-const prod = document.getElementById('m-prod').value;
+const prod = getProdValue('m-prod','m-prod-other');
 const budget = document.getElementById('m-budget').value;
 const city = document.getElementById('m-city').value;
 if(!n||!p){alert('Please enter your name and phone number.');return;}
@@ -3154,7 +3179,7 @@ const p = document.getElementById('cf-phone').value.trim();
 if(!n||!p){alert('Please enter your name and phone number.');return;}
 document.getElementById('cf-ok').classList.add('show');
 ['cf-name','cf-phone','cf-city','cf-msg'].forEach(id=>document.getElementById(id).value='');
-document.getElementById('cf-prod').value='';
+getProdValue('cf-prod','cf-prod-other')='';
 setTimeout(()=>document.getElementById('cf-ok').classList.remove('show'),8000);
 }
 function animCount(el, target, suffix='') {
@@ -3264,12 +3289,12 @@ if (!n || !p) { alert('Please enter your name and phone.'); return; }
 const leads = JSON.parse(localStorage.getItem('punishka_leads') || '[]');
 leads.unshift({
 name: n, phone: p,
-product: document.getElementById('ex-prod').value,
+product: getProdValue('ex-prod','ex-prod-other'),
 source: 'exit-intent',
 time: new Date().toISOString()
 });
 localStorage.setItem('punishka_leads', JSON.stringify(leads.slice(0, 200)));
-_pt('enquiry_submit',{product:document.getElementById('ex-prod').value,source:'exit_intent'});
+_pt('enquiry_submit',{product:getProdValue('ex-prod','ex-prod-other'),source:'exit_intent'});
 document.getElementById('exit-ok').classList.add('show');
 setTimeout(() => {
 closeExit();
