@@ -1838,6 +1838,162 @@ h1,h2,h3,h4 { letter-spacing: -.01em; }
 /* Section wraps on homepage */
 .hp-card { border: 1px solid rgba(0,0,0,.07) !important; border-radius: 18px !important; }
 
+
+/* ══════════════════════════════════════
+   PREMIUM FAQ REDESIGN
+══════════════════════════════════════ */
+.faq-pro {
+  background: #f5f5f7;
+  padding: 64px 20px 72px;
+}
+.faq-pro-hd {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+.faq-pro-title { margin-bottom: 10px; font-size: clamp(24px,4vw,36px); }
+.faq-pro-sub {
+  font-size: 15px; color: var(--mu); margin-bottom: 28px; line-height: 1.6;
+}
+/* Search */
+.faq-search-wrap {
+  position: relative; max-width: 480px; margin: 0 auto;
+}
+.faq-search-ic {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; color: var(--mu); pointer-events: none;
+}
+.faq-search {
+  width: 100%; padding: 14px 18px 14px 46px;
+  border: 1.5px solid rgba(0,0,0,.1); border-radius: 100px;
+  background: #fff; font-size: 14px; font-family: 'DM Sans',sans-serif;
+  color: var(--tx); outline: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  transition: border-color .2s, box-shadow .2s;
+}
+.faq-search:focus {
+  border-color: var(--or);
+  box-shadow: 0 0 0 3px rgba(255,107,0,.10), 0 2px 12px rgba(0,0,0,.06);
+}
+/* List */
+.faq-pro-list {
+  max-width: 720px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 10px;
+}
+/* Card */
+.faq-pro-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.07);
+  box-shadow: 0 1px 3px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.04);
+  overflow: hidden;
+  transition: box-shadow .22s, border-color .22s;
+}
+.faq-pro-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,.10);
+  border-color: rgba(255,107,0,.2);
+}
+.faq-pro-card.open {
+  border-color: rgba(255,107,0,.3);
+  box-shadow: 0 4px 20px rgba(255,107,0,.08);
+}
+/* Button */
+.faq-pro-btn {
+  width: 100%; display: flex; align-items: center; gap: 14px;
+  padding: 18px 20px; background: none; border: none;
+  cursor: pointer; text-align: left; color: var(--tx);
+  transition: background .15s;
+}
+.faq-pro-btn:hover { background: rgba(255,107,0,.03); }
+.faq-pro-ic {
+  font-size: 20px; flex-shrink: 0; width: 36px; height: 36px;
+  background: rgba(255,107,0,.08); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-style: normal;
+}
+.faq-pro-q {
+  flex: 1; font-size: 14.5px; font-weight: 600;
+  color: #1d1d1f; line-height: 1.45; letter-spacing: -.01em;
+}
+/* Arrow */
+.faq-pro-arr {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: rgba(0,0,0,.06); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, transform .3s cubic-bezier(.4,0,.2,1);
+  position: relative;
+}
+.faq-pro-arr::before, .faq-pro-arr::after {
+  content: ''; position: absolute;
+  background: #6e6e73; border-radius: 2px;
+  transition: transform .3s, opacity .2s;
+}
+.faq-pro-arr::before { width: 10px; height: 1.5px; }
+.faq-pro-arr::after {
+  width: 1.5px; height: 10px;
+  transform: scaleY(1);
+}
+.faq-pro-card.open .faq-pro-arr {
+  background: var(--or); transform: rotate(0deg);
+}
+.faq-pro-card.open .faq-pro-arr::before,
+.faq-pro-card.open .faq-pro-arr::after { background: #fff; }
+.faq-pro-card.open .faq-pro-arr::after { transform: scaleY(0); opacity: 0; }
+/* Panel */
+.faq-pro-panel {
+  max-height: 0; overflow: hidden;
+  transition: max-height .35s cubic-bezier(.4,0,.2,1);
+}
+.faq-pro-card.open .faq-pro-panel { max-height: 300px; }
+.faq-pro-a {
+  padding: 0 20px 20px 70px;
+  font-size: 14px; color: #555; line-height: 1.78;
+}
+/* CTA Box */
+.faq-pro-cta {
+  background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+  border-radius: 16px; padding: 20px 22px;
+  display: flex; flex-direction: column; gap: 14px;
+  align-items: center; text-align: center;
+}
+.faq-pro-cta-ic { font-size: 24px; }
+.faq-pro-cta span { color: #d0d0d5; font-size: 14px; line-height: 1.6; }
+.faq-pro-cta strong { color: #fff; }
+.faq-pro-cta-btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.faq-pro-cta-call {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--or); color: #fff;
+  font-family: 'Barlow Condensed',sans-serif; font-weight: 800;
+  font-size: 14px; text-transform: uppercase; letter-spacing: .04em;
+  padding: 9px 18px; border-radius: 100px; text-decoration: none;
+  transition: background .15s, transform .15s;
+}
+.faq-pro-cta-call:hover { background: var(--or2); transform: translateY(-1px); }
+.faq-pro-cta-wa {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #25D366; color: #fff;
+  font-family: 'Barlow Condensed',sans-serif; font-weight: 800;
+  font-size: 14px; text-transform: uppercase; letter-spacing: .04em;
+  padding: 9px 18px; border-radius: 100px; text-decoration: none;
+  transition: background .15s, transform .15s;
+}
+.faq-pro-cta-wa:hover { background: #1fbb58; transform: translateY(-1px); }
+/* No results */
+.faq-no-results {
+  text-align: center; padding: 32px;
+  color: var(--mu); font-size: 14px;
+}
+.faq-no-results a { color: var(--or); font-weight: 600; }
+/* Mobile */
+@media(max-width:767px) {
+  .faq-pro { padding: 44px 16px 56px; }
+  .faq-pro-btn { padding: 16px; gap: 12px; }
+  .faq-pro-q { font-size: 13.5px; }
+  .faq-pro-a { padding: 0 16px 16px 16px; }
+  .faq-pro-ic { width: 32px; height: 32px; font-size: 17px; }
+  .faq-pro-cta { padding: 18px 16px; }
+}
+
 </style>
 <!-- ═══════════ END LAYOUT FIX LAYER ═══════════ -->
   <!-- Performance hints -->
@@ -2177,64 +2333,112 @@ h1,h2,h3,h4 { letter-spacing: -.01em; }
   </section>
 
   <!-- FAQ SECTION — AEO / People Also Ask / Voice Search -->
-  <section class="faq-sec" id="faq" style="background:#fff;padding:48px 20px;max-width:860px;margin:0 auto">
-    <div class="lbl" style="color:var(--or)">FAQ</div>
-    <h2 class="ttl" style="margin-bottom:28px;font-size:clamp(22px,4vw,32px)">Frequently Asked Questions</h2>
+  <section class="faq-pro" id="faq" itemscope itemtype="https://schema.org/FAQPage">
 
-    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+    <!-- Header -->
+    <div class="faq-pro-hd">
+      <div class="lbl">FAQ</div>
+      <h2 class="ttl faq-pro-title">Frequently Asked Questions</h2>
+      <p class="faq-pro-sub">Everything you need to know about DJ equipment, pricing & delivery</p>
+      <!-- Search -->
+      <div class="faq-search-wrap">
+        <svg class="faq-search-ic" viewBox="0 0 24 24"><path d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <input class="faq-search" id="faq-search" type="text" placeholder="Search questions…" oninput="faqSearch(this.value)" autocomplete="off"/>
+      </div>
+    </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="border-bottom:1px solid #f0f0f0;padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          DJ amplifier price in India — what should I expect? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">DJ amplifier prices in India range from ₹8,000 to ₹80,000 depending on wattage and number of channels. At Punishka Trading, New Delhi, you can get professional 4-channel Class-H DJ amplifiers at wholesale price with GST invoice. <strong>Call +91 8447075889</strong> for today's best price.</p>
+    <!-- FAQ Cards -->
+    <div class="faq-pro-list" id="faq-pro-list">
+
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="dj amplifier price india expect">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">💰</span>
+          <span class="faq-pro-q" itemprop="name">DJ amplifier price in India — what should I expect?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">DJ amplifier prices in India range from ₹8,000 to ₹80,000 depending on wattage and number of channels. At Punishka Trading, New Delhi, you can get professional 4-channel Class-H DJ amplifiers at wholesale price with GST invoice. <strong>Call +91 8447075889</strong> for today's best price.</p>
         </div>
       </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="border-bottom:1px solid #f0f0f0;padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          Which is the best DJ amplifier brand in India? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">Punishka Trading, New Delhi stocks <strong>PU Audio amplifiers</strong> — the PU8000 4-Channel Class-H and 3U-8800 Heavy Duty models are trusted by 3000+ DJs across India for their unmatched quality, durability and best price. Call +91 8447075889 for pricing.</p>
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="best dj amplifier brand india pu8000">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">🎧</span>
+          <span class="faq-pro-q" itemprop="name">Which is the best DJ amplifier brand in India?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">Punishka Trading, New Delhi stocks <strong>PU Audio amplifiers</strong> — the PU8000 4-Channel Class-H and 3U-8800 Heavy Duty models are trusted by 3000+ DJs across India for their unmatched quality, durability and best price. Call +91 8447075889 for pricing.</p>
         </div>
       </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="border-bottom:1px solid #f0f0f0;padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          Wireless microphone price in India — best options? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">Wireless microphone prices in India start from ₹2,000 for basic VHF systems to ₹25,000+ for professional UHF systems. Punishka Trading offers the <strong>PU1997 UHF Touch Screen</strong> and <strong>DH-744 VHF Dual Wireless</strong> microphone systems at competitive wholesale prices with pan-India delivery.</p>
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="wireless microphone price india uhf vhf">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">🎤</span>
+          <span class="faq-pro-q" itemprop="name">Wireless microphone price in India — best options?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">Wireless microphone prices in India start from ₹2,000 for basic VHF systems to ₹25,000+ for professional UHF systems. Punishka Trading offers the <strong>PU1997 UHF Touch Screen</strong> and <strong>DH-744 VHF Dual Wireless</strong> microphone systems at competitive wholesale prices with pan-India delivery.</p>
         </div>
       </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="border-bottom:1px solid #f0f0f0;padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          Where to buy DJ equipment in Delhi at best price? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">Punishka Trading in <strong>Rohini, New Delhi</strong> is Delhi's top DJ equipment supplier. We offer DJ amplifiers, mixers, wireless microphones, network plates and PA system components at wholesale price with <strong>GST invoice, 100% original products</strong> and fast pan-India delivery. Call <strong>+91 8447075889</strong>.</p>
+      <!-- CTA after 3 -->
+      <div class="faq-pro-cta">
+        <span class="faq-pro-cta-ic">💬</span>
+        <span>Still have questions? <strong>Call or WhatsApp us now</strong> — we reply in minutes.</span>
+        <div class="faq-pro-cta-btns">
+          <a href="tel:+918447075889" class="faq-pro-cta-call">📞 Call Now</a>
+          <a href="https://wa.me/918447075889" target="_blank" class="faq-pro-cta-wa">💬 WhatsApp</a>
         </div>
       </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="border-bottom:1px solid #f0f0f0;padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          What is DJ mixer price in India? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">DJ mixer prices in India range from ₹5,000 to ₹1,00,000+. Punishka Trading offers professional digital mixers including <strong>16-Channel DSP Digital Mixer</strong> and the <strong>TQ-22 Digital Mixer</strong> at best wholesale rates. WhatsApp or call +91 8447075889 for current pricing.</p>
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="buy dj equipment delhi best price rohini">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">📍</span>
+          <span class="faq-pro-q" itemprop="name">Where to buy DJ equipment in Delhi at best price?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">Punishka Trading in <strong>Rohini, New Delhi</strong> is Delhi's top DJ equipment supplier. We offer DJ amplifiers, mixers, wireless microphones, network plates and PA system components at wholesale price with <strong>GST invoice, 100% original products</strong> and fast pan-India delivery. Call <strong>+91 8447075889</strong>.</p>
         </div>
       </div>
 
-      <div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="padding:16px 0">
-        <h3 itemprop="name" style="font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-          Does Punishka Trading provide GST invoice and delivery across India? <span style="color:var(--or);font-size:20px">+</span>
-        </h3>
-        <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" style="display:none;padding-top:10px">
-          <p itemprop="text" style="font-size:13.5px;color:#555;line-height:1.7">Yes. Punishka Trading is a <strong>GST-registered DJ equipment supplier</strong> in New Delhi. We provide proper GST invoice on all orders. We deliver pan-India via trusted courier partners. All products are <strong>100% original</strong> with manufacturer support. Payment via UPI, bank transfer or cash accepted.</p>
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="dj mixer price india digital analog">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">🎛</span>
+          <span class="faq-pro-q" itemprop="name">What is DJ mixer price in India?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">DJ mixer prices in India range from ₹5,000 to ₹1,00,000+. Punishka Trading offers professional digital mixers including <strong>16-Channel DSP Digital Mixer</strong> and the <strong>TQ-22 Digital Mixer</strong> at best wholesale rates. WhatsApp or call +91 8447075889 for current pricing.</p>
         </div>
+      </div>
+
+      <div class="faq-pro-card" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" data-q="gst invoice delivery india original">
+        <button class="faq-pro-btn" onclick="toggleFaqPro(this)" aria-expanded="false">
+          <span class="faq-pro-ic">📦</span>
+          <span class="faq-pro-q" itemprop="name">Does Punishka Trading provide GST invoice and delivery across India?</span>
+          <span class="faq-pro-arr"></span>
+        </button>
+        <div class="faq-pro-panel" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p class="faq-pro-a" itemprop="text">Yes. Punishka Trading is a <strong>GST-registered DJ equipment supplier</strong> in New Delhi. We provide proper GST invoice on all orders. We deliver pan-India via trusted courier partners. All products are <strong>100% original</strong> with manufacturer support. Payment via UPI, bank transfer or cash accepted.</p>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="faq-pro-cta faq-pro-cta-final">
+        <span class="faq-pro-cta-ic">🎯</span>
+        <span>Ready to order? Get the <strong>best wholesale price today</strong> — GST invoice included.</span>
+        <div class="faq-pro-cta-btns">
+          <a href="tel:+918447075889" class="faq-pro-cta-call">📞 Call for Best Price</a>
+          <a href="https://wa.me/918447075889" target="_blank" class="faq-pro-cta-wa">💬 WhatsApp Quote</a>
+        </div>
+      </div>
+
+      <!-- Empty state for search -->
+      <div class="faq-no-results" id="faq-no-results" style="display:none">
+        <p>No questions found. <a href="https://wa.me/918447075889" target="_blank">Ask us directly on WhatsApp →</a></p>
       </div>
 
     </div>
@@ -2604,6 +2808,36 @@ try{history.replaceState(null,'','#'+pg);}catch(e){}
 window.scrollTo({top:0,behavior:'smooth'});
 _sbSwapBlog(pg);
 }
+
+// Premium FAQ
+function toggleFaqPro(btn) {
+  const card = btn.closest('.faq-pro-card');
+  const isOpen = card.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-pro-card.open').forEach(c => {
+    c.classList.remove('open');
+    c.querySelector('.faq-pro-btn').setAttribute('aria-expanded','false');
+  });
+  // Open clicked if was closed
+  if (!isOpen) {
+    card.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+function faqSearch(q) {
+  const term = q.toLowerCase().trim();
+  const cards = document.querySelectorAll('.faq-pro-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const text = card.dataset.q + ' ' + card.querySelector('.faq-pro-q').textContent.toLowerCase();
+    const show = !term || text.includes(term);
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  document.querySelectorAll('.faq-pro-cta').forEach(el => el.style.display = term ? 'none' : '');
+  document.getElementById('faq-no-results').style.display = visible === 0 ? 'block' : 'none';
+}
+
 // Handle navigation from policy pages via URL hash
 (function(){
 const hash = location.hash.replace('#','');
