@@ -1622,8 +1622,9 @@ body { padding-top: 64px; }
 
 /* ─── FOOTER ─── */
 .ft2 { border-top: 1px solid rgba(0,0,0,.08); box-shadow: none; }
-.ft2-inner { padding: 64px 40px 48px; gap: 64px; }
+.ft2-inner { padding: 64px 40px 48px; gap: 48px; grid-template-columns: minmax(0,260px) 1fr 1fr !important; }
 .ft2-logo-ic { border-radius: 12px; box-shadow: 0 4px 16px rgba(255,107,0,.22); }
+.ft2-col { text-align: left !important; }
 .ft2-logo-n { font-size: 22px; letter-spacing: .05em; }
 .ft2-desc { font-size: 13.5px; line-height: 1.9; color: #6e6e73; }
 .ft2-heading {
@@ -1641,7 +1642,7 @@ body { padding-top: 64px; }
 .ft2-links li button::before, .ft2-links li a::before { content: "›"; color: var(--or); font-size: 16px; font-weight: 700; line-height: 1; flex-shrink: 0; display: inline-block; }
 .ft2-links li button:hover, .ft2-links li a:hover { color: var(--or); }
 .ft2-links { gap: 10px; }
-.ft2-links-wrap { gap: 0 24px; }
+.ft2-links-wrap { gap: 0 20px; grid-template-columns: 1.4fr 1fr; }
 .ft2-ci { border-radius: 10px; background: #f5f5f7; box-shadow: none; }
 .ft2-ci svg { fill: var(--or); }
 .ft2-ci-wa svg { fill: #25D366; }
