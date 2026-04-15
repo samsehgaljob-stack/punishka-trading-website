@@ -98,9 +98,13 @@ footer a{color:var(--or)}
   /* Hero center */
   .local-hero{text-align:center}
   .local-hero p{margin-left:auto;margin-right:auto}
-  /* Buttons: all 3 equal, homepage style */
-  .hero-btns{display:grid !important;grid-template-columns:1fr 1fr 1fr !important;gap:10px !important;width:100% !important;max-width:480px;margin:0 auto}
-  .cta-btns{display:grid !important;grid-template-columns:1fr 1fr 1fr !important;gap:10px !important;width:100% !important;max-width:480px;margin:0 auto}
+  /* Buttons: mobile = 2 rows, desktop = 1 row */
+  .hero-btns,.cta-btns{display:grid !important;grid-template-columns:1fr 1fr !important;gap:10px !important;width:100% !important;max-width:480px;margin:0 auto}
+  .hero-btns .btn-map,.cta-btns .cta-btn-map{grid-column:1/-1 !important}
+  @media(min-width:500px){
+    .hero-btns,.cta-btns{grid-template-columns:1fr 1fr 1fr !important}
+    .hero-btns .btn-map,.cta-btns .cta-btn-map{grid-column:auto !important}
+  }
   .btn-or,.btn-wa,.btn-map,.cta-btn-call,.cta-btn-wa,.cta-btn-map{
     display:flex !important;align-items:center !important;justify-content:center !important;
     gap:6px !important;font-family:'Barlow Condensed',sans-serif !important;
@@ -178,7 +182,6 @@ footer a{color:var(--or)}
     <a href="/dj-equipment-gurgaon/" class="int-link">DJ Equipment Gurgaon</a>
     <a href="/category/amplifiers/" class="int-link">Amplifiers</a>
     <a href="/category/microphones/" class="int-link">Microphones</a>
-    <a href="/" class="int-link">Home</a>
   </div>
 </div>
 
