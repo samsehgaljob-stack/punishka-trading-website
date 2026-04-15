@@ -62,7 +62,7 @@
     '          <li><a href="/#contact">Contact</a></li>',
     '          <li><a href="/terms.html">Terms &amp; Conditions</a></li>',
     '          <li><a href="/shipping.html">Shipping Policy</a></li>',
-    '          <li><a href="/returns.html">Return Policy</a></li>',
+    '          <li><a href="/return.html">Return Policy</a></li>',
     '          <li><a href="/privacy.html">Privacy Policy</a></li>',
     '        </ul>',
     '        <ul class="ft2-links">',
