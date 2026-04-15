@@ -158,6 +158,24 @@
         a.classList.add('active');
       }
     });
+
+    /* Blog swap in sticky bar for static pages */
+    var BLOG_SVG = '<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>';
+    var sbLinks = document.querySelectorAll('.pt-sticky .pt-sb:not(.pt-sb-call)');
+    // On blog page: show normal nav (no swap needed)
+    if (!path.startsWith('/blog/')) {
+      // Find last non-call button and swap with Blog
+      var last = sbLinks[sbLinks.length - 1];
+      if (last) {
+        last.innerHTML = BLOG_SVG + 'Blog';
+        last.setAttribute('href', '/blog/');
+      }
+    } else {
+      // On blog page: highlight Blog button
+      if (sbLinks[sbLinks.length - 1]) {
+        sbLinks[sbLinks.length - 1].classList.add('active');
+      }
+    }
   }
 
   if (document.readyState === 'loading') {
