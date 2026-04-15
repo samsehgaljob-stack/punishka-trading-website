@@ -13,21 +13,6 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="DJ Equipment Blog | Punishka Trading Delhi"/>
 <meta property="og:url" content="https://www.punishkatrading.com/blog/"/>
-<meta property="og:image" content="/images/djamplifer/pu8000-4-channel-class-h-amplifier/front.jpg"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Punishka Trading DJ Equipment Blog",
-  "url": "https://www.punishkatrading.com/blog/",
-  "description": "Expert guides, price lists and tips for DJ equipment in India",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Punishka Trading",
-    "url": "https://www.punishkatrading.com"
-  }
-}
-</script>
 <link rel="stylesheet" href="/css/shared.css"/>
 <script src="/components/shared.js"></script>
 <style>
@@ -36,30 +21,23 @@
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);padding-top:64px;padding-bottom:85px;overflow-x:hidden}
 @media(min-width:768px){body{padding-bottom:0}}
 a{text-decoration:none;color:inherit}
-/* Hero */
 .blog-hero{background:#1d1d1f;padding:48px 20px 52px;text-align:center;position:relative;overflow:hidden}
 .blog-hero::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:600px;height:300px;background:radial-gradient(circle,rgba(255,107,0,.18) 0%,transparent 70%);pointer-events:none}
 .blog-hero-lbl{display:inline-block;background:rgba(255,107,0,.15);border:1px solid rgba(255,107,0,.4);color:#ff9944;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:5px 14px;border-radius:100px;margin-bottom:14px}
 .blog-hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(32px,6vw,56px);color:#fff;text-transform:uppercase;letter-spacing:-.01em;line-height:1;margin-bottom:12px}
 .blog-hero h1 span{color:var(--or)}
 .blog-hero p{color:#9d9d9f;font-size:15px;max-width:500px;margin:0 auto}
-/* Filters */
 .blog-filters{background:#fff;border-bottom:1px solid var(--bd);padding:14px 20px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
 .blog-filters::-webkit-scrollbar{display:none}
 .bf{font-family:'DM Sans',sans-serif;font-weight:600;font-size:12.5px;padding:7px 16px;border-radius:100px;border:1.5px solid var(--bd);background:#fff;color:var(--mu);cursor:pointer;white-space:nowrap;transition:all .2s}
 .bf.on,.bf:hover{background:var(--or);color:#fff;border-color:var(--or)}
-/* Grid */
 .blog-wrap{max-width:1200px;margin:0 auto;padding:40px 20px 60px}
 .blog-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:600px){.blog-grid{grid-template-columns:1fr 1fr}}
 @media(min-width:900px){.blog-grid{grid-template-columns:1fr 1fr 1fr}}
 @media(min-width:1200px){.blog-grid{grid-template-columns:repeat(4,1fr)}}
-/* Card */
 .bc{background:#fff;border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,.07);box-shadow:0 1px 4px rgba(0,0,0,.06);transition:all .22s;display:flex;flex-direction:column}
 .bc:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.12)}
-.bc-img{width:100%;height:180px;object-fit:cover;background:#f0f0f0;display:block}
-.bc-img-ph{width:100%;height:180px;background:linear-gradient(135deg,#1d1d1f 0%,#2c2c2e 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.bc-img-ph svg{width:40px;height:40px;fill:rgba(255,107,0,.4)}
 .bc-body{padding:16px;flex:1;display:flex;flex-direction:column}
 .bc-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--or);margin-bottom:6px}
 .bc-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#1d1d1f;line-height:1.15;margin-bottom:8px}
@@ -69,76 +47,164 @@ a{text-decoration:none;color:inherit}
 .bc-lang{display:flex;gap:4px}
 .bc-lang span{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:#f0f0f5;color:#555;text-transform:uppercase}
 .bc-read{font-size:12px;font-weight:700;color:var(--or);display:flex;align-items:center;gap:4px;margin-top:12px}
-/* Empty state */
 .blog-empty{text-align:center;padding:80px 20px;color:var(--mu)}
-.blog-empty svg{width:48px;height:48px;fill:var(--bd);margin:0 auto 16px}
-.blog-empty h3{font-family:'Barlow Condensed',sans-serif;font-size:24px;text-transform:uppercase;margin-bottom:8px;color:#3a3a3c}
-/* Section heading */
 .blog-sec-hd{margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .blog-sec-hd h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;text-transform:uppercase;color:#1d1d1f}
 .blog-count{font-size:13px;color:var(--mu)}
+
+/* ═══════════════════════════════════════════════
+   ANIMATED CATEGORY THUMBNAILS
+═══════════════════════════════════════════════ */
+.bc-thumb{width:100%;height:180px;position:relative;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.th-lbl{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:rgba(255,255,255,.55)}
+
+/* ── AMPLIFIER: Pulsing Sonar Rings ── */
+.th-amp{background:radial-gradient(ellipse at center,#3d1400 0%,#1a0500 70%)}
+.th-amp-ring{position:absolute;border-radius:50%;border:1.5px solid rgba(255,107,0,.7);animation:amp-ring 2.4s ease-out infinite}
+.th-amp-ring:nth-child(1){animation-delay:0s}
+.th-amp-ring:nth-child(2){animation-delay:.6s}
+.th-amp-ring:nth-child(3){animation-delay:1.2s}
+.th-amp-ring:nth-child(4){animation-delay:1.8s}
+.th-amp-icon{position:relative;z-index:4;font-size:38px;filter:drop-shadow(0 0 12px rgba(255,107,0,.8))}
+@keyframes amp-ring{0%{width:48px;height:48px;opacity:.9;border-color:rgba(255,107,0,.8)}100%{width:260px;height:260px;opacity:0;border-color:rgba(255,107,0,0)}}
+
+/* ── MIXER: EQ Bars ── */
+.th-mix{background:linear-gradient(180deg,#07071f 0%,#0f0f35 100%)}
+.th-mix-wrap{display:flex;align-items:flex-end;gap:5px;height:80px;padding-bottom:4px}
+.eq-b{width:10px;border-radius:3px 3px 0 0;background:linear-gradient(to top,#FF6B00,#ff9d4d);animation:eq-b .0s ease-in-out infinite alternate}
+.eq-b:nth-child(1){animation:eq-b1 .55s ease-in-out infinite alternate}
+.eq-b:nth-child(2){animation:eq-b2 .70s ease-in-out infinite alternate}
+.eq-b:nth-child(3){animation:eq-b3 .45s ease-in-out infinite alternate}
+.eq-b:nth-child(4){animation:eq-b4 .80s ease-in-out infinite alternate}
+.eq-b:nth-child(5){animation:eq-b5 .50s ease-in-out infinite alternate}
+.eq-b:nth-child(6){animation:eq-b6 .65s ease-in-out infinite alternate}
+.eq-b:nth-child(7){animation:eq-b7 .40s ease-in-out infinite alternate}
+.eq-b:nth-child(8){animation:eq-b8 .75s ease-in-out infinite alternate}
+.eq-b:nth-child(9){animation:eq-b9 .60s ease-in-out infinite alternate}
+@keyframes eq-b1{0%{height:6px}100%{height:38px}}
+@keyframes eq-b2{0%{height:6px}100%{height:58px}}
+@keyframes eq-b3{0%{height:6px}100%{height:25px}}
+@keyframes eq-b4{0%{height:6px}100%{height:70px}}
+@keyframes eq-b5{0%{height:6px}100%{height:44px}}
+@keyframes eq-b6{0%{height:6px}100%{height:62px}}
+@keyframes eq-b7{0%{height:6px}100%{height:30px}}
+@keyframes eq-b8{0%{height:6px}100%{height:50px}}
+@keyframes eq-b9{0%{height:6px}100%{height:40px}}
+
+/* ── SPEAKER: Expanding Arcs ── */
+.th-spk{background:radial-gradient(ellipse at 40% 50%,#003333 0%,#001515 100%)}
+.th-spk-arc{position:absolute;border-radius:50%;border:1.5px solid rgba(0,210,180,.55);animation:spk-arc 2s ease-out infinite}
+.th-spk-arc:nth-child(1){animation-delay:0s}
+.th-spk-arc:nth-child(2){animation-delay:.65s}
+.th-spk-arc:nth-child(3){animation-delay:1.3s}
+.th-spk-icon{position:relative;z-index:4;font-size:38px;filter:drop-shadow(0 0 10px rgba(0,210,180,.7))}
+@keyframes spk-arc{0%{width:50px;height:50px;opacity:.9}100%{width:280px;height:280px;opacity:0}}
+
+/* ── CABINET: Speaker Grille Dots with Scan ── */
+.th-cab{background:linear-gradient(135deg,#1a0000 0%,#3d0000 100%);overflow:hidden}
+.th-cab-dots{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;padding:20px;width:100%}
+.th-cab-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,107,0,.25);animation:dot-pulse 2s ease-in-out infinite}
+.th-cab-scan{position:absolute;top:0;bottom:0;width:30px;background:linear-gradient(90deg,transparent,rgba(255,107,0,.18),transparent);animation:cab-scan 2.5s ease-in-out infinite}
+@keyframes dot-pulse{0%,100%{background:rgba(255,107,0,.2)}50%{background:rgba(255,107,0,.75);box-shadow:0 0 6px rgba(255,107,0,.6)}}
+@keyframes cab-scan{0%{left:-30px}100%{left:calc(100% + 30px)}}
+
+/* ── CROSSOVER: Signal Split Lines ── */
+.th-cross{background:linear-gradient(135deg,#030318 0%,#0a0a30 100%)}
+.th-cross-svg{position:absolute;width:100%;height:100%}
+.th-cross-icon{position:relative;z-index:4;font-size:38px;filter:drop-shadow(0 0 10px rgba(100,150,255,.8))}
+.cross-path{stroke-dasharray:300;stroke-dashoffset:300;animation:draw-path 2s ease-in-out infinite}
+.cross-path-lo{animation-delay:.4s}
+@keyframes draw-path{0%{stroke-dashoffset:300;opacity:0}30%{opacity:1}100%{stroke-dashoffset:0;opacity:.7}}
+
+/* ── SUBWOOFER: Deep Slow Bass Pulse ── */
+.th-sub{background:radial-gradient(ellipse at center,#1a0f00 0%,#080308 100%)}
+.th-sub-ring{position:absolute;border-radius:50%;border:2.5px solid rgba(255,107,0,.5);animation:sub-ring 3.5s ease-out infinite}
+.th-sub-ring:nth-child(1){animation-delay:0s}
+.th-sub-ring:nth-child(2){animation-delay:1.1s}
+.th-sub-ring:nth-child(3){animation-delay:2.2s}
+.th-sub-icon{position:relative;z-index:4;font-size:42px;filter:drop-shadow(0 0 16px rgba(255,107,0,.9));animation:sub-icon-pulse 3.5s ease-in-out infinite}
+@keyframes sub-ring{0%{width:60px;height:60px;opacity:1;border-width:3px}100%{width:320px;height:320px;opacity:0;border-width:.5px}}
+@keyframes sub-icon-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+
+/* ── MICROPHONE: Oscilloscope Waveform ── */
+.th-mic{background:linear-gradient(180deg,#111 0%,#1e1e1e 100%)}
+.th-mic-wave{position:absolute;width:200%;animation:wave-scroll 3s linear infinite}
+.th-mic-icon{position:relative;z-index:4;font-size:38px;filter:drop-shadow(0 0 10px rgba(255,200,0,.7))}
+@keyframes wave-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── ACCESSORIES: Rotating Rings ── */
+.th-acc{background:radial-gradient(ellipse at center,#001a14 0%,#000d0a 100%)}
+.th-acc-ring{position:absolute;border-radius:50%;animation:acc-spin linear infinite}
+.th-acc-ring:nth-child(1){width:80px;height:80px;border:2px solid rgba(0,200,140,.6);border-top-color:transparent;animation-duration:2s}
+.th-acc-ring:nth-child(2){width:110px;height:110px;border:1.5px solid rgba(0,200,140,.35);border-bottom-color:transparent;animation-duration:3s;animation-direction:reverse}
+.th-acc-ring:nth-child(3){width:145px;height:145px;border:1px solid rgba(0,200,140,.2);border-left-color:transparent;animation-duration:4s}
+.th-acc-icon{position:relative;z-index:4;font-size:34px;filter:drop-shadow(0 0 10px rgba(0,220,160,.7))}
+@keyframes acc-spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
-
 <div id="pt-header"></div>
-
-<!-- HERO -->
 <section class="blog-hero">
-  <div class="blog-hero-lbl">📝 Knowledge Hub</div>
-  <h1>DJ Equipment<br/><span>Blog & Guides</span></h1>
-  <p>Expert tips, buying guides, price lists & reviews — Hindi & English. Updated daily.</p>
+  <div class="blog-hero-lbl">&#128221; Knowledge Hub</div>
+  <h1>DJ Equipment<br/><span>Blog &amp; Guides</span></h1>
+  <p>Expert tips, buying guides, price lists &amp; reviews &mdash; Hindi &amp; English. Updated daily.</p>
 </section>
-
-<!-- CATEGORY FILTERS -->
 <div class="blog-filters">
-  <button class="bf on" onclick="filterBlog('all')">All Posts</button>
-  <button class="bf" onclick="filterBlog('amplifier')">Amplifiers</button>
-  <button class="bf" onclick="filterBlog('mixer')">Mixers</button>
-  <button class="bf" onclick="filterBlog('speaker')">Speakers</button>
-  <button class="bf" onclick="filterBlog('microphone')">Microphones</button>
-  <button class="bf" onclick="filterBlog('cabinet')">Cabinets</button>
-  <button class="bf" onclick="filterBlog('crossover')">Crossovers</button>
-  <button class="bf" onclick="filterBlog('subwoofer')">Subwoofers</button>
-  <button class="bf" onclick="filterBlog('accessories')">Accessories</button>
+  <button class="bf on" onclick="filterBlog('all',this)">All Posts</button>
+  <button class="bf" onclick="filterBlog('amplifier',this)">Amplifiers</button>
+  <button class="bf" onclick="filterBlog('mixer',this)">Mixers</button>
+  <button class="bf" onclick="filterBlog('speaker',this)">Speakers</button>
+  <button class="bf" onclick="filterBlog('microphone',this)">Microphones</button>
+  <button class="bf" onclick="filterBlog('cabinet',this)">Cabinets</button>
+  <button class="bf" onclick="filterBlog('crossover',this)">Crossovers</button>
+  <button class="bf" onclick="filterBlog('subwoofer',this)">Subwoofers</button>
+  <button class="bf" onclick="filterBlog('accessories',this)">Accessories</button>
 </div>
-
-<!-- BLOG GRID -->
 <div class="blog-wrap">
   <div class="blog-sec-hd">
     <h2>Latest Posts</h2>
     <span class="blog-count" id="blog-count">Loading...</span>
   </div>
-  <div class="blog-grid" id="blog-grid">
-    <div class="blog-empty">
-      <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-      <h3>Posts Loading...</h3>
-      <p>Daily blog posts will appear here automatically</p>
-    </div>
-  </div>
+  <div class="blog-grid" id="blog-grid"></div>
 </div>
-
 <div id="pt-footer"></div>
-
 <script>
-// Blog posts data — auto-populated by daily scheduled task
 var BLOG_POSTS = [];
 
-// Try loading posts from data file
+function catThumb(cat) {
+  switch(cat) {
+    case 'amplifier':
+      return '<div class="bc-thumb th-amp"><div class="th-amp-ring"></div><div class="th-amp-ring"></div><div class="th-amp-ring"></div><div class="th-amp-ring"></div><div class="th-amp-icon">&#128266;</div><div class="th-lbl">Amplifier</div></div>';
+    case 'mixer':
+      return '<div class="bc-thumb th-mix"><div class="th-mix-wrap"><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div><div class="eq-b"></div></div><div class="th-lbl">Mixer</div></div>';
+    case 'speaker':
+      return '<div class="bc-thumb th-spk"><div class="th-spk-arc"></div><div class="th-spk-arc"></div><div class="th-spk-arc"></div><div class="th-spk-icon">&#128226;</div><div class="th-lbl">Speaker</div></div>';
+    case 'cabinet':
+      return '<div class="bc-thumb th-cab"><div class="th-cab-scan"></div><div class="th-cab-dots">' + '<div class="th-cab-dot"></div>'.repeat(45) + '</div><div class="th-lbl">Cabinet</div></div>';
+    case 'crossover':
+      return '<div class="bc-thumb th-cross"><svg class="th-cross-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="cross-path" d="M20,90 C80,90 100,90 150,90 C200,90 220,40 280,40" stroke="#6496ff" stroke-width="2.5" fill="none"/><path class="cross-path cross-path-lo" d="M20,90 C80,90 100,90 150,90 C200,90 220,140 280,140" stroke="#FF6B00" stroke-width="2.5" fill="none"/><circle cx="20" cy="90" r="5" fill="#aac0ff" opacity="0.8"/><circle cx="280" cy="40" r="4" fill="#6496ff" opacity="0.8"/><circle cx="280" cy="140" r="4" fill="#FF6B00" opacity="0.8"/></svg><div class="th-cross-icon">&#9889;</div><div class="th-lbl">Crossover</div></div>';
+    case 'subwoofer':
+      return '<div class="bc-thumb th-sub"><div class="th-sub-ring"></div><div class="th-sub-ring"></div><div class="th-sub-ring"></div><div class="th-sub-icon">&#128264;</div><div class="th-lbl">Subwoofer</div></div>';
+    case 'microphone':
+      return '<div class="bc-thumb th-mic"><svg class="th-mic-wave" viewBox="0 0 600 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="top:0;height:100%;opacity:.6"><polyline points="0,90 20,90 30,45 40,135 50,60 60,120 70,75 80,105 90,50 100,130 110,90 130,90 150,55 160,125 170,70 180,110 190,80 200,100 210,48 220,132 230,90 250,90 270,55 280,125 290,70 300,110 310,80 320,100 330,48 340,132 350,90 370,90 380,55 390,125 400,70 410,110 420,80 430,100 440,48 450,132 460,90 480,90 490,55 500,125 510,70 520,110 530,80 540,100 550,48 560,132 570,90 600,90" stroke="#ffcc00" stroke-width="2" fill="none"/></svg><div class="th-mic-icon">&#127908;</div><div class="th-lbl">Microphone</div></div>';
+    case 'accessories':
+      return '<div class="bc-thumb th-acc"><div class="th-acc-ring"></div><div class="th-acc-ring"></div><div class="th-acc-ring"></div><div class="th-acc-icon">&#128268;</div><div class="th-lbl">Accessories</div></div>';
+    default:
+      return '<div class="bc-thumb th-amp"><div class="th-amp-ring"></div><div class="th-amp-ring"></div><div class="th-amp-ring"></div><div class="th-amp-icon">&#127926;</div><div class="th-lbl">DJ</div></div>';
+  }
+}
+
 fetch('/blog/posts.json')
   .then(r => r.ok ? r.json() : [])
-  .then(posts => {
-    BLOG_POSTS = posts;
-    renderBlog('all');
-  })
+  .then(posts => { BLOG_POSTS = posts; renderBlog('all', null); })
   .catch(() => {
-    document.getElementById('blog-grid').innerHTML = '<div class="blog-empty"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg><h3>Coming Soon</h3><p>Daily posts start appearing from tomorrow!</p></div>';
+    document.getElementById('blog-grid').innerHTML = '<p style="color:#999;text-align:center;padding:40px">Posts coming soon!</p>';
     document.getElementById('blog-count').textContent = '0 posts';
   });
 
-function filterBlog(cat) {
+function filterBlog(cat, btn) {
   document.querySelectorAll('.bf').forEach(b => b.classList.remove('on'));
-  event.target.classList.add('on');
+  if(btn) btn.classList.add('on');
   renderBlog(cat);
 }
 
@@ -146,25 +212,13 @@ function renderBlog(cat) {
   var posts = cat === 'all' ? BLOG_POSTS : BLOG_POSTS.filter(p => p.category === cat);
   document.getElementById('blog-count').textContent = posts.length + ' post' + (posts.length !== 1 ? 's' : '');
   if (!posts.length) {
-    document.getElementById('blog-grid').innerHTML = '<div class="blog-empty"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg><h3>No Posts Yet</h3><p>Check back soon!</p></div>';
+    document.getElementById('blog-grid').innerHTML = '<div style="text-align:center;padding:60px 20px;color:#999;grid-column:1/-1"><p style="font-size:32px;margin-bottom:12px">&#128221;</p><p>No posts in this category yet</p></div>';
     return;
   }
-  document.getElementById('blog-grid').innerHTML = posts.map(p => `
-    <a href="/blog/${p.slug}/" class="bc">
-      <div class="bc-img-ph">
-        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-      </div>
-      <div class="bc-body">
-        <div class="bc-cat">${p.category}</div>
-        <div class="bc-title">${p.title}</div>
-        <div class="bc-excerpt">${p.excerpt}</div>
-        <div class="bc-meta">
-          <span class="bc-date">${p.date}</span>
-          <div class="bc-lang"><span>EN</span><span>HI</span></div>
-        </div>
-        <div class="bc-read">Read More →</div>
-      </div>
-    </a>`).join('');
+  document.getElementById('blog-grid').innerHTML = posts.map(p => {
+    var cat_val = p.category || 'amplifier';
+    return '<a href="/blog/' + p.slug + '/" class="bc">' + catThumb(cat_val) + '<div class="bc-body"><div class="bc-cat">' + p.category + '</div><div class="bc-title">' + p.title + '</div><div class="bc-excerpt">' + p.excerpt + '</div><div class="bc-meta"><span class="bc-date">' + p.date + '</span><div class="bc-lang"><span>EN</span><span>HI</span></div></div><div class="bc-read">Read More &#8594;</div></div></a>';
+  }).join('');
 }
 </script>
 </body>
