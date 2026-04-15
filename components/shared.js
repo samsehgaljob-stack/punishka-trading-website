@@ -31,6 +31,7 @@
     '    <a href="/#products" class="pt-nav-a">Products</a>',
     '    <a href="/#about" class="pt-nav-a">About Us</a>',
     '    <a href="/#contact" class="pt-nav-a">Contact</a>',
+    '    <a href="/blog/" class="pt-nav-a">Blog</a>',
     '  </nav>',
     '  <a href="tel:+918447075889" class="pt-hdr-call">',
     '    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.35 1.02-.21 1.12.46 2.33.71 3.58.71.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.21 1.02L6.6 10.8z"/></svg>',
