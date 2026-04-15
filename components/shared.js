@@ -70,6 +70,7 @@
     '          <li><a href="/category/microphones/">Microphones</a></li>',
     '          <li><a href="/category/pa-systems/">PA Systems</a></li>',
     '          <li><a href="/dj-equipment-delhi/">Delhi Store</a></li>',
+    '          <li><a href="/blog/">Blog & Guides</a></li>',
     '        </ul>',
     '      </div>',
     '    </div>',
