@@ -4,7 +4,10 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Admin Panel — Punishka Trading</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"></noscript>
 <style>
 :root{
   --or:#FF6B00;--or2:#E55A00;--or3:rgba(255,107,0,0.1);
@@ -743,7 +746,7 @@ function renderProducts() {
   const tbody = document.getElementById('prod-tbody');
   tbody.innerHTML = prods.map(p=>`
     <tr>
-      <td><img class="pt-img" src="${p.img||''}" alt="${p.name}" onerror="this.src='https://placehold.co/46x46/f5f5f5/999?text=?'"/></td>
+      <td><img loading="lazy" class="pt-img" src="${p.img||''}" alt="${p.name}" onerror="this.src='https://placehold.co/46x46/f5f5f5/999?text=?'"/></td>
       <td><div class="pt-name">${p.name}</div><div class="pt-cat">${p.cat}</div></td>
       <td><div class="pt-cat" style="text-transform:capitalize">${p.cat}</div></td>
       <td>

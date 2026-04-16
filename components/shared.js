@@ -6,17 +6,21 @@
 (function () {
   'use strict';
 
-  /* ── 1. Inject shared CSS ── */
-  var cssLink = document.createElement('link');
-  cssLink.rel = 'stylesheet';
-  cssLink.href = '/css/shared.css';
-  document.head.appendChild(cssLink);
+  /* ── 1. Inject shared CSS (skip if already in page) ── */
+  if (!document.querySelector('link[href*="shared.css"]')) {
+    var cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = '/css/shared.css';
+    document.head.appendChild(cssLink);
+  }
 
   /* ── 2. Inject Google Fonts if not already loaded ── */
   if (!document.querySelector('link[href*="Barlow+Condensed"]')) {
     var fontLink = document.createElement('link');
-    fontLink.rel = 'stylesheet';
+    fontLink.rel = 'preload';
+    fontLink.as = 'style';
     fontLink.href = 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800;900&family=DM+Sans:wght@400;500;600;700&display=swap';
+    fontLink.onload = function() { this.rel = 'stylesheet'; };
     document.head.appendChild(fontLink);
   }
 
