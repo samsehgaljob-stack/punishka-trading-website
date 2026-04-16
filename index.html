@@ -3154,6 +3154,11 @@ document.body.style.overflow = '';
 document.getElementById('modal-ok').classList.remove('show');
 }
 }
+var APPS_SCRIPT_URL='PASTE_YOUR_APPS_SCRIPT_URL_HERE';
+function sendLead(data){
+if(!APPS_SCRIPT_URL||APPS_SCRIPT_URL==='PASTE_YOUR_APPS_SCRIPT_URL_HERE')return;
+fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});
+}
 function submitModal() {
 const n = document.getElementById('m-name').value.trim();
 const p = document.getElementById('m-phone').value.trim();
@@ -3164,6 +3169,7 @@ if(!n||!p){alert('Please enter your name and phone number.');return;}
 const leads = JSON.parse(localStorage.getItem('punishka_leads')||'[]');
 leads.unshift({name:n,phone:p,product:prod,budget,city,time:new Date().toISOString()});
 localStorage.setItem('punishka_leads',JSON.stringify(leads.slice(0,200)));
+sendLead({name:n,phone:p,product:prod,budget:budget,city:city,source:'modal',time:new Date().toISOString()});
 _pt('enquiry_submit',{product:prod,source:'modal'});
 document.getElementById('modal-ok').classList.add('show');
 ['m-name','m-phone'].forEach(id=>document.getElementById(id).value='');
@@ -3177,9 +3183,12 @@ function submitCF() {
 const n = document.getElementById('cf-name').value.trim();
 const p = document.getElementById('cf-phone').value.trim();
 if(!n||!p){alert('Please enter your name and phone number.');return;}
+const prod = getProdValue('cf-prod','cf-prod-other');
+const city = document.getElementById('cf-city')?document.getElementById('cf-city').value:'';
+const msg = document.getElementById('cf-msg')?document.getElementById('cf-msg').value:'';
+sendLead({name:n,phone:p,product:prod,city:city,message:msg,source:'contact-form',time:new Date().toISOString()});
 document.getElementById('cf-ok').classList.add('show');
-['cf-name','cf-phone','cf-city','cf-msg'].forEach(id=>document.getElementById(id).value='');
-getProdValue('cf-prod','cf-prod-other')='';
+['cf-name','cf-phone','cf-city','cf-msg'].forEach(id=>{var el=document.getElementById(id);if(el)el.value='';});
 setTimeout(()=>document.getElementById('cf-ok').classList.remove('show'),8000);
 }
 function animCount(el, target, suffix='') {
@@ -3294,6 +3303,7 @@ source: 'exit-intent',
 time: new Date().toISOString()
 });
 localStorage.setItem('punishka_leads', JSON.stringify(leads.slice(0, 200)));
+sendLead({name:n,phone:p,product:getProdValue('ex-prod','ex-prod-other'),source:'exit-intent',time:new Date().toISOString()});
 _pt('enquiry_submit',{product:getProdValue('ex-prod','ex-prod-other'),source:'exit_intent'});
 document.getElementById('exit-ok').classList.add('show');
 setTimeout(() => {
