@@ -142,12 +142,20 @@
   <!-- SEO: Robots -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
 
-  <!-- SEO: Author & Geo -->
-  <meta name="author" content="Punishka Trading"/>
+  <!-- SEO: Author & Geo (E-E-A-T signals) -->
+  <meta name="author" content="Punishka Trading — DJ Equipment Expert, New Delhi"/>
   <meta name="geo.region" content="IN-DL"/>
-  <meta name="geo.placename" content="New Delhi"/>
+  <meta name="geo.placename" content="New Delhi, Rohini Sector 17"/>
   <meta name="geo.position" content="28.7041;77.1025"/>
   <meta name="ICBM" content="28.7041, 77.1025"/>
+  <meta name="rating" content="general"/>
+  <meta name="revisit-after" content="7 days"/>
+  <!-- GEO: llms.txt reference for AI crawlers -->
+  <link rel="llms-txt" href="https://www.punishkatrading.com/llms.txt" type="text/plain"/>
+  <!-- SXO: Theme color for browser UI -->
+  <meta name="theme-color" content="#FF6B00"/>
+  <meta name="msapplication-navbutton-color" content="#FF6B00"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
   <!-- SEO: Open Graph (Facebook / WhatsApp preview) -->
   <meta property="og:type" content="website"/>
@@ -330,8 +338,126 @@
       },
       {
         "@type": "Speakable",
-        "cssSelector": [".hero-sub", ".stats", ".faq-answer"]
+        "cssSelector": [".hero-sub", ".hero h1", ".about-text", ".faq-acc-a"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.punishkatrading.com/#organization",
+        "name": "Punishka Trading",
+        "legalName": "Electronic Punishka Trading",
+        "url": "https://www.punishkatrading.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.punishkatrading.com/images/logo.webp",
+          "width": 200,
+          "height": 60
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-9315820632",
+            "contactType": "sales",
+            "areaServed": "IN",
+            "availableLanguage": ["Hindi", "English"],
+            "contactOption": "TollFree"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-9315820632",
+            "contactType": "customer support",
+            "areaServed": "IN",
+            "availableLanguage": ["Hindi", "English"]
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "A1-41 Ground Floor, Rohini Sector 17",
+          "addressLocality": "New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110089",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://www.instagram.com/punishkatrading",
+          "https://www.facebook.com/punishkatrading",
+          "https://www.youtube.com/@punishkatrading",
+          "https://wa.me/919315820632",
+          "https://maps.google.com/?q=Punishka+Trading+Rohini+Sector+17+Delhi"
+        ],
+        "knowsAbout": [
+          "DJ Amplifiers", "DJ Mixers", "Wireless Microphones", "PA Systems",
+          "Network Plates", "DJ Equipment", "Professional Audio Equipment",
+          "Class-H Amplifiers", "UHF Wireless Microphone Systems"
+        ],
+        "foundingDate": "2018",
+        "numberOfEmployees": {"@type": "QuantitativeValue", "value": 10},
+        "taxID": "07DVJPP6642A1ZJ",
+        "vatID": "07DVJPP6642A1ZJ",
+        "description": "Punishka Trading is India's leading DJ equipment wholesaler and retailer based in Rohini Sector 17, New Delhi. We supply DJ amplifiers, mixers, wireless microphones, PA systems, and network plates at wholesale prices with GST invoice since 2018."
       }
+    ]
+  }
+  </script>
+
+  <!-- AEO: HowTo Schema — targets "how to choose DJ equipment" featured snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Choose the Right DJ Equipment in India",
+    "description": "A step-by-step guide to selecting the best DJ amplifier, mixer, and microphone for your needs in India.",
+    "totalTime": "PT10M",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "INR", "value": "15000" },
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Determine Your Wattage Requirement",
+        "text": "Choose amplifier wattage based on venue size. For small venues (up to 200 people), 2000W is sufficient. For large events (500+ people), opt for a 4-channel Class-H amplifier like the PU8000 (4000W+). Punishka Trading can guide you based on your event type."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Select the Right DJ Mixer",
+        "text": "For live DJ events, choose an analog mixer (16+ channels). For studio or conference, a digital DSP mixer with EQ and effects is better. Punishka Trading stocks both analog (MG-P32X 32-channel) and digital (16-ch DSP) mixers at wholesale prices."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Choose UHF vs VHF Wireless Microphone",
+        "text": "For professional events, always choose UHF wireless microphones. UHF (400-900 MHz) offers better range, less interference, and more channels than VHF. Punishka Trading recommends the KMC8 Dual UHF or PU1997 Touch Screen UHF for live events."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Add Network Plates for PA Speakers",
+        "text": "If building a custom PA speaker cabinet, add a quality crossover network plate. For a 2-way system (woofer + tweeter), use a 400W+400W+1HF crossover plate from Punishka Trading. Ensures clean frequency separation and protects your speaker drivers."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Visit or Call Punishka Trading for Best Price",
+        "text": "Visit our walk-in store at A1-41, Rohini Sector 17, New Delhi or call +91 9315820632 for current wholesale pricing, live demo, and GST invoice. We serve dealers, DJs, and event companies across India."
+      }
+    ]
+  }
+  </script>
+
+  <!-- AIO: ItemList schema for product categories — helps AI generate structured summaries -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "DJ Equipment Categories at Punishka Trading",
+    "description": "Complete range of professional DJ and audio equipment available at Punishka Trading, New Delhi",
+    "numberOfItems": 6,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "DJ Amplifiers", "url": "https://www.punishkatrading.com/category/amplifiers/", "description": "Professional 2-channel and 4-channel Class-H DJ amplifiers for live events, parties, and DJ shows" },
+      { "@type": "ListItem", "position": 2, "name": "DJ Mixers", "url": "https://www.punishkatrading.com/category/mixers/", "description": "Analog and digital DJ mixers with 16 to 32 channels, DSP processing, and EQ controls" },
+      { "@type": "ListItem", "position": 3, "name": "Wireless Microphones", "url": "https://www.punishkatrading.com/category/microphones/", "description": "UHF and VHF wireless handheld and collar microphone systems for DJ events and conferences" },
+      { "@type": "ListItem", "position": 4, "name": "PA Systems", "url": "https://www.punishkatrading.com/category/pa-systems/", "description": "Passive and active PA speakers for live events, schools, and permanent sound installations" },
+      { "@type": "ListItem", "position": 5, "name": "Network Plates", "url": "https://www.punishkatrading.com/dj-equipment-delhi/", "description": "Crossover network plates for DJ speaker cabinets — 400W, 800W and custom configurations" },
+      { "@type": "ListItem", "position": 6, "name": "DJ Shop Delhi", "url": "https://www.punishkatrading.com/dj-shop-delhi/", "description": "Walk-in DJ equipment store in Rohini Sector 17, New Delhi — test before you buy" }
     ]
   }
   </script>
