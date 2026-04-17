@@ -1,0 +1,48 @@
+{
+  "name": "Punishka Trading — DJ Equipment Delhi",
+  "short_name": "Punishka Trading",
+  "description": "Best DJ equipment wholesaler in Delhi. Amplifiers, mixers, wireless microphones, PA systems. Rohini Sector 17, New Delhi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B00",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "shortcuts": [
+    {
+      "name": "DJ Amplifiers",
+      "url": "/category/amplifiers/",
+      "description": "Browse DJ amplifiers at wholesale price"
+    },
+    {
+      "name": "DJ Mixers",
+      "url": "/category/mixers/",
+      "description": "Browse DJ mixers at wholesale price"
+    },
+    {
+      "name": "Wireless Microphones",
+      "url": "/category/microphones/",
+      "description": "Browse UHF wireless microphones"
+    },
+    {
+      "name": "Contact Us",
+      "url": "/#contact",
+      "description": "Call or WhatsApp Punishka Trading"
+    }
+  ]
+}

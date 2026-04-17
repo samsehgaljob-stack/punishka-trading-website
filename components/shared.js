@@ -14,6 +14,21 @@
     document.head.appendChild(cssLink);
   }
 
+  /* ── 1b. Inject favicon & manifest (skip if already set) ── */
+  if (!document.querySelector('link[rel="icon"]')) {
+    var favLink = document.createElement('link');
+    favLink.rel = 'icon';
+    favLink.href = '/favicon.svg';
+    favLink.type = 'image/svg+xml';
+    document.head.appendChild(favLink);
+  }
+  if (!document.querySelector('link[rel="manifest"]')) {
+    var manLink = document.createElement('link');
+    manLink.rel = 'manifest';
+    manLink.href = '/manifest.json';
+    document.head.appendChild(manLink);
+  }
+
   /* ── 2. Inject Google Fonts if not already loaded ── */
   if (!document.querySelector('link[href*="Barlow+Condensed"]')) {
     var fontLink = document.createElement('link');
