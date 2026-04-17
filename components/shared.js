@@ -14,6 +14,18 @@
     document.head.appendChild(cssLink);
   }
 
+  /* ── 1a. Inject Google Analytics GA4 (skip if already loaded) ── */
+  if (!document.querySelector('script[src*="googletagmanager"]') && !window.gtag) {
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PMT5H8T6N';
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-2PMT5H8T6N', { send_page_view: true });
+  }
+
   /* ── 1b. Inject favicon & manifest (skip if already set) ── */
   if (!document.querySelector('link[rel="icon"]')) {
     var favLink = document.createElement('link');
