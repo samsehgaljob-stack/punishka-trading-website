@@ -10,32 +10,14 @@
   </url>
 
   <!-- Products Page -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
 
   <!-- About Page -->
-  <url>
-    <loc>https://www.punishkatrading.com/#about</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <!-- Contact Page -->
-  <url>
-    <loc>https://www.punishkatrading.com/#contact</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://www.punishkatrading.com/privacy.html</loc>
+    <loc>https://www.punishkatrading.com/privacy/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -43,7 +25,7 @@
 
   <!-- Terms & Conditions -->
   <url>
-    <loc>https://www.punishkatrading.com/terms.html</loc>
+    <loc>https://www.punishkatrading.com/terms/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -51,7 +33,7 @@
 
   <!-- Shipping Policy -->
   <url>
-    <loc>https://www.punishkatrading.com/shipping.html</loc>
+    <loc>https://www.punishkatrading.com/shipping/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -59,7 +41,7 @@
 
   <!-- Return Policy -->
   <url>
-    <loc>https://www.punishkatrading.com/return.html</loc>
+    <loc>https://www.punishkatrading.com/return/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -67,308 +49,80 @@
 
 
   <!-- PU8000 4-Channel Class-H Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pu8000-4-channel-class-h-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- PU8000 Black & Silver 4-Channel Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pu8000-black-silver-4-channel-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- PU7800 4-Channel Class-H Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pu7800-4-channel-class-h-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- 3U-8800 Heavy Duty 4-Channel Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=3u-8800-heavy-duty-4-channel-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- DJ-1600 Indian Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=dj-1600-indian-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- DJ-1200 Professional Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=dj-1200-professional-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- DJ-110 100W Single Zone Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=dj-110-100w-single-zone-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- SSA-120 BTE 120W Amplifier -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=ssa-120-bte-120w-amplifier</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- MG-P32X 32-Channel Analog Mixer -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=mg-p32x-32-channel-analog-mixer</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- MG24-14FX 24-Channel Analog Mixer -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=mg24-14fx-24-channel-analog-mixer</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- 16-Channel DSP Digital Mixer -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=16-channel-dsp-digital-mixer</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- TQ-22 Digital Mixer -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=tq-22-digital-mixer</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- KMC8 Dual UHF Wireless Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=kmc8-dual-uhf-wireless-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- URX9900 Dual Wireless Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=urx9900-dual-wireless-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- VM860 Dual UHF Wireless Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=vm860-dual-uhf-wireless-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- DH-744 VHF Dual Wireless Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=dh-744-vhf-dual-wireless-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- GLXD4 Dual Wireless UHF Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=glxd4-dual-wireless-uhf-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- PU1997 UHF Wireless Microphone (Touch Screen) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pu1997-uhf-wireless-microphone-touch-screen</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- U6600 4-Wireless Microphone System -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=u6600-4-wireless-microphone-system</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- SH-300G UHF Dual Wireless Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=sh-300g-uhf-dual-wireless-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Conference Microphone MEG938 -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=conference-microphone-meg938</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- SM58 Dynamic Vocal Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=sm58-dynamic-vocal-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- SM57 Dynamic Instrument Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=sm57-dynamic-instrument-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- E945 Dynamic Vocal Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=e945-dynamic-vocal-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- E835 Dynamic Vocal Microphone -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=e835-dynamic-vocal-microphone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Crossover Network Plate (400W+400W+1HF) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=crossover-network-plate-400w-400w-1hf</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Crossover Network Plate (2 Bass + 2 HF) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=crossover-network-plate-2-bass-2-hf</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- D-750 HF Network Plate (Deluxe Series) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=d-750-hf-network-plate-deluxe-series</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Heavy Network Plate (1 HF | 80W–120W) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=heavy-network-plate-1-hf-80w-120w</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Network Plate (Single 15″/18″) | Pure Copper -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=network-plate-single-15-18-pure-copper</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Pressure Mid 400W 5 Ohm -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pressure-mid-400w-5-ohm</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Pressure Mid 400W 8 Ohm -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=pressure-mid-400w-8-ohm</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Wireless XLR Microphone System -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=wireless-xlr-microphone-system</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- RX-3000 / DJ-801 10 MOSFET Amplifier Board -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=rx-3000-dj-801-10-mosfet-amplifier-board</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- MT Series Amplifier Board (MT-1201/1601/1801) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=mt-series-amplifier-board-mt-1201-1601-1801</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- CA Series 16 MOSFET Board (PAIR) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=ca-series-16-mosfet-board-pair</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- 4-Pin Speakon Connector Set (20 Pcs) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=4-pin-speakon-connector-set-20-pcs</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- XLR 3-Pin Connector Set (20M + 20F) -->
-  <url>
-    <loc>https://www.punishkatrading.com/#products?p=xlr-3-pin-connector-set-20m-20f</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Category Pages -->
   <url>
