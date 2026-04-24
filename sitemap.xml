@@ -1,306 +1,326 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
   <url>
     <loc>https://www.punishkatrading.com/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Products Page -->
-
-  <!-- About Page -->
-
-  <!-- Contact Page -->
-
-  <!-- Privacy Policy -->
   <url>
-    <loc>https://www.punishkatrading.com/privacy/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.punishkatrading.com/blog/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
-
-  <!-- Terms & Conditions -->
   <url>
-    <loc>https://www.punishkatrading.com/terms/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.punishkatrading.com/about/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
-
-  <!-- Shipping Policy -->
   <url>
-    <loc>https://www.punishkatrading.com/shipping/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.punishkatrading.com/contact/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
-
-  <!-- Return Policy -->
-  <url>
-    <loc>https://www.punishkatrading.com/return/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-
-  <!-- PU8000 4-Channel Class-H Amplifier -->
-
-  <!-- PU8000 Black & Silver 4-Channel Amplifier -->
-
-  <!-- PU7800 4-Channel Class-H Amplifier -->
-
-  <!-- 3U-8800 Heavy Duty 4-Channel Amplifier -->
-
-  <!-- DJ-1600 Indian Amplifier -->
-
-  <!-- DJ-1200 Professional Amplifier -->
-
-  <!-- DJ-110 100W Single Zone Amplifier -->
-
-  <!-- SSA-120 BTE 120W Amplifier -->
-
-  <!-- MG-P32X 32-Channel Analog Mixer -->
-
-  <!-- MG24-14FX 24-Channel Analog Mixer -->
-
-  <!-- 16-Channel DSP Digital Mixer -->
-
-  <!-- TQ-22 Digital Mixer -->
-
-  <!-- KMC8 Dual UHF Wireless Microphone -->
-
-  <!-- URX9900 Dual Wireless Microphone -->
-
-  <!-- VM860 Dual UHF Wireless Microphone -->
-
-  <!-- DH-744 VHF Dual Wireless Microphone -->
-
-  <!-- GLXD4 Dual Wireless UHF Microphone -->
-
-  <!-- PU1997 UHF Wireless Microphone (Touch Screen) -->
-
-  <!-- U6600 4-Wireless Microphone System -->
-
-  <!-- SH-300G UHF Dual Wireless Microphone -->
-
-  <!-- Conference Microphone MEG938 -->
-
-  <!-- SM58 Dynamic Vocal Microphone -->
-
-  <!-- SM57 Dynamic Instrument Microphone -->
-
-  <!-- E945 Dynamic Vocal Microphone -->
-
-  <!-- E835 Dynamic Vocal Microphone -->
-
-  <!-- Crossover Network Plate (400W+400W+1HF) -->
-
-  <!-- Crossover Network Plate (2 Bass + 2 HF) -->
-
-  <!-- D-750 HF Network Plate (Deluxe Series) -->
-
-  <!-- Heavy Network Plate (1 HF | 80W–120W) -->
-
-  <!-- Network Plate (Single 15″/18″) | Pure Copper -->
-
-  <!-- Pressure Mid 400W 5 Ohm -->
-
-  <!-- Pressure Mid 400W 8 Ohm -->
-
-  <!-- Wireless XLR Microphone System -->
-
-  <!-- RX-3000 / DJ-801 10 MOSFET Amplifier Board -->
-
-  <!-- MT Series Amplifier Board (MT-1201/1601/1801) -->
-
-  <!-- CA Series 16 MOSFET Board (PAIR) -->
-
-  <!-- 4-Pin Speakon Connector Set (20 Pcs) -->
-
-  <!-- XLR 3-Pin Connector Set (20M + 20F) -->
-
-  <!-- Category Pages -->
   <url>
     <loc>https://www.punishkatrading.com/category/amplifiers/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/category/microphones/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.punishkatrading.com/category/mixers/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/category/microphones/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.punishkatrading.com/category/pa-systems/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Product Pages -->
-  <url>
-    <loc>https://www.punishkatrading.com/product/pu8000-4-channel-class-h-amplifier/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/product/pu7800-4-channel-class-h-amplifier/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/product/3u-8800-heavy-duty-4-channel-amplifier/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/product/dj-1600-indian-amplifier/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/product/mg-p32x-32-channel-analog-mixer/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/product/kmc8-dual-uhf-wireless-microphone/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Local SEO Pages -->
-  <url>
-    <loc>https://www.punishkatrading.com/dj-equipment-delhi/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/dj-equipment-gurgaon/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/dj-equipment-noida/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- New SEO Landing Pages — April 2026 -->
-  <url>
-    <loc>https://www.punishkatrading.com/best-dj-wholesaler-delhi/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/best-dj-wholesaler-india/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/dj-shop-delhi/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/dj-shop-near-me/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-
-  <!-- Blog Index -->
-  <url>
-    <loc>https://www.punishkatrading.com/blog/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Posts -->
   <url>
-    <loc>https://www.punishkatrading.com/blog/active-vs-passive-crossover/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://www.punishkatrading.com/category/speakers/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/category/subwoofers/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/category/cabinets/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/category/crossovers/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/category/accessories/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dj-1600-indian-amplifier/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dj1200-amplifier/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/pbt-601-pa-amplifier/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/pu-60xt-pa-driver-unit/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/de800-tweeter-review/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dj-amplifier-cooling-tips/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/mixer-eq-settings-guide/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/speaker-placement-guide/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/ported-vs-sealed-cabinet/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/crossover-frequency-settings/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/subwoofer-placement-guide/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dynamic-vs-condenser-mic/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dj-rack-case-guide/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dj-equipment-buying-guide-beginners/</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.punishkatrading.com/blog/analog-vs-digital-mixer/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.punishkatrading.com/blog/bass-cabinet-kaise-banaye/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://www.punishkatrading.com/blog/speaker-watt-vs-room-size/</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.punishkatrading.com/blog/best-4-channel-dj-amplifier-india/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/best-dj-mixer-india-2025/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/best-dj-speaker-india/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/best-subwoofer-dj-india/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/best-wireless-mic-india/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/class-h-amplifier-kya-hota-hai/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://www.punishkatrading.com/blog/dj-cabinet-types-india/</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.punishkatrading.com/blog/crossover-network-plate-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/subwoofer-pressure-mid-difference/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/mic-price-list-delhi/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/xlr-cable-guide/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/sound-system-setup-wedding/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/best-dj-mixer-india-2025/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/line-array-speaker-guide/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/18-inch-subwoofer-cabinet/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/network-plate-wiring-guide/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/best-subwoofer-dj-india/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dual-wireless-mic-events/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/speakon-connector-guide/</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/pa-speaker-kaise-choose-kare/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/bass-cabinet-kaise-banaye/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/active-vs-passive-crossover/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/uhf-vs-vhf-microphone/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/amplifier-watt-kaise-choose-kare/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/mixer-price-list-delhi/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/mosfet-amplifier-guide/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/dsp-digital-mixer-kya-hai/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/best-dj-speaker-india/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/best-wireless-mic-india-2025/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/pu8000-vs-pu7800-comparison/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/32-channel-mixer-events/</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -311,221 +331,27 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.punishkatrading.com/blog/dj-cabinet-types-india/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://www.punishkatrading.com/blog/class-h-amplifier-kya-hota-hai/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.punishkatrading.com/blog/best-4-channel-dj-amplifier-india/</loc>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.punishkatrading.com/blog/dj-speaker-cabinet-types/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.punishkatrading.com/blog/dual-wireless-mic-events/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://www.punishkatrading.com/blog/best-wireless-mic-india/</loc>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/line-array-speaker-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/pa-speaker-kaise-choose-kare/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/speakon-connector-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/subwoofer-pressure-mid-difference/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/uhf-vs-vhf-microphone/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/xlr-cable-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/18-inch-subwoofer-cabinet/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/32-channel-mixer-events/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/amplifier-watt-kaise-choose-kare/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/best-wireless-mic-india-2025/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/dsp-digital-mixer-kya-hai/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/mic-price-list-delhi/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/mixer-price-list-delhi/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/mosfet-amplifier-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/network-plate-wiring-guide/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/pu8000-vs-pu7800-comparison/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/sound-system-setup-wedding/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.punishkatrading.com/blog/speaker-watt-vs-room-size/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-
-  <!-- PRODUCT PAGES -->
-  <url><loc>https://www.punishkatrading.com/product/pu7800-4-channel-class-h-amplifier/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/3u-8800-heavy-duty-4-channel-amplifier/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/dj-1600-indian-amplifier/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/kmc8-dual-uhf-wireless-microphone/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/urx9900-dual-wireless-microphone/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/vm860-dual-uhf-wireless-microphone/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/u6600-4-wireless-microphone-system/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/mg-p32x-32-channel-analog-mixer/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/mg24-14fx-24-channel-analog-mixer/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/16-channel-dsp-digital-mixer/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/crossover-network-plate-400w/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.punishkatrading.com/product/d-750-hf-network-plate-deluxe/</loc><lastmod>2026-04-18</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/crossover-frequency-settings/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/de800-tweeter-review/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/dj-amplifier-cooling-tips/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/dj-equipment-buying-guide-beginners/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/dj-rack-case-guide/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/dynamic-vs-condenser-mic/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/mixer-eq-settings-guide/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/ported-vs-sealed-cabinet/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/pu-60xt-pa-driver-unit/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/speaker-placement-guide/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.punishkatrading.com/blog/subwoofer-placement-guide/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
