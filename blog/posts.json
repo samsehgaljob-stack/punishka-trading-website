@@ -1,8 +1,118 @@
 [
   {
+    "slug": "bridged-mode-amplifier-guide",
+    "title": "Bridged Mode Amplifier — What It Is & When to Use",
+    "title_hi": "Bridged Mode Amplifier — क्या है और कब Use करें",
+    "category": "amplifier",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "gain-staging-mixer",
+    "title": "Gain Staging on DJ Mixer — Avoid Distortion Guide",
+    "title_hi": "DJ Mixer पर Gain Staging — Distortion से कैसे बचें",
+    "category": "mixer",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "outdoor-speaker-setup",
+    "title": "Outdoor Event Speaker Setup — Coverage & Power Guide India",
+    "title_hi": "Outdoor Event Speaker Setup — Coverage और Power Guide",
+    "category": "speaker",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "cabinet-wood-guide",
+    "title": "DJ Speaker Cabinet Wood — Plywood vs MDF vs Birch",
+    "title_hi": "DJ Speaker Cabinet Wood — Plywood vs MDF vs Birch",
+    "category": "cabinet",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "3-way-crossover-guide",
+    "title": "3-Way Crossover Guide — High, Mid, Low Setup for DJ",
+    "title_hi": "3-Way Crossover Guide — High, Mid, Low Setup",
+    "category": "crossover",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "ported-vs-bandpass-sub",
+    "title": "Ported vs Bandpass Subwoofer — Which Hits Harder?",
+    "title_hi": "Ported vs Bandpass Subwoofer — कौन ज़्यादा Bass देता है?",
+    "category": "subwoofer",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "mic-placement-guide",
+    "title": "Microphone Placement Guide — Live Events India",
+    "title_hi": "Microphone Placement Guide — Live Events India",
+    "category": "microphone",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "audio-snake-cable-guide",
+    "title": "Audio Snake Cable — What It Is & Why DJs Need It",
+    "title_hi": "Audio Snake Cable — क्या है और DJ को क्यों चाहिए",
+    "category": "accessories",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "d2-driver-hf-guide",
+    "title": "D2 HF Compression Driver — Setup, Review & Best Use India",
+    "title_hi": "D2 HF Compression Driver — Setup, Review और Best Use India",
+    "category": "speaker",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "18-inch-ferrite-speaker",
+    "title": "18 Inch Ferrite Magnet DJ Speaker — Why It's Best for Indian Events",
+    "title_hi": "18 इंच Ferrite Magnet DJ Speaker — Indian Events के लिए क्यों Best है",
+    "category": "speaker",
+    "date": "2026-04-30",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
     "slug": "dj-1600-indian-amplifier",
-    "title": "DJ 1600 Indian Amplifier — Full Review & Price 2026",
-    "title_hi": "DJ 1600 Indian Amplifier — पूरी Review और Price 2026",
+    "title": "DJ 1600 Indian Amplifier â Full Review & Price 2026",
+    "title_hi": "DJ 1600 Indian Amplifier â à¤ªà¥à¤°à¥ Review à¤à¤° Price 2026",
     "category": "Amplifier",
     "excerpt": "DJ 1600 is one of India's most popular DJ amplifiers, trusted by professionals across Delhi/NCR. Read our full review including specs, price, and comparison.",
     "date": "25 April 2026",
@@ -10,8 +120,8 @@
   },
   {
     "slug": "dj1200-amplifier",
-    "title": "DJ 1200 Amplifier — Specs, Price & Review India 2026",
-    "title_hi": "DJ 1200 Amplifier — Specs, Price और Review India 2026",
+    "title": "DJ 1200 Amplifier â Specs, Price & Review India 2026",
+    "title_hi": "DJ 1200 Amplifier â Specs, Price à¤à¤° Review India 2026",
     "category": "Amplifier",
     "excerpt": "The DJ 1200 amplifier is a compact powerhouse built for Indian DJ events. Discover full specs, Delhi price, and whether it's right for your sound setup.",
     "date": "25 April 2026",
@@ -19,8 +129,8 @@
   },
   {
     "slug": "pbt-601-pa-amplifier",
-    "title": "PBT 601 PA Amplifier — Review, Specs & Price India 2026",
-    "title_hi": "PBT 601 PA Amplifier — Review, Specs और Price India 2026",
+    "title": "PBT 601 PA Amplifier â Review, Specs & Price India 2026",
+    "title_hi": "PBT 601 PA Amplifier â Review, Specs à¤à¤° Price India 2026",
     "category": "Amplifier",
     "excerpt": "PBT 601 PA Amplifier is built for professional PA applications across India. Read the full review with specs, Delhi pricing, and real-world performance insights.",
     "date": "25 April 2026",
@@ -28,17 +138,17 @@
   },
   {
     "slug": "pu-60xt-pa-driver-unit",
-    "title": "PU-60XT PA Driver Unit — Complete Review & Setup Guide",
-    "title_hi": "PU-60XT PA Driver Unit — पूरी Review और Setup Guide",
+    "title": "PU-60XT PA Driver Unit â Complete Review & Setup Guide",
+    "title_hi": "PU-60XT PA Driver Unit â à¤ªà¥à¤°à¥ Review à¤à¤° Setup Guide",
     "category": "Speaker",
-    "excerpt": "The PU-60XT PA Driver Unit at ₹1200/pcs is ideal for horn speakers and 100V line PA systems. Read our complete review and setup guide for Indian DJ events.",
+    "excerpt": "The PU-60XT PA Driver Unit at â¹1200/pcs is ideal for horn speakers and 100V line PA systems. Read our complete review and setup guide for Indian DJ events.",
     "date": "24 April 2026",
     "date_iso": "2026-04-24"
   },
   {
     "slug": "de800-tweeter-review",
-    "title": "DE800 120W Neodymium Tweeter — Review & Setup Guide India",
-    "title_hi": "DE800 120W Neodymium Tweeter — Review और Setup Guide",
+    "title": "DE800 120W Neodymium Tweeter â Review & Setup Guide India",
+    "title_hi": "DE800 120W Neodymium Tweeter â Review à¤à¤° Setup Guide",
     "category": "Speaker",
     "excerpt": "The DE800 120W Neodymium HF tweeter from Punishka Trading delivers crystal-clear highs for DJ speakers. Read the full review and setup guide for Indian events.",
     "date": "24 April 2026",
@@ -46,8 +156,8 @@
   },
   {
     "slug": "dj-amplifier-cooling-tips",
-    "title": "DJ Amplifier Cooling Tips — Prevent Overheating",
-    "title_hi": "DJ Amplifier को ठंडा कैसे रखें — Overheating से बचाएं",
+    "title": "DJ Amplifier Cooling Tips â Prevent Overheating",
+    "title_hi": "DJ Amplifier à¤à¥ à¤ à¤à¤¡à¤¾ à¤à¥à¤¸à¥ à¤°à¤à¥à¤ â Overheating à¤¸à¥ à¤¬à¤à¤¾à¤à¤",
     "category": "Amplifier",
     "excerpt": "Overheating is the #1 cause of DJ amplifier failure in India. Learn expert cooling tips to protect your PU8000 and other DJ amps from heat damage.",
     "date": "24 April 2026",
@@ -55,8 +165,8 @@
   },
   {
     "slug": "mixer-eq-settings-guide",
-    "title": "DJ Mixer EQ Settings — Complete Guide for Best Sound",
-    "title_hi": "DJ Mixer EQ Settings — बेस्ट Sound के लिए पूरी गाइड",
+    "title": "DJ Mixer EQ Settings â Complete Guide for Best Sound",
+    "title_hi": "DJ Mixer EQ Settings â à¤¬à¥à¤¸à¥à¤ Sound à¤à¥ à¤²à¤¿à¤ à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "Mixer",
     "excerpt": "EQ settings on a DJ mixer can make or break your sound at any event. This complete guide covers bass, mid, treble settings for Indian events and venues.",
     "date": "24 April 2026",
@@ -64,8 +174,8 @@
   },
   {
     "slug": "speaker-placement-guide",
-    "title": "DJ Speaker Placement Guide — Get Best Sound Coverage",
-    "title_hi": "DJ Speaker Placement Guide — बेस्ट Sound Coverage कैसे पाएं",
+    "title": "DJ Speaker Placement Guide â Get Best Sound Coverage",
+    "title_hi": "DJ Speaker Placement Guide â à¤¬à¥à¤¸à¥à¤ Sound Coverage à¤à¥à¤¸à¥ à¤ªà¤¾à¤à¤",
     "category": "Speaker",
     "excerpt": "Correct DJ speaker placement makes a huge difference in sound coverage and clarity. Learn professional tips for weddings, events, and concerts in India.",
     "date": "24 April 2026",
@@ -73,8 +183,8 @@
   },
   {
     "slug": "ported-vs-sealed-cabinet",
-    "title": "Ported vs Sealed Speaker Cabinet — Which Sounds Better?",
-    "title_hi": "Ported vs Sealed Speaker Cabinet — कौन सा बेहतर है?",
+    "title": "Ported vs Sealed Speaker Cabinet â Which Sounds Better?",
+    "title_hi": "Ported vs Sealed Speaker Cabinet â à¤à¥à¤¨ à¤¸à¤¾ à¤¬à¥à¤¹à¤¤à¤° à¤¹à¥?",
     "category": "Cabinet",
     "excerpt": "Choosing between ported and sealed DJ speaker cabinets affects bass response, efficiency, and sound quality. Find out which is right for Indian DJ events.",
     "date": "24 April 2026",
@@ -82,8 +192,8 @@
   },
   {
     "slug": "crossover-frequency-settings",
-    "title": "Crossover Frequency Settings — How to Set for DJ",
-    "title_hi": "Crossover Frequency Settings — DJ के लिए कैसे Set करें",
+    "title": "Crossover Frequency Settings â How to Set for DJ",
+    "title_hi": "Crossover Frequency Settings â DJ à¤à¥ à¤²à¤¿à¤ à¤à¥à¤¸à¥ Set à¤à¤°à¥à¤",
     "category": "Crossover",
     "excerpt": "Setting the right crossover frequency is critical for clean DJ sound. Learn how to set high-pass and low-pass filters correctly for Indian DJ setups.",
     "date": "24 April 2026",
@@ -91,8 +201,8 @@
   },
   {
     "slug": "subwoofer-placement-guide",
-    "title": "Subwoofer Placement for Events — Best Position Guide India",
-    "title_hi": "Subwoofer Placement Guide — Events के लिए Best Position",
+    "title": "Subwoofer Placement for Events â Best Position Guide India",
+    "title_hi": "Subwoofer Placement Guide â Events à¤à¥ à¤²à¤¿à¤ Best Position",
     "category": "Subwoofer",
     "excerpt": "Where you place your subwoofer dramatically changes the bass at your event. Learn the best subwoofer positioning techniques for Indian weddings and DJ shows.",
     "date": "24 April 2026",
@@ -100,17 +210,17 @@
   },
   {
     "slug": "dynamic-vs-condenser-mic",
-    "title": "Dynamic vs Condenser Microphone — Which for DJ Events India?",
-    "title_hi": "Dynamic vs Condenser Microphone — DJ Events के लिए कौन सा?",
+    "title": "Dynamic vs Condenser Microphone â Which for DJ Events India?",
+    "title_hi": "Dynamic vs Condenser Microphone â DJ Events à¤à¥ à¤²à¤¿à¤ à¤à¥à¤¨ à¤¸à¤¾?",
     "category": "Microphone",
-    "excerpt": "Dynamic vs condenser microphone — which should you choose for Indian DJ events and live sound? This complete guide covers pros, cons, and best uses for each type.",
+    "excerpt": "Dynamic vs condenser microphone â which should you choose for Indian DJ events and live sound? This complete guide covers pros, cons, and best uses for each type.",
     "date": "24 April 2026",
     "date_iso": "2026-04-24"
   },
   {
     "slug": "dj-rack-case-guide",
-    "title": "DJ Rack Case — Protect Your Equipment on the Go",
-    "title_hi": "DJ Rack Case — Equipment को Safe कैसे रखें",
+    "title": "DJ Rack Case â Protect Your Equipment on the Go",
+    "title_hi": "DJ Rack Case â Equipment à¤à¥ Safe à¤à¥à¤¸à¥ à¤°à¤à¥à¤",
     "category": "Accessories",
     "excerpt": "A DJ rack case protects your amplifiers, mixers, and processors during transport. Learn how to choose the right rack case for Indian DJ setups and touring.",
     "date": "24 April 2026",
@@ -119,43 +229,43 @@
   {
     "slug": "dj-equipment-buying-guide-beginners",
     "title": "Complete DJ Equipment Buying Guide for Beginners India",
-    "title_hi": "Beginners के लिए DJ Equipment Buying Guide — India",
+    "title_hi": "Beginners à¤à¥ à¤²à¤¿à¤ DJ Equipment Buying Guide â India",
     "category": "amplifier",
-    "excerpt": "Starting your DJ journey in India? This beginner's guide covers every piece of equipment you need — amplifier, mixer, speakers, mic, cables — with Delhi wholesale pricing.",
+    "excerpt": "Starting your DJ journey in India? This beginner's guide covers every piece of equipment you need â amplifier, mixer, speakers, mic, cables â with Delhi wholesale pricing.",
     "date": "22 April 2026",
     "date_iso": "2026-04-22"
   },
   {
     "slug": "analog-vs-digital-mixer",
-    "title": "Analog vs Digital DJ Mixer — Full Comparison",
-    "title_hi": "Analog vs Digital DJ Mixer — पूरी तुलना",
+    "title": "Analog vs Digital DJ Mixer â Full Comparison",
+    "title_hi": "Analog vs Digital DJ Mixer â à¤ªà¥à¤°à¥ à¤¤à¥à¤²à¤¨à¤¾",
     "category": "mixer",
-    "excerpt": "Analog mixers are warm and simple. Digital mixers are powerful and precise. Here's which one is right for your DJ setup in India — with real prices and use cases.",
+    "excerpt": "Analog mixers are warm and simple. Digital mixers are powerful and precise. Here's which one is right for your DJ setup in India â with real prices and use cases.",
     "date": "22 April 2026",
     "date_iso": "2026-04-22"
   },
   {
     "slug": "speaker-watt-vs-room-size",
-    "title": "Speaker Watt vs Room Size — Complete Calculator",
-    "title_hi": "Speaker Watt vs Room Size — पूरी जानकारी",
+    "title": "Speaker Watt vs Room Size â Complete Calculator",
+    "title_hi": "Speaker Watt vs Room Size â à¤ªà¥à¤°à¥ à¤à¤¾à¤¨à¤à¤¾à¤°à¥",
     "category": "speaker",
-    "excerpt": "Too many watts damage speakers. Too few watts sound weak. Here's how to match speaker wattage to your room size — with a simple calculator and Delhi pricing.",
+    "excerpt": "Too many watts damage speakers. Too few watts sound weak. Here's how to match speaker wattage to your room size â with a simple calculator and Delhi pricing.",
     "date": "22 April 2026",
     "date_iso": "2026-04-22"
   },
   {
     "slug": "dj-cabinet-types-india",
-    "title": "DJ Speaker Cabinet Types — Which One Do You Need?",
-    "title_hi": "DJ Speaker Cabinet के प्रकार — कौन सा चाहिए?",
+    "title": "DJ Speaker Cabinet Types â Which One Do You Need?",
+    "title_hi": "DJ Speaker Cabinet à¤à¥ à¤ªà¥à¤°à¤à¤¾à¤° â à¤à¥à¤¨ à¤¸à¤¾ à¤à¤¾à¤¹à¤¿à¤?",
     "category": "cabinet",
-    "excerpt": "Not all speaker cabinets sound the same. From bass reflex to horn-loaded, here's a clear guide to DJ cabinet types — with Delhi wholesale prices.",
+    "excerpt": "Not all speaker cabinets sound the same. From bass reflex to horn-loaded, here's a clear guide to DJ cabinet types â with Delhi wholesale prices.",
     "date": "22 April 2026",
     "date_iso": "2026-04-22"
   },
   {
     "slug": "crossover-network-plate-guide",
-    "title": "Crossover Network Plate — What Is It & Why You Need It",
-    "title_hi": "Crossover Network Plate — क्या है और क्यों जरूरी है",
+    "title": "Crossover Network Plate â What Is It & Why You Need It",
+    "title_hi": "Crossover Network Plate â à¤à¥à¤¯à¤¾ à¤¹à¥ à¤à¤° à¤à¥à¤¯à¥à¤ à¤à¤°à¥à¤°à¥ à¤¹à¥",
     "category": "crossover",
     "excerpt": "A crossover network plate is the tiny component that can save your speakers from damage. Here's what it does, why every DJ cabinet needs one, and how to pick the right plate.",
     "date": "22 April 2026",
@@ -163,8 +273,8 @@
   },
   {
     "slug": "subwoofer-pressure-mid-difference",
-    "title": "Subwoofer vs Pressure Mid — What's the Difference?",
-    "title_hi": "Subwoofer vs Pressure Mid — क्या फर्क है?",
+    "title": "Subwoofer vs Pressure Mid â What's the Difference?",
+    "title_hi": "Subwoofer vs Pressure Mid â à¤à¥à¤¯à¤¾ à¤«à¤°à¥à¤ à¤¹à¥?",
     "category": "subwoofer",
     "excerpt": "Subwoofer and pressure mid sound similar but do different jobs. Here's the technical difference, real-world use, and Delhi pricing for both.",
     "date": "22 April 2026",
@@ -173,16 +283,16 @@
   {
     "slug": "mic-price-list-delhi",
     "title": "Wireless Microphone Price List Delhi 2025",
-    "title_hi": "Wireless Microphone Price List दिल्ली 2025",
+    "title_hi": "Wireless Microphone Price List à¤¦à¤¿à¤²à¥à¤²à¥ 2025",
     "category": "microphone",
-    "excerpt": "Updated Delhi wholesale price list for wireless microphones — UHF, VHF, dual handheld, lapel, and headset mics. Real 2025 prices from Rohini DJ market.",
+    "excerpt": "Updated Delhi wholesale price list for wireless microphones â UHF, VHF, dual handheld, lapel, and headset mics. Real 2025 prices from Rohini DJ market.",
     "date": "22 April 2026",
     "date_iso": "2026-04-22"
   },
   {
     "slug": "xlr-cable-guide",
     "title": "XLR Cable & Connector Guide for DJ Sound",
-    "title_hi": "XLR Cable और Connector — DJ Sound के लिए गाइड",
+    "title_hi": "XLR Cable à¤à¤° Connector â DJ Sound à¤à¥ à¤²à¤¿à¤ à¤à¤¾à¤à¤¡",
     "category": "accessories",
     "excerpt": "The XLR cable is the backbone of every DJ setup. Here's how to choose quality XLR cables, understand balanced signal, and avoid the cheap-cable trap.",
     "date": "22 April 2026",
@@ -191,16 +301,16 @@
   {
     "slug": "sound-system-setup-wedding",
     "title": "Complete Sound System Setup for Indian Wedding",
-    "title_hi": "भारतीय शादी के लिए Sound System Setup — पूरी गाइड",
+    "title_hi": "à¤­à¤¾à¤°à¤¤à¥à¤¯ à¤¶à¤¾à¤¦à¥ à¤à¥ à¤²à¤¿à¤ Sound System Setup â à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "amplifier",
-    "excerpt": "A complete, practical sound system blueprint for Indian weddings — from baraat to reception. Equipment list, Delhi/NCR prices, and setup tips from Punishka Trading.",
+    "excerpt": "A complete, practical sound system blueprint for Indian weddings â from baraat to reception. Equipment list, Delhi/NCR prices, and setup tips from Punishka Trading.",
     "date": "21 April 2026",
     "date_iso": "2026-04-21"
   },
   {
     "slug": "best-dj-mixer-india-2025",
-    "title": "Best DJ Mixer in India 2025 — Buyer's Guide",
-    "title_hi": "भारत में बेस्ट DJ Mixer 2025 — खरीदने की गाइड",
+    "title": "Best DJ Mixer in India 2025 â Buyer's Guide",
+    "title_hi": "à¤­à¤¾à¤°à¤¤ à¤®à¥à¤ à¤¬à¥à¤¸à¥à¤ DJ Mixer 2025 â à¤à¤°à¥à¤¦à¤¨à¥ à¤à¥ à¤à¤¾à¤à¤¡",
     "category": "mixer",
     "excerpt": "A hands-on buyer's guide to the best DJ mixers available in India in 2025. Compare KMC8, MG-P32X, digital DSP mixers, and find the right one for weddings, clubs, or studio work.",
     "date": "21 April 2026",
@@ -208,8 +318,8 @@
   },
   {
     "slug": "line-array-speaker-guide",
-    "title": "Line Array Speaker System — Complete Guide India",
-    "title_hi": "Line Array Speaker System — पूरी गाइड",
+    "title": "Line Array Speaker System â Complete Guide India",
+    "title_hi": "Line Array Speaker System â à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "speaker",
     "excerpt": "What is a line array speaker, when should you use one, and how much does it cost in India? A complete guide for DJs, event companies, and venue owners.",
     "date": "21 April 2026",
@@ -217,8 +327,8 @@
   },
   {
     "slug": "18-inch-subwoofer-cabinet",
-    "title": "18 Inch Subwoofer Cabinet — Best Options India 2025",
-    "title_hi": "18 इंच Subwoofer Cabinet — बेस्ट Options 2025",
+    "title": "18 Inch Subwoofer Cabinet â Best Options India 2025",
+    "title_hi": "18 à¤à¤à¤ Subwoofer Cabinet â à¤¬à¥à¤¸à¥à¤ Options 2025",
     "category": "cabinet",
     "excerpt": "Which 18-inch subwoofer cabinet should you buy in 2025? We compare specs, Delhi wholesale prices, and real-world performance for DJs and event companies.",
     "date": "21 April 2026",
@@ -226,17 +336,17 @@
   },
   {
     "slug": "network-plate-wiring-guide",
-    "title": "How to Connect Crossover Network Plate — Step by Step",
-    "title_hi": "Crossover Network Plate कैसे Connect करें — Step by Step",
+    "title": "How to Connect Crossover Network Plate â Step by Step",
+    "title_hi": "Crossover Network Plate à¤à¥à¤¸à¥ Connect à¤à¤°à¥à¤ â Step by Step",
     "category": "crossover",
-    "excerpt": "A practical, step-by-step wiring guide for crossover network plates used in DJ and PA speaker cabinets — with safety tips and common mistakes to avoid.",
+    "excerpt": "A practical, step-by-step wiring guide for crossover network plates used in DJ and PA speaker cabinets â with safety tips and common mistakes to avoid.",
     "date": "21 April 2026",
     "date_iso": "2026-04-21"
   },
   {
     "slug": "best-subwoofer-dj-india",
     "title": "Best Subwoofer for DJ in India 2025",
-    "title_hi": "DJ के लिए भारत में बेस्ट Subwoofer 2025",
+    "title_hi": "DJ à¤à¥ à¤²à¤¿à¤ à¤­à¤¾à¤°à¤¤ à¤®à¥à¤ à¤¬à¥à¤¸à¥à¤ Subwoofer 2025",
     "category": "subwoofer",
     "excerpt": "Looking for the best subwoofer for DJ use in India? We compare sizes, powers, cabinet types, and current Delhi wholesale prices for 2025.",
     "date": "21 April 2026",
@@ -244,26 +354,26 @@
   },
   {
     "slug": "dual-wireless-mic-events",
-    "title": "Dual Wireless Mic for Events — Complete Guide",
-    "title_hi": "Events के लिए Dual Wireless Mic — पूरी गाइड",
+    "title": "Dual Wireless Mic for Events â Complete Guide",
+    "title_hi": "Events à¤à¥ à¤²à¤¿à¤ Dual Wireless Mic â à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "microphone",
-    "excerpt": "A complete guide to dual wireless microphones for Indian events — UHF vs VHF, frequency planning, battery life, and Delhi wholesale prices.",
+    "excerpt": "A complete guide to dual wireless microphones for Indian events â UHF vs VHF, frequency planning, battery life, and Delhi wholesale prices.",
     "date": "21 April 2026",
     "date_iso": "2026-04-21"
   },
   {
     "slug": "speakon-connector-guide",
-    "title": "Speakon Connector — Complete Guide for DJ",
-    "title_hi": "Speakon Connector — DJ के लिए पूरी गाइड",
+    "title": "Speakon Connector â Complete Guide for DJ",
+    "title_hi": "Speakon Connector â DJ à¤à¥ à¤²à¤¿à¤ à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "accessories",
-    "excerpt": "Everything a DJ needs to know about Speakon connectors — NL2 vs NL4, wiring, crimping, and Delhi wholesale prices in 2025.",
+    "excerpt": "Everything a DJ needs to know about Speakon connectors â NL2 vs NL4, wiring, crimping, and Delhi wholesale prices in 2025.",
     "date": "21 April 2026",
     "date_iso": "2026-04-21"
   },
   {
     "slug": "pa-speaker-kaise-choose-kare",
-    "title": "How to Choose PA Speakers for DJ Setup — Complete India Guide",
-    "title_hi": "DJ Setup के लिए PA Speakers कैसे चुनें — पूरी गाइड",
+    "title": "How to Choose PA Speakers for DJ Setup â Complete India Guide",
+    "title_hi": "DJ Setup à¤à¥ à¤²à¤¿à¤ PA Speakers à¤à¥à¤¸à¥ à¤à¥à¤¨à¥à¤ â à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "speaker",
     "excerpt": "Choosing PA speakers for a DJ setup means balancing wattage, driver size, dispersion, and room acoustics. Our Delhi-based guide covers everything from 12-inch top-cabinets to full line arrays.",
     "date": "20 April 2026",
@@ -271,8 +381,8 @@
   },
   {
     "slug": "bass-cabinet-kaise-banaye",
-    "title": "Bass Cabinet for DJ — Complete Buying Guide India 2025",
-    "title_hi": "DJ के लिए Bass Cabinet — खरीदने की पूरी गाइड",
+    "title": "Bass Cabinet for DJ â Complete Buying Guide India 2025",
+    "title_hi": "DJ à¤à¥ à¤²à¤¿à¤ Bass Cabinet â à¤à¤°à¥à¤¦à¤¨à¥ à¤à¥ à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "cabinet",
     "excerpt": "Bass cabinets deliver the low-end punch that makes Indian weddings and baraat processions unforgettable. Here's how to pick the right size, tuning, and build.",
     "date": "20 April 2026",
@@ -280,17 +390,17 @@
   },
   {
     "slug": "active-vs-passive-crossover",
-    "title": "Active vs Passive Crossover for DJ — Complete Guide India",
-    "title_hi": "Active vs Passive Crossover — पूरी जानकारी",
+    "title": "Active vs Passive Crossover for DJ â Complete Guide India",
+    "title_hi": "Active vs Passive Crossover â à¤ªà¥à¤°à¥ à¤à¤¾à¤¨à¤à¤¾à¤°à¥",
     "category": "crossover",
-    "excerpt": "The crossover decision shapes your entire DJ setup — passive is cheaper but limits tuning, active gives you pro-level control. Here's how to choose for Indian events.",
+    "excerpt": "The crossover decision shapes your entire DJ setup â passive is cheaper but limits tuning, active gives you pro-level control. Here's how to choose for Indian events.",
     "date": "20 April 2026",
     "date_iso": "2026-04-20"
   },
   {
     "slug": "uhf-vs-vhf-microphone",
-    "title": "UHF vs VHF Microphone — Which is Better for DJ?",
-    "title_hi": "UHF vs VHF Microphone — DJ के लिए कौनसा बेहतर?",
+    "title": "UHF vs VHF Microphone â Which is Better for DJ?",
+    "title_hi": "UHF vs VHF Microphone â DJ à¤à¥ à¤²à¤¿à¤ à¤à¥à¤¨à¤¸à¤¾ à¤¬à¥à¤¹à¤¤à¤°?",
     "category": "microphone",
     "excerpt": "UHF and VHF wireless mics work the same way but behave very differently in crowded Indian wedding environments. This guide explains why UHF wins for professional use.",
     "date": "20 April 2026",
@@ -299,7 +409,7 @@
   {
     "slug": "amplifier-watt-kaise-choose-kare",
     "title": "How to Choose Amplifier Wattage for DJ",
-    "title_hi": "DJ के लिए Amplifier Watt कैसे चुनें",
+    "title_hi": "DJ à¤à¥ à¤²à¤¿à¤ Amplifier Watt à¤à¥à¤¸à¥ à¤à¥à¤¨à¥à¤",
     "category": "amplifier",
     "excerpt": "How to choose the right amplifier wattage for your DJ setup in India. Understand RMS vs peak power, speaker matching, headroom, and what wattage suits your event size.",
     "date": "20 April 2026",
@@ -308,16 +418,16 @@
   {
     "slug": "mixer-price-list-delhi",
     "title": "DJ Mixer Price List Delhi Wholesale 2025",
-    "title_hi": "DJ Mixer Price List दिल्ली Wholesale 2025",
+    "title_hi": "DJ Mixer Price List à¤¦à¤¿à¤²à¥à¤²à¥ Wholesale 2025",
     "category": "mixer",
-    "excerpt": "Complete DJ mixer price list for Delhi wholesale market 2025. Analog and digital DSP mixers from 4-channel to 32-channel — including KMC8 and MG-P32X at Rohini prices.",
+    "excerpt": "Complete DJ mixer price list for Delhi wholesale market 2025. Analog and digital DSP mixers from 4-channel to 32-channel â including KMC8 and MG-P32X at Rohini prices.",
     "date": "20 April 2026",
     "date_iso": "2026-04-20"
   },
   {
     "slug": "mosfet-amplifier-guide",
-    "title": "MOSFET Amplifier for DJ — Complete Buying Guide",
-    "title_hi": "MOSFET Amplifier DJ के लिए — पूरी गाइड",
+    "title": "MOSFET Amplifier for DJ â Complete Buying Guide",
+    "title_hi": "MOSFET Amplifier DJ à¤à¥ à¤²à¤¿à¤ â à¤ªà¥à¤°à¥ à¤à¤¾à¤à¤¡",
     "category": "amplifier",
     "excerpt": "What is a MOSFET amplifier and why do professional DJs prefer them? Complete guide covering MOSFET vs BJT, sound quality, reliability, and Delhi prices for 2025.",
     "date": "19 April 2026",
@@ -326,7 +436,7 @@
   {
     "slug": "dsp-digital-mixer-kya-hai",
     "title": "What is DSP Digital Mixer? All You Need to Know",
-    "title_hi": "DSP Digital Mixer क्या है? पूरी जानकारी",
+    "title_hi": "DSP Digital Mixer à¤à¥à¤¯à¤¾ à¤¹à¥? à¤ªà¥à¤°à¥ à¤à¤¾à¤¨à¤à¤¾à¤°à¥",
     "category": "mixer",
     "excerpt": "What is a DSP digital mixer and why is it better for events? Complete guide covering DSP processing, built-in effects, scene memory, and best DSP mixer options in India.",
     "date": "19 April 2026",
@@ -335,7 +445,7 @@
   {
     "slug": "best-dj-speaker-india",
     "title": "Best DJ Speakers in India for Events & Concerts",
-    "title_hi": "Events और Concerts के लिए भारत के बेस्ट DJ Speakers",
+    "title_hi": "Events à¤à¤° Concerts à¤à¥ à¤²à¤¿à¤ à¤­à¤¾à¤°à¤¤ à¤à¥ à¤¬à¥à¤¸à¥à¤ DJ Speakers",
     "category": "speaker",
     "excerpt": "Best DJ speakers in India for events and concerts in 2025. Top passive PA speakers for weddings, corporate events, and outdoor concerts with Delhi wholesale prices.",
     "date": "19 April 2026",
@@ -344,25 +454,25 @@
   {
     "slug": "best-wireless-mic-india-2025",
     "title": "Best Wireless Microphone in India 2025",
-    "title_hi": "भारत में बेस्ट Wireless Microphone 2025",
+    "title_hi": "à¤­à¤¾à¤°à¤¤ à¤®à¥à¤ à¤¬à¥à¤¸à¥à¤ Wireless Microphone 2025",
     "category": "microphone",
-    "excerpt": "Best wireless microphones in India for 2025. Top UHF systems for DJ events, weddings, anchors, and karaoke — reviewed with Delhi wholesale prices and buying recommendations.",
+    "excerpt": "Best wireless microphones in India for 2025. Top UHF systems for DJ events, weddings, anchors, and karaoke â reviewed with Delhi wholesale prices and buying recommendations.",
     "date": "19 April 2026",
     "date_iso": "2026-04-19"
   },
   {
     "slug": "pu8000-vs-pu7800-comparison",
-    "title": "PU8000 vs PU7800 Amplifier — Which to Buy?",
-    "title_hi": "PU8000 vs PU7800 — कौन सा खरीदें?",
+    "title": "PU8000 vs PU7800 Amplifier â Which to Buy?",
+    "title_hi": "PU8000 vs PU7800 â à¤à¥à¤¨ à¤¸à¤¾ à¤à¤°à¥à¤¦à¥à¤?",
     "category": "amplifier",
-    "excerpt": "PU8000 vs PU7800 amplifier — detailed comparison of power output, efficiency, protection features, and price to help you choose the right amp for your DJ setup.",
+    "excerpt": "PU8000 vs PU7800 amplifier â detailed comparison of power output, efficiency, protection features, and price to help you choose the right amp for your DJ setup.",
     "date": "18 April 2026",
     "date_iso": "2026-04-18"
   },
   {
     "slug": "32-channel-mixer-events",
-    "title": "32-Channel Mixer for Big Events — Why You Need It",
-    "title_hi": "बड़े Events के लिए 32-Channel Mixer — क्यों जरूरी है",
+    "title": "32-Channel Mixer for Big Events â Why You Need It",
+    "title_hi": "à¤¬à¤¡à¤¼à¥ Events à¤à¥ à¤²à¤¿à¤ 32-Channel Mixer â à¤à¥à¤¯à¥à¤ à¤à¤°à¥à¤°à¥ à¤¹à¥",
     "category": "mixer",
     "excerpt": "Why do large events need a 32-channel mixer? Learn how a 32-channel DSP mixer handles big weddings, concerts, and multi-performer events in India with total audio control.",
     "date": "18 April 2026",
@@ -371,7 +481,7 @@
   {
     "slug": "dj-amplifier-price-delhi",
     "title": "DJ Amplifier Price List Delhi 2025",
-    "title_hi": "DJ Amplifier Price List दिल्ली 2025",
+    "title_hi": "DJ Amplifier Price List à¤¦à¤¿à¤²à¥à¤²à¥ 2025",
     "category": "amplifier",
     "excerpt": "Complete DJ amplifier price list for Delhi 2025. Wholesale rates for 1000W to 8000W amplifiers including PU7800, PU8000, and budget options from Rohini market.",
     "date": "17 April 2026",
@@ -380,7 +490,7 @@
   {
     "slug": "class-h-amplifier-kya-hota-hai",
     "title": "What is Class-H Amplifier? Complete Guide",
-    "title_hi": "Class-H Amplifier क्या होता है? पूरी जानकारी",
+    "title_hi": "Class-H Amplifier à¤à¥à¤¯à¤¾ à¤¹à¥à¤¤à¤¾ à¤¹à¥? à¤ªà¥à¤°à¥ à¤à¤¾à¤¨à¤à¤¾à¤°à¥",
     "category": "amplifier",
     "excerpt": "Class-H amplifiers are the most efficient choice for professional DJ setups. Learn how they work, why they run cooler, and which models are best for events in India.",
     "date": "16 April 2026",
@@ -389,7 +499,7 @@
   {
     "slug": "best-4-channel-dj-amplifier-india",
     "title": "Best 4-Channel DJ Amplifier in India 2025",
-    "title_hi": "भारत में बेस्ट 4-चैनल DJ Amplifier 2025",
+    "title_hi": "à¤­à¤¾à¤°à¤¤ à¤®à¥à¤ à¤¬à¥à¤¸à¥à¤ 4-à¤à¥à¤¨à¤² DJ Amplifier 2025",
     "category": "amplifier",
     "excerpt": "Looking for the best 4-channel DJ amplifier in India? This guide covers top models, wattage requirements, and Delhi wholesale prices to help you choose the right amp for events.",
     "date": "15 April 2026",
@@ -397,17 +507,17 @@
   },
   {
     "slug": "dj-speaker-cabinet-types",
-    "title": "DJ Speaker Cabinet Types — Which One Do You Need?",
-    "title_hi": "DJ Speaker Cabinet के प्रकार — कौन सा चाहिए?",
+    "title": "DJ Speaker Cabinet Types â Which One Do You Need?",
+    "title_hi": "DJ Speaker Cabinet à¤à¥ à¤ªà¥à¤°à¤à¤¾à¤° â à¤à¥à¤¨ à¤¸à¤¾ à¤à¤¾à¤¹à¤¿à¤?",
     "category": "cabinet",
-    "excerpt": "Not sure which DJ speaker cabinet to buy? This guide explains all cabinet types — bass reflex, sealed, vented — and helps you choose the right one for your sound system.",
+    "excerpt": "Not sure which DJ speaker cabinet to buy? This guide explains all cabinet types â bass reflex, sealed, vented â and helps you choose the right one for your sound system.",
     "date": "15 April 2026",
     "date_iso": "2026-04-15"
   },
   {
     "slug": "best-wireless-mic-india",
     "title": "Best Wireless Microphone in India 2025",
-    "title_hi": "भारत में बेस्ट Wireless Microphone 2025",
+    "title_hi": "à¤­à¤¾à¤°à¤¤ à¤®à¥à¤ à¤¬à¥à¤¸à¥à¤ Wireless Microphone 2025",
     "category": "microphone",
     "excerpt": "Looking for the best wireless microphone in India for events and weddings? This guide covers UHF vs VHF, dual wireless systems, and Delhi prices from Punishka Trading.",
     "date": "15 April 2026",
