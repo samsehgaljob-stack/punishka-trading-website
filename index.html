@@ -3782,52 +3782,47 @@ function pcGalDots(id, active) {
 
 <script>
 (function(){
-  var track  = document.querySelector('.hero-track');
+  var track = document.querySelector('.hero-track');
   if(!track) return;
-  var slides = track.querySelectorAll('.hero-slide');
-  var total  = slides.length;
-  var cur    = 0;
-  var startX = 0;
-  var isDrag = false;
+  var cur = 0, startX = 0, isDrag = false, wasDrag = false;
+
+  function getTotal(){ return track.querySelectorAll('.hero-slide').length; }
 
   function goTo(n){
-    cur = (n + total) % total;
+    var t = getTotal(); if(!t) return;
+    cur = (n + t) % t;
     track.style.transform = 'translateX(-' + (cur * 100) + '%)';
   }
 
-  // Auto scroll every 3s
   var timer = setInterval(function(){ goTo(cur + 1); }, 3000);
 
-  function openCurrentSlide() {
-    var slideEls = track.querySelectorAll('.hero-slide');
-    var s = slideEls[cur];
-    if (s && s.dataset.pid) { openPD(s.dataset.pid); }
-  }
-
-  // Touch swipe support
-  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; isDrag=true; }, {passive:true});
+  // Touch swipe
+  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; isDrag=true; wasDrag=false; }, {passive:true});
   track.addEventListener('touchend', function(e){
     if(!isDrag) return;
     var diff = startX - e.changedTouches[0].clientX;
-    if(Math.abs(diff) > 10){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
-    else { openCurrentSlide(); }
+    if(Math.abs(diff) > 15){ wasDrag=true; goTo(cur+(diff>0?1:-1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
     isDrag = false;
   }, {passive:true});
 
-  // Mouse drag support
-  track.addEventListener('mousedown', function(e){ startX = e.clientX; isDrag=true; });
+  // Mouse drag
+  track.addEventListener('mousedown', function(e){ startX=e.clientX; isDrag=true; wasDrag=false; });
   track.addEventListener('mouseup', function(e){
     if(!isDrag) return;
     var diff = startX - e.clientX;
-    if(Math.abs(diff) > 10){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
-    else { openCurrentSlide(); }
+    if(Math.abs(diff) > 15){ wasDrag=true; goTo(cur+(diff>0?1:-1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
     isDrag = false;
   });
-  track.addEventListener('mouseleave', function(){ isDrag=false; });
-
-  // Pause on hover
+  track.addEventListener('mouseleave', function(){ isDrag=false; timer=setInterval(function(){goTo(cur+1);},3000); });
   track.addEventListener('mouseenter', function(){ clearInterval(timer); });
-  track.addEventListener('mouseleave', function(){ timer=setInterval(function(){goTo(cur+1);},3000); });
+
+  // Click — fires after both touch tap and mouse click
+  track.addEventListener('click', function(){
+    if(wasDrag){ wasDrag=false; return; }
+    var slides = track.querySelectorAll('.hero-slide');
+    var s = slides[cur];
+    if(s && s.dataset.pid && typeof openPD==='function'){ openPD(s.dataset.pid); }
+  });
 })();
 </script>
 
