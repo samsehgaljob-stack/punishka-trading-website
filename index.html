@@ -1650,7 +1650,10 @@ body { padding-top: 64px; }
   letter-spacing: .15em;
   padding: 6px 14px;
 }
-.hero-img-wrap { border-radius: 18px; border: 1.5px solid rgba(255,107,0,.22); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.hero-img-wrap { border-radius: 18px; border: 1.5px solid rgba(255,107,0,.22); box-shadow: 0 20px 60px rgba(0,0,0,.25); min-height: 320px; }
+.hero-carousel { min-height: 320px; }
+.hero-track { min-height: 320px; }
+@media(min-width:768px) { .hero-img-wrap, .hero-carousel, .hero-track { min-height: 460px; } }
 
 /* ─── TRUST ROW ─── */
 .trust-row { background: var(--wh); padding: 20px 18px; gap: 14px; border-bottom: 1px solid var(--bd); }
