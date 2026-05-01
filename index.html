@@ -2382,7 +2382,7 @@ body.splash-active { overflow: hidden; }
 <script>
 (function() {
   var SPLASH_KEY = 'pt_splash_shown';
-  var SPLASH_TTL = 24 * 60 * 60 * 1000; // 24 hours
+  var SPLASH_TTL = 1 * 60 * 60 * 1000; // 1 hour
   var lastShown = localStorage.getItem(SPLASH_KEY);
   var now = Date.now();
   var splashEl = document.getElementById('splash-screen');
