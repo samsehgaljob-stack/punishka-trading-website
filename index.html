@@ -63,7 +63,7 @@
 /* headings */
 .ft2-heading{color:#111!important;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px;padding-bottom:12px;border-bottom:2.5px solid var(--or);display:inline-block;opacity:1!important;visibility:visible!important}
 /* links */
-.ft2-links-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.ft2-links-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;align-items:start}
 .ft2-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .ft2-links li button,.ft2-links li a{background:none;border:none;color:#333;font-size:13px;cursor:pointer;padding:2px 0;text-align:left;font-family:'DM Sans',sans-serif;text-decoration:none;transition:color .18s,transform .18s;display:flex;align-items:center;gap:7px;white-space:nowrap}
 .ft2-links li button::before,.ft2-links li a::before{content:'›';color:var(--or);font-size:17px;font-weight:700;line-height:1;flex-shrink:0;transition:transform .18s}
@@ -96,6 +96,8 @@
   .ft2-col:last-child{border-bottom:none}
   .ft2-desc{max-width:100%}
   .ft2-heading{display:block}
+  .ft2-links-wrap{grid-template-columns:1fr 1fr;gap:0 14px}
+  .ft2-links li button,.ft2-links li a{font-size:12px;white-space:normal;word-break:break-word}
   .ft2-bottom{padding:16px 20px;flex-direction:column;align-items:center;text-align:center;gap:12px}
   .ft2-copy{text-align:center}
   .ft2-social{justify-content:center}
@@ -2865,22 +2867,22 @@ body.splash-active { overflow: hidden; }
           <li><button onclick="goPage('products')">Products</button></li>
           <li><button onclick="goPage('about')">About Us</button></li>
           <li><button onclick="goPage('contact')">Contact</button></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="shipping.html">Shipping Policy</a></li>
-          <li><a href="return.html">Return Policy</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-        <ul class="ft2-links">
           <li><a href="/category/amplifiers/">DJ Amplifiers</a></li>
           <li><a href="/category/mixers/">DJ Mixers</a></li>
           <li><a href="/category/microphones/">Microphones</a></li>
           <li><a href="/category/pa-systems/">PA Systems</a></li>
           <li><a href="/dj-equipment-delhi/">Delhi Store</a></li>
+        </ul>
+        <ul class="ft2-links">
           <li><a href="/blog/">Blog &amp; Guides</a></li>
           <li><a href="/best-dj-wholesaler-delhi/">DJ Wholesaler Delhi</a></li>
           <li><a href="/best-dj-wholesaler-india/">DJ Wholesaler India</a></li>
           <li><a href="/dj-shop-delhi/">DJ Shop Delhi</a></li>
           <li><a href="/dj-shop-near-me/">DJ Shop Near Me</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
