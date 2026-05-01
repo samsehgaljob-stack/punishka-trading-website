@@ -2380,14 +2380,29 @@ body.splash-active { overflow: hidden; }
 </style>
 
 <script>
-document.body.classList.add('splash-active');
-setTimeout(function() {
-  document.body.classList.remove('splash-active');
+(function() {
+  var SPLASH_KEY = 'pt_splash_shown';
+  var SPLASH_TTL = 24 * 60 * 60 * 1000; // 24 hours
+  var lastShown = localStorage.getItem(SPLASH_KEY);
+  var now = Date.now();
+  var splashEl = document.getElementById('splash-screen');
+
+  if (lastShown && (now - parseInt(lastShown, 10)) < SPLASH_TTL) {
+    // Already shown within 24h — hide immediately
+    if (splashEl) splashEl.style.display = 'none';
+    return;
+  }
+
+  // First visit or >24h — show splash
+  localStorage.setItem(SPLASH_KEY, now.toString());
+  document.body.classList.add('splash-active');
   setTimeout(function() {
-    var s = document.getElementById('splash-screen');
-    if (s) s.remove();
-  }, 700);
-}, 2200);
+    document.body.classList.remove('splash-active');
+    setTimeout(function() {
+      if (splashEl) splashEl.remove();
+    }, 700);
+  }, 2200);
+})();
 </script>
 
 <!-- HEADER -->
