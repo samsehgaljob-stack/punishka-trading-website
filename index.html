@@ -3332,7 +3332,7 @@ const prods = D.products || DEFAULTS.products;
 const heroItems = prods.filter(p => p.featured).slice(0, 8);
 track.innerHTML = heroItems.map((p, i) =>
 `<div class="hero-slide${i===0?' active':''}" data-pid="${p.id}" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;background:#fff;overflow:hidden;">
-<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;transform:scale(1.5);transform-origin:center;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
+<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="max-width:85%;max-height:85%;width:auto;height:auto;object-fit:contain;display:block;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
 <div style="position:absolute;bottom:10px;right:10px;background:rgba(255,107,0,0.9);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:5px 11px;border-radius:6px;pointer-events:none;">View Product ›</div>
 </div>`
 ).join('');
