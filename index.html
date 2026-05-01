@@ -3322,10 +3322,10 @@ if (!track) return;
 const prods = D.products || DEFAULTS.products;
 const heroItems = prods.filter(p => p.featured).slice(0, 8);
 track.innerHTML = heroItems.map((p, i) =>
-`<a class="hero-slide${i===0?' active':''}" href="javascript:void(0)" onclick="openPD('${p.id}')" style="display:block;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;">
-<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;transform:scale(1.35);transform-origin:center;display:block;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
-<div style="position:absolute;bottom:10px;right:10px;background:rgba(255,107,0,0.85);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:4px 10px;border-radius:6px;pointer-events:none;">View Product ›</div>
-</a>`
+`<div class="hero-slide${i===0?' active':''}" data-pid="${p.id}" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;background:#fff;overflow:hidden;">
+<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="max-width:90%;max-height:90%;width:auto;height:auto;object-fit:contain;display:block;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
+<div style="position:absolute;bottom:10px;right:10px;background:rgba(255,107,0,0.9);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:5px 11px;border-radius:6px;pointer-events:none;">View Product ›</div>
+</div>`
 ).join('');
 }
 function getProductFaq(p) {
@@ -3789,12 +3789,19 @@ function pcGalDots(id, active) {
   // Auto scroll every 3s
   var timer = setInterval(function(){ goTo(cur + 1); }, 3000);
 
+  function openCurrentSlide() {
+    var slideEls = track.querySelectorAll('.hero-slide');
+    var s = slideEls[cur];
+    if (s && s.dataset.pid) { openPD(s.dataset.pid); }
+  }
+
   // Touch swipe support
   track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; isDrag=true; }, {passive:true});
   track.addEventListener('touchend', function(e){
     if(!isDrag) return;
     var diff = startX - e.changedTouches[0].clientX;
-    if(Math.abs(diff) > 40){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    if(Math.abs(diff) > 10){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    else { openCurrentSlide(); }
     isDrag = false;
   }, {passive:true});
 
@@ -3803,7 +3810,8 @@ function pcGalDots(id, active) {
   track.addEventListener('mouseup', function(e){
     if(!isDrag) return;
     var diff = startX - e.clientX;
-    if(Math.abs(diff) > 40){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    if(Math.abs(diff) > 10){ goTo(cur + (diff > 0 ? 1 : -1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    else { openCurrentSlide(); }
     isDrag = false;
   });
   track.addEventListener('mouseleave', function(){ isDrag=false; });
