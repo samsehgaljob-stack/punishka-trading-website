@@ -1,5 +1,125 @@
 [
   {
+    "slug": "amplifier-distortion-causes",
+    "title": "Amplifier Distortion — Causes & How to Fix It",
+    "title_hi": "Amplifier Distortion — कारण और ठीक करने का तरीका",
+    "category": "amplifier",
+    "date": "2026-05-01",
+    "excerpt": "What Is Amplifier Distortion? Amplifier distortion is one of the most common problems faced by DJs and sound engineers across India. It occurs when your...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "mixer-fx-effects-guide",
+    "title": "DJ Mixer FX Effects — How to Use Them Live",
+    "title_hi": "DJ Mixer FX Effects — Live Events में कैसे Use करें",
+    "category": "mixer",
+    "date": "2026-05-01",
+    "excerpt": "What Are DJ Mixer FX Effects? Modern DJ mixers come equipped with a range of built-in digital FX (effects) that can transform a standard audio performance into...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "horn-tweeter-guide",
+    "title": "Horn Tweeter in PA Speaker — How It Works & Why It Matters",
+    "title_hi": "PA Speaker में Horn Tweeter — कैसे काम करता है और क्यों जरूरी है",
+    "category": "speaker",
+    "date": "2026-05-01",
+    "excerpt": "What Is a Horn Tweeter? A horn tweeter is a high-frequency driver that uses a horn-shaped acoustic waveguide to amplify and direct sound waves. Unlike a...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "cabinet-driver-replacement",
+    "title": "How to Replace Driver in DJ Speaker Cabinet",
+    "title_hi": "DJ Speaker Cabinet में Driver कैसे Replace करें",
+    "category": "cabinet",
+    "date": "2026-05-01",
+    "excerpt": "When Should You Replace the Driver in Your Speaker Cabinet? Speaker drivers are the heart of any DJ PA cabinet, and like all components, they eventually wear...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "crossover-troubleshooting",
+    "title": "Crossover Network Problems — Troubleshooting Guide",
+    "title_hi": "Crossover Network Problems — Troubleshooting Guide",
+    "category": "crossover",
+    "date": "2026-05-01",
+    "excerpt": "Common Crossover Network Problems and How to Fix Them The crossover network is the component that directs the right frequencies to the right speakers — highs...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "subwoofer-frequency-settings",
+    "title": "Subwoofer Frequency & Phase Settings — Complete Guide",
+    "title_hi": "Subwoofer Frequency और Phase Settings — पूरी Guide",
+    "category": "subwoofer",
+    "date": "2026-05-01",
+    "excerpt": "Why Subwoofer Frequency and Phase Settings Matter Getting your subwoofer frequency and phase settings correct is the difference between a bass-heavy DJ system...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "wireless-mic-frequency-setup",
+    "title": "Wireless Mic Frequency Setup — Avoid Interference",
+    "title_hi": "Wireless Mic Frequency Setup — Interference से कैसे बचें",
+    "category": "microphone",
+    "date": "2026-05-01",
+    "excerpt": "Why Wireless Mic Frequency Setup Matters A wireless microphone system is only as good as its frequency setup. Poor frequency configuration leads to...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "power-conditioner-dj",
+    "title": "Power Conditioner for DJ — Protect Equipment from Voltage Spikes",
+    "title_hi": "DJ के लिए Power Conditioner — Voltage Spikes से Equipment बचाएं",
+    "category": "accessories",
+    "date": "2026-05-01",
+    "excerpt": "What Is a Power Conditioner and Why Do DJs Need It? A power conditioner is a device that filters, regulates, and protects the mains power supply before it...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "pa-horn-speaker-setup",
+    "title": "PA Horn Speaker Setup — Complete Guide for Outdoor Events India",
+    "title_hi": "PA Horn Speaker Setup — Outdoor Events के लिए पूरी Guide",
+    "category": "speaker",
+    "date": "2026-05-01",
+    "excerpt": "PA Horn Speaker — What Makes It Perfect for Outdoor Events PA horn speakers are among the most efficient and purpose-built speaker designs for outdoor events,...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
+    "slug": "de800-vs-d2-driver-comparison",
+    "title": "DE800 Tweeter vs D2 Driver — Which HF Driver for Your Cabinet?",
+    "title_hi": "DE800 vs D2 Driver — आपके Cabinet के लिए कौन सा HF Driver?",
+    "category": "speaker",
+    "date": "2026-05-01",
+    "excerpt": "DE800 Tweeter vs D2 Driver — Understanding HF Drivers for DJ Cabinets If you are building or upgrading a PA speaker cabinet for your DJ setup, choosing the...",
+    "lang": [
+      "en",
+      "hi"
+    ]
+  },
+  {
     "slug": "pu8000-amplifier-review",
     "title": "Punishka PU8000 1600W Power Amplifier — Full Review India",
     "title_hi": "Punishka PU8000 1600W Power Amplifier — पूरी Review India",
