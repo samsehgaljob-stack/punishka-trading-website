@@ -113,7 +113,7 @@
 .pc-gal-dots{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:5}
 .pc-gal-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.5);transition:background .2s;cursor:pointer}
 .pc-gal-dot.on{background:var(--or)}
-.pc:hover{box-shadow:0 8px 28px rgba(0,0,0,.13);transform:translateY(-3px)}.pc:hover .pc-img{transform:scale(1.04)}.hero-carousel{position:relative;width:100%;height:100%;overflow:hidden;border-radius:inherit}.hero-track{display:flex;height:100%;transition:transform .6s cubic-bezier(.4,0,.2,1)}.hero-slide{flex:0 0 100%;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;padding:20px;border-radius:inherit}</style>
+.pc:hover{box-shadow:0 8px 28px rgba(0,0,0,.13);transform:translateY(-3px)}.pc:hover .pc-img{transform:scale(1.04)}.hero-carousel{position:relative;width:100%;height:100%;overflow:hidden;border-radius:inherit}.hero-track{display:flex;height:100%;transition:transform .6s cubic-bezier(.4,0,.2,1)}.hero-slide{flex:0 0 100%;width:100%;height:100%;border-radius:inherit;text-decoration:none;}</style>
 
   <!-- Meta Pixel -->
   <script>
@@ -3289,7 +3289,10 @@ if (!track) return;
 const prods = D.products || DEFAULTS.products;
 const heroItems = prods.filter(p => p.featured).slice(0, 8);
 track.innerHTML = heroItems.map((p, i) =>
-`<img class="hero-slide${i===0?' active':''}" src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>`
+`<a class="hero-slide${i===0?' active':''}" href="javascript:void(0)" onclick="openPD('${p.id}')" style="display:block;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;">
+<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;padding:20px;border-radius:inherit;display:block;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
+<div style="position:absolute;bottom:10px;right:10px;background:rgba(255,107,0,0.85);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:4px 10px;border-radius:6px;pointer-events:none;">View Product ›</div>
+</a>`
 ).join('');
 }
 function getProductFaq(p) {
