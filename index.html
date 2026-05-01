@@ -3331,8 +3331,8 @@ if (!track) return;
 const prods = D.products || DEFAULTS.products;
 const heroItems = prods.filter(p => p.featured).slice(0, 8);
 track.innerHTML = heroItems.map((p, i) =>
-`<div class="hero-slide${i===0?' active':''}" data-pid="${p.id}" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;background:#fff;overflow:hidden;">
-<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
+`<div class="hero-slide${i===0?' active':''}" data-pid="${p.id}" onclick="if(!window._heroSwipe){openPD('${p.id}')}" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:pointer;position:relative;flex:0 0 100%;background:#fff;overflow:hidden;">
+<img src="${getProductPrimaryImage(p)}" alt="${p.name}" ${i===0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;pointer-events:none;" onerror="this.src='https://placehold.co/1200x675/f5f5f5/999?text=Product'"/>
 <div style="position:absolute;bottom:10px;right:10px;background:rgba(255,107,0,0.9);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:5px 11px;border-radius:6px;pointer-events:none;">View Product ›</div>
 </div>`
 ).join('');
@@ -3784,10 +3784,10 @@ function pcGalDots(id, active) {
 (function(){
   var track = document.querySelector('.hero-track');
   if(!track) return;
-  var cur = 0, startX = 0, isDrag = false, wasDrag = false;
+  var cur = 0, startX = 0, isDrag = false;
+  window._heroSwipe = false;
 
   function getTotal(){ return track.querySelectorAll('.hero-slide').length; }
-
   function goTo(n){
     var t = getTotal(); if(!t) return;
     cur = (n + t) % t;
@@ -3797,32 +3797,36 @@ function pcGalDots(id, active) {
   var timer = setInterval(function(){ goTo(cur + 1); }, 3000);
 
   // Touch swipe
-  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; isDrag=true; wasDrag=false; }, {passive:true});
+  track.addEventListener('touchstart', function(e){
+    startX = e.touches[0].clientX; isDrag=true; window._heroSwipe=false;
+  }, {passive:true});
   track.addEventListener('touchend', function(e){
     if(!isDrag) return;
     var diff = startX - e.changedTouches[0].clientX;
-    if(Math.abs(diff) > 15){ wasDrag=true; goTo(cur+(diff>0?1:-1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    if(Math.abs(diff) > 15){
+      window._heroSwipe = true;
+      goTo(cur+(diff>0?1:-1));
+      clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000);
+      setTimeout(function(){ window._heroSwipe=false; }, 300);
+    }
     isDrag = false;
   }, {passive:true});
 
-  // Mouse drag
-  track.addEventListener('mousedown', function(e){ startX=e.clientX; isDrag=true; wasDrag=false; });
+  // Mouse
+  track.addEventListener('mousedown', function(e){ startX=e.clientX; isDrag=true; window._heroSwipe=false; });
   track.addEventListener('mouseup', function(e){
     if(!isDrag) return;
     var diff = startX - e.clientX;
-    if(Math.abs(diff) > 15){ wasDrag=true; goTo(cur+(diff>0?1:-1)); clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000); }
+    if(Math.abs(diff) > 15){
+      window._heroSwipe = true;
+      goTo(cur+(diff>0?1:-1));
+      clearInterval(timer); timer=setInterval(function(){goTo(cur+1);},3000);
+      setTimeout(function(){ window._heroSwipe=false; }, 300);
+    }
     isDrag = false;
   });
   track.addEventListener('mouseleave', function(){ isDrag=false; timer=setInterval(function(){goTo(cur+1);},3000); });
   track.addEventListener('mouseenter', function(){ clearInterval(timer); });
-
-  // Click — fires after both touch tap and mouse click
-  track.addEventListener('click', function(){
-    if(wasDrag){ wasDrag=false; return; }
-    var slides = track.querySelectorAll('.hero-slide');
-    var s = slides[cur];
-    if(s && s.dataset.pid && typeof openPD==='function'){ openPD(s.dataset.pid); }
-  });
 })();
 </script>
 
